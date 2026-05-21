@@ -7,3 +7,4 @@ pipeline/pages-cache/
 .idea/
 _smoke.mjs
 _*.mjs
+extension.zip
