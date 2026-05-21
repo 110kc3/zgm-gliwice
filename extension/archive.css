@@ -155,3 +155,13 @@ section h2 {
 #archive-table tr:hover td { background: #f9fafb; }
 
 #archive-table a { color: var(--accent); }
+
+#archive-footer {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 12px;
+}
+.zgm-support { color: var(--amber-fg); font-weight: 600; text-decoration: none; }
+.zgm-support:hover { text-decoration: underline; }

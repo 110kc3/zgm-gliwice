@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "ZGM Gliwice — auction history",
+  "name": "ZGM Gliwice — historia przetargów",
   "short_name": "ZGM history",
   "version": "1.0.0",
   "description": "Historia przetargów nieruchomości ZGM Gliwice: dawne ceny, zł/m², terminy wadium i oględzin, powiadomienia o aukcjach.",

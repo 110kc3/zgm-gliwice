@@ -108,6 +108,7 @@ h2 {
 
 .footer-links { display: flex; gap: 10px; }
 .footer-links a { color: var(--accent); }
+.footer-links .zgm-support { color: var(--amber-fg); font-weight: 600; }
 
 /* Wadium-deadline highlight */
 .zgm-urgent { color: var(--amber-fg); font-weight: 600; }

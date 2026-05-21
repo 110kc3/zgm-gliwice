@@ -63,6 +63,7 @@
       'popup.meta':
         '${active} active · ${tracked} properties tracked · refreshed ${when}',
       'popup.repo': 'repo',
+      'popup.support': 'Support this project',
       'popup.lang_toggle.to_pl': 'PL',
       'popup.lang_toggle.to_en': 'EN',
 
@@ -165,6 +166,7 @@
       'popup.meta':
         '${active} aktywnych · ${tracked} nieruchomości w bazie · odświeżono ${when}',
       'popup.repo': 'repozytorium',
+      'popup.support': 'Wesprzyj projekt',
       'popup.lang_toggle.to_pl': 'PL',
       'popup.lang_toggle.to_en': 'EN',
 
@@ -280,6 +282,12 @@
           try { fn(next); } catch {}
         }
       }
+    });
+  } catch {}
+
+  window.ZGM_I18N = { t, getLang, setLang, onChange, ready };
+})();
+
     });
   } catch {}
 
