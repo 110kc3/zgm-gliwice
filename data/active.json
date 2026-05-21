@@ -274,6 +274,19 @@
   ],
   "wykaz": [
     {
+      "wykaz_no": "ZGM/DS/93/2026",
+      "address_raw": "Górnych Wa łów 31-31A garaż nr 1",
+      "address": {
+        "street": "Górnych Wa łów",
+        "street_norm": "gornych wa low",
+        "building": "31-31A",
+        "apt": "garaz-1",
+        "key": "gornych wa low|31-31A|garaz-1",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
       "wykaz_no": "ZGM/DS/66/2026",
       "address_raw": "Styczyńskiego 14/13",
       "address": {

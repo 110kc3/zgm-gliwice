@@ -4800,6 +4800,23 @@
       ]
     },
     {
+      "key": "gornych wa low|31-31A|garaz-1",
+      "street": "Górnych Wa łów",
+      "street_norm": "gornych wa low",
+      "building": "31-31A",
+      "apt": "garaz-1",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/93/2026"
+        }
+      ]
+    },
+    {
       "key": "styczynskiego|14|13",
       "street": "Styczyńskiego",
       "street_norm": "styczynskiego",
