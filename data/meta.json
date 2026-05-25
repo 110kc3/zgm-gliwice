@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "parser_version": "0.2.0",
-  "generated_at": "2026-05-21T09:25:09.196Z",
+  "generated_at": "2026-05-25T09:55:20.172Z",
   "source_pdf_count": 43,
   "parsed_records": 241,
   "parser_note_count": 13,
-  "unique_properties": 182,
+  "unique_properties": 183,
   "active_listings": 15,
-  "wykaz_entries": 10
+  "wykaz_entries": 11
 }

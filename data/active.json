@@ -274,14 +274,27 @@
   ],
   "wykaz": [
     {
-      "wykaz_no": "ZGM/DS/93/2026",
-      "address_raw": "Górnych Wa łów 31-31A garaż nr 1",
+      "wykaz_no": "ZGM/DS/91/2026",
+      "address_raw": "Plebiscytowa garaż nr 11",
       "address": {
-        "street": "Górnych Wa łów",
-        "street_norm": "gornych wa low",
+        "street": "Plebiscytowa",
+        "street_norm": "plebiscytowa",
+        "building": "0",
+        "apt": "garaz-11",
+        "key": "plebiscytowa|0|garaz-11",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/93/2026",
+      "address_raw": "Górnych Wałów 31-31A garaż nr 1",
+      "address": {
+        "street": "Górnych Wałów",
+        "street_norm": "gornych walow",
         "building": "31-31A",
         "apt": "garaz-1",
-        "key": "gornych wa low|31-31A|garaz-1",
+        "key": "gornych walow|31-31A|garaz-1",
         "warning": null
       },
       "published_date": null
