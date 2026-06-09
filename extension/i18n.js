@@ -17,7 +17,7 @@
   const STRINGS = {
     en: {
       // popup
-      'popup.title': 'ZGM auction history',
+      'popup.title': 'ZGM Gliwice — auction history',
       'popup.currently_active': 'Currently active',
       'popup.refresh': 'Refresh data',
       'popup.loading': 'Loading…',
@@ -35,29 +35,37 @@
       'popup.col.ask': 'Ask',
       'popup.col.prior': 'Prior',
       'popup.col.last_unsold': 'Last unsold',
-      'popup.fresh': 'first',
-      'popup.prior_summary': '${n}× (${unsold} unsold)',
+      'popup.fresh': 'new',
+      'popup.prior_summary': 'listed ${n}× before',
       'popup.col.status': 'Status',
       'popup.active_section': 'Currently active',
       'popup.watching_section': 'Watching',
       'popup.watching.historical_only': 'Not currently active — ${n}× prior (${unsold} unsold)',
       'watch.button.add': 'Watch',
       'watch.button.remove': 'Unwatch',
-      'notif.title': 'ZGM — watched property listed',
+      'notif.title': 'ZGM Gliwice — watched property listed',
       'notif.body': '${addr} — auction ${date} at ${price}',
       'popup.archive_link': 'Archive',
-      'archive.title': 'ZGM auction archive',
+      'archive.title': 'ZGM Gliwice — auction archive',
       'archive.provenance': 'Data from ${from} to ${to} · last refreshed ${updated}',
       'archive.back': 'Back to popup',
       'archive.summary': 'Summary',
       'archive.sold_suffix': 'sold',
+      'archive.archived_suffix': 'in archive',
       'archive.median': 'median',
+      'archive.median_start': 'median start',
       'archive.median_m2': 'median PLN/m²',
+      'archive.filter.city': 'City',
       'archive.filter.kind': 'Kind',
       'archive.filter.outcome': 'Outcome',
+      'archive.filter.min_year': 'From year',
+      'archive.filter.year': 'Year',
+      'archive.filter.all_years': 'All years',
       'archive.filter.all': 'All',
       'archive.filter.search': 'Search street',
       'archive.filter.search_placeholder': 'e.g. Zwycięstwa',
+      'archive.historical_section': 'Historical (sold / unsold)',
+      'archive.active_empty': 'No active listings match the current filters.',
       'archive.col.area': 'area',
       'archive.rowcount': '${n} record(s)',
       'popup.meta':
@@ -66,13 +74,17 @@
       'popup.support': 'Support this project',
       'popup.lang_toggle.to_pl': 'PL',
       'popup.lang_toggle.to_en': 'EN',
+      'theme.toggle.to_dark': 'Switch to dark mode',
+      'theme.toggle.to_light': 'Switch to light mode',
 
       // badges on listing index pages
-      'badge.first': 'first listing',
+      'badge.first': 'no prior auctions',
+      'badge.no_archive': 'no archive data',
       'badge.prev_unsold':
         'prev ${n}× — ${unsold} unsold${sold_clause}',
       'badge.prev_unsold.sold_clause': ', ${sold} sold',
       'badge.prev_sold': 'prev ${n}× sold',
+      'chip.round': 'auction ${r}',
 
       // tooltip/table headers
       'col.date': 'date',
@@ -90,6 +102,7 @@
       // outcomes
       'outcome.sold': 'sold',
       'outcome.unsold': 'unsold',
+      'outcome.archived': 'past (result not published)',
       'outcome.no_winner': 'no winner',
       'outcome.sold_for': 'sold ${price}',
 
@@ -104,6 +117,17 @@
       'kind.uzytkowy': 'commercial',
       'kind.garaz': 'garage',
       'kind.unknown': 'unknown',
+
+      // city labels (popup chip)
+      'city.gliwice': 'Gliwice',
+      'city.katowice': 'Katowice',
+      'city.bytom': 'Bytom',
+      'city.zabrze': 'Zabrze',
+      'city.sosnowiec': 'Sosnowiec',
+      'city.rybnik': 'Rybnik',
+      'city.bielsko': 'Bielsko-Biała',
+      'city.myslowice': 'Mysłowice',
+      'city.swietochlowice': 'Świętochłowice',
 
       // detail-page panel
       'panel.title': 'Auction history — ${addr}',
@@ -120,7 +144,7 @@
 
     pl: {
       // popup
-      'popup.title': 'ZGM — historia aukcji',
+      'popup.title': 'ZGM Gliwice — historia aukcji',
       'popup.currently_active': 'Aktualne aukcje',
       'popup.refresh': 'Odśwież dane',
       'popup.loading': 'Wczytywanie…',
@@ -139,28 +163,36 @@
       'popup.col.prior': 'Historia',
       'popup.col.last_unsold': 'Ostatnia bez sprzedaży',
       'popup.fresh': 'nowa',
-      'popup.prior_summary': '${n}× (${unsold} bez sprzedaży)',
+      'popup.prior_summary': 'wystawiona ${n}× wcześniej',
       'popup.col.status': 'Status',
       'popup.active_section': 'Aktualne aukcje',
       'popup.watching_section': 'Obserwowane',
       'popup.watching.historical_only': 'Brak aktywnej aukcji — ${n}× wcześniej (${unsold} bez sprzedaży)',
       'watch.button.add': 'Obserwuj',
       'watch.button.remove': 'Przestań obserwować',
-      'notif.title': 'ZGM — nowa aukcja obserwowanej nieruchomości',
+      'notif.title': 'ZGM Gliwice — nowa aukcja obserwowanej nieruchomości',
       'notif.body': '${addr} — aukcja ${date} po ${price}',
       'popup.archive_link': 'Archiwum',
-      'archive.title': 'Archiwum aukcji ZGM',
+      'archive.title': 'Archiwum aukcji ZGM Gliwice',
       'archive.provenance': 'Dane od ${from} do ${to} · ostatnie odświeżenie ${updated}',
       'archive.back': 'Wróć do popupa',
       'archive.summary': 'Podsumowanie',
       'archive.sold_suffix': 'sprzedanych',
+      'archive.archived_suffix': 'w archiwum',
       'archive.median': 'mediana',
+      'archive.median_start': 'mediana wyw.',
       'archive.median_m2': 'mediana zł/m²',
+      'archive.filter.city': 'Miasto',
       'archive.filter.kind': 'Typ',
       'archive.filter.outcome': 'Wynik',
+      'archive.filter.min_year': 'Od roku',
+      'archive.filter.year': 'Rok',
+      'archive.filter.all_years': 'Wszystkie lata',
       'archive.filter.all': 'Wszystkie',
       'archive.filter.search': 'Szukaj ulicy',
       'archive.filter.search_placeholder': 'np. Zwycięstwa',
+      'archive.historical_section': 'Historyczne (sprzedane / bez sprzedaży)',
+      'archive.active_empty': 'Brak aktywnych aukcji pasujących do filtrów.',
       'archive.col.area': 'powierzchnia',
       'archive.rowcount': '${n} rekord(ów)',
       'popup.meta':
@@ -169,13 +201,17 @@
       'popup.support': 'Wesprzyj projekt',
       'popup.lang_toggle.to_pl': 'PL',
       'popup.lang_toggle.to_en': 'EN',
+      'theme.toggle.to_dark': 'Przełącz na ciemny motyw',
+      'theme.toggle.to_light': 'Przełącz na jasny motyw',
 
       // badges
-      'badge.first': 'pierwsza aukcja',
+      'badge.first': 'brak wcześniejszych aukcji',
+      'badge.no_archive': 'brak danych archiwalnych',
       'badge.prev_unsold':
         'poprzednio ${n}× — ${unsold} bez sprzedaży${sold_clause}',
       'badge.prev_unsold.sold_clause': ', ${sold} sprzedane',
       'badge.prev_sold': 'poprzednio ${n}× sprzedane',
+      'chip.round': '${r}. przetarg',
 
       // tooltip/table headers
       'col.date': 'data',
@@ -193,6 +229,7 @@
       // outcomes
       'outcome.sold': 'sprzedane',
       'outcome.unsold': 'bez sprzedaży',
+      'outcome.archived': 'zakończone (brak wyniku)',
       'outcome.no_winner': 'brak nabywcy',
       'outcome.sold_for': 'sprzedane za ${price}',
 
@@ -207,6 +244,17 @@
       'kind.uzytkowy': 'użytkowy',
       'kind.garaz': 'garaż',
       'kind.unknown': 'nieznany',
+
+      // city labels (popup chip)
+      'city.gliwice': 'Gliwice',
+      'city.katowice': 'Katowice',
+      'city.bytom': 'Bytom',
+      'city.zabrze': 'Zabrze',
+      'city.sosnowiec': 'Sosnowiec',
+      'city.rybnik': 'Rybnik',
+      'city.bielsko': 'Bielsko-Biała',
+      'city.myslowice': 'Mysłowice',
+      'city.swietochlowice': 'Świętochłowice',
 
       // detail-page panel
       'panel.title': 'Historia aukcji — ${addr}',

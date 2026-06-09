@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "city": "gliwice",
+  "listings": [
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Zygmunta Starego 29/4",
+      "address": {
+        "street": "Zygmunta Starego",
+        "street_norm": "zygmunta starego",
+        "building": "29",
+        "apt": "4",
+        "key": "zygmunta starego|29|4",
+        "warning": null
+      },
+      "auction_date": "2026-06-22",
+      "area_m2": 86.79,
+      "starting_price_pln": 461430,
+      "detail_url": "https://zgm-gliwice.pl/zygmunta-starego-29-4-23-03-2026-r/",
+      "wadium_deadline": "2026-06-16",
+      "viewing_date": "2026-05-06",
+      "round": 2
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Czarnieckiego 25/1",
+      "address": {
+        "street": "Czarnieckiego",
+        "street_norm": "czarnieckiego",
+        "building": "25",
+        "apt": "1",
+        "key": "czarnieckiego|25|1",
+        "warning": null
+      },
+      "auction_date": "2026-06-22",
+      "area_m2": 81.81,
+      "starting_price_pln": 435780,
+      "detail_url": "https://zgm-gliwice.pl/czarnieckiego-25-1-23-03-2026-r/",
+      "wadium_deadline": "2026-06-16",
+      "viewing_date": "2026-05-07",
+      "round": 2
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Przyjaźni 9/5",
+      "address": {
+        "street": "Przyjaźni",
+        "street_norm": "przyjazni",
+        "building": "9",
+        "apt": "5",
+        "key": "przyjazni|9|5",
+        "warning": null
+      },
+      "auction_date": "2026-06-22",
+      "area_m2": 134.17,
+      "starting_price_pln": 796320,
+      "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
+      "wadium_deadline": "2026-06-16",
+      "viewing_date": "2026-05-08",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Królewskiej Tamy 55/2",
+      "address": {
+        "street": "Królewskiej Tamy",
+        "street_norm": "krolewskiej tamy",
+        "building": "55",
+        "apt": "2",
+        "key": "krolewskiej tamy|55|2",
+        "warning": null
+      },
+      "auction_date": "2026-06-29",
+      "area_m2": 25.27,
+      "starting_price_pln": 99200,
+      "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-55-2-09-03-2026-r/",
+      "wadium_deadline": "2026-06-23",
+      "viewing_date": "2026-06-17",
+      "round": 3
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Królewskiej Tamy 53/2",
+      "address": {
+        "street": "Królewskiej Tamy",
+        "street_norm": "krolewskiej tamy",
+        "building": "53",
+        "apt": "2",
+        "key": "krolewskiej tamy|53|2",
+        "warning": null
+      },
+      "auction_date": "2026-06-29",
+      "area_m2": 26.89,
+      "starting_price_pln": 105400,
+      "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-5-2-09-03-2026-r/",
+      "wadium_deadline": "2026-06-23",
+      "viewing_date": "2026-06-17",
+      "round": 3
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Plebiscytowa 4/9",
+      "address": {
+        "street": "Plebiscytowa",
+        "street_norm": "plebiscytowa",
+        "building": "4",
+        "apt": "9",
+        "key": "plebiscytowa|4|9",
+        "warning": null
+      },
+      "auction_date": "2026-06-29",
+      "area_m2": 52.45,
+      "starting_price_pln": 198800,
+      "detail_url": "https://zgm-gliwice.pl/plebiscytowa-4-9-19-01-2026-r/",
+      "wadium_deadline": "2026-06-23",
+      "viewing_date": "2026-06-16",
+      "round": 3
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Poniatowskiego 1/13",
+      "address": {
+        "street": "Poniatowskiego",
+        "street_norm": "poniatowskiego",
+        "building": "1",
+        "apt": "13",
+        "key": "poniatowskiego|1|13",
+        "warning": null
+      },
+      "auction_date": "2026-06-29",
+      "area_m2": 38.09,
+      "starting_price_pln": 137550,
+      "detail_url": "https://zgm-gliwice.pl/poniatowskiego-1-13-19-01-2026-r/",
+      "wadium_deadline": "2026-06-23",
+      "viewing_date": "2026-06-18",
+      "round": 3
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Daszyńskiego 65/10",
+      "address": {
+        "street": "Daszyńskiego",
+        "street_norm": "daszynskiego",
+        "building": "65",
+        "apt": "10",
+        "key": "daszynskiego|65|10",
+        "warning": null
+      },
+      "auction_date": "2026-07-06",
+      "area_m2": 51.59,
+      "starting_price_pln": 214080,
+      "detail_url": "https://zgm-gliwice.pl/daszynskiego-65-10-30-03-2026-r/",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-23",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Zwycięstwa 11/6c",
+      "address": {
+        "street": "Zwycięstwa",
+        "street_norm": "zwyciestwa",
+        "building": "11",
+        "apt": "6C",
+        "key": "zwyciestwa|11|6C",
+        "warning": null
+      },
+      "auction_date": "2026-07-06",
+      "area_m2": 71.07,
+      "starting_price_pln": 361600,
+      "detail_url": "https://zgm-gliwice.pl/zwyciestwa-11-6c-30-03-2026-r/",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-23",
+      "round": 2
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Świętojańska 39/3",
+      "address": {
+        "street": "Świętojańska",
+        "street_norm": "swietojanska",
+        "building": "39",
+        "apt": "3",
+        "key": "swietojanska|39|3",
+        "warning": null
+      },
+      "auction_date": "2026-07-06",
+      "area_m2": 47.5,
+      "starting_price_pln": 264000,
+      "detail_url": "https://zgm-gliwice.pl/swietojanska-39-3-04-05-2026-r/",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-25",
+      "round": 2
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Rybnicka 25/19",
+      "address": {
+        "street": "Rybnicka",
+        "street_norm": "rybnicka",
+        "building": "25",
+        "apt": "19",
+        "key": "rybnicka|25|19",
+        "warning": null
+      },
+      "auction_date": "2026-07-06",
+      "area_m2": 68.14,
+      "starting_price_pln": 245490,
+      "detail_url": "https://zgm-gliwice.pl/rybnicka-25-19-01-12-2025-r/",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-26",
+      "round": 4
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Rybitwy 13/17",
+      "address": {
+        "street": "Rybitwy",
+        "street_norm": "rybitwy",
+        "building": "13",
+        "apt": "17",
+        "key": "rybitwy|13|17",
+        "warning": null
+      },
+      "auction_date": "2026-07-06",
+      "area_m2": 45.29,
+      "starting_price_pln": 251440,
+      "detail_url": "https://zgm-gliwice.pl/rybitwy-13-17-01-12-2025-r/",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-26",
+      "round": 3
+    },
+    {
+      "kind": "garaz",
+      "address_raw": "Kozielska 13 garaż nr 1",
+      "address": {
+        "street": "Kozielska",
+        "street_norm": "kozielska",
+        "building": "13",
+        "apt": "garaz-1",
+        "key": "kozielska|13|garaz-1",
+        "warning": null
+      },
+      "auction_date": "2026-06-29",
+      "area_m2": 16.92,
+      "starting_price_pln": 44820,
+      "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
+      "wadium_deadline": "2026-06-23",
+      "viewing_date": "2026-06-16",
+      "round": 1
+    },
+    {
+      "kind": "uzytkowy",
+      "address_raw": "Zwycięstwa 45/7",
+      "address": {
+        "street": "Zwycięstwa",
+        "street_norm": "zwyciestwa",
+        "building": "45",
+        "apt": "7",
+        "key": "zwyciestwa|45|7",
+        "warning": null
+      },
+      "auction_date": "2026-06-29",
+      "area_m2": 64.78,
+      "starting_price_pln": 177660,
+      "detail_url": "https://zgm-gliwice.pl/zwyciestwa-45-7-08-12-2025-r/",
+      "wadium_deadline": "2026-06-23",
+      "viewing_date": "2026-06-15",
+      "round": 5
+    },
+    {
+      "kind": "uzytkowy",
+      "address_raw": "Chorzowska 40/12",
+      "address": {
+        "street": "Chorzowska",
+        "street_norm": "chorzowska",
+        "building": "40",
+        "apt": "12",
+        "key": "chorzowska|40|12",
+        "warning": null
+      },
+      "auction_date": "2026-07-06",
+      "area_m2": 49,
+      "starting_price_pln": 131850,
+      "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-24",
+      "round": 2
+    }
+  ],
+  "wykaz": [
+    {
+      "wykaz_no": "ZGM/DS/91/2026",
+      "address_raw": "Plebiscytowa garaż nr 11",
+      "address": {
+        "street": "Plebiscytowa",
+        "street_norm": "plebiscytowa",
+        "building": "0",
+        "apt": "garaz-11",
+        "key": "plebiscytowa|0|garaz-11",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/93/2026",
+      "address_raw": "Górnych Wałów 31-31A garaż nr 1",
+      "address": {
+        "street": "Górnych Wałów",
+        "street_norm": "gornych walow",
+        "building": "31-31A",
+        "apt": "garaz-1",
+        "key": "gornych walow|31-31A|garaz-1",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/66/2026",
+      "address_raw": "Styczyńskiego 14/13",
+      "address": {
+        "street": "Styczyńskiego",
+        "street_norm": "styczynskiego",
+        "building": "14",
+        "apt": "13",
+        "key": "styczynskiego|14|13",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/80/2026",
+      "address_raw": "Gałczyńskiego 11/1",
+      "address": {
+        "street": "Gałczyńskiego",
+        "street_norm": "galczynskiego",
+        "building": "11",
+        "apt": "1",
+        "key": "galczynskiego|11|1",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/88/2026",
+      "address_raw": "Błogosławionego Czesława 48/3",
+      "address": {
+        "street": "Błogosławionego Czesława",
+        "street_norm": "blogoslawionego czeslawa",
+        "building": "48",
+        "apt": "3",
+        "key": "blogoslawionego czeslawa|48|3",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/67/2026",
+      "address_raw": "Lutycka 27/1",
+      "address": {
+        "street": "Lutycka",
+        "street_norm": "lutycka",
+        "building": "27",
+        "apt": "1",
+        "key": "lutycka|27|1",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/92/2026",
+      "address_raw": "Damrota 9/4",
+      "address": {
+        "street": "Damrota",
+        "street_norm": "damrota",
+        "building": "9",
+        "apt": "4",
+        "key": "damrota|9|4",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/52/2026",
+      "address_raw": "Korfantego 17/I",
+      "address": {
+        "street": "Korfantego",
+        "street_norm": "korfantego",
+        "building": "17",
+        "apt": "I",
+        "key": "korfantego|17|I",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/50/2026",
+      "address_raw": "Stalmacha 7/3",
+      "address": {
+        "street": "Stalmacha",
+        "street_norm": "stalmacha",
+        "building": "7",
+        "apt": "3",
+        "key": "stalmacha|7|3",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/51/2026",
+      "address_raw": "Zwycięstwa 34/9a",
+      "address": {
+        "street": "Zwycięstwa",
+        "street_norm": "zwyciestwa",
+        "building": "34",
+        "apt": "9A",
+        "key": "zwyciestwa|34|9A",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/57/2026",
+      "address_raw": "Staszica 13/1",
+      "address": {
+        "street": "Staszica",
+        "street_norm": "staszica",
+        "building": "13",
+        "apt": "1",
+        "key": "staszica|13|1",
+        "warning": null
+      },
+      "published_date": null
+    }
+  ]
+}

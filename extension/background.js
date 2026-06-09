@@ -1,25 +1,40 @@
 // Service worker:
-//   - fetches data/{properties,active,meta}.json from GitHub on demand
-//   - chrome.alarms periodic check: re-fetches, diffs active.json against
-//     the user's watchlist, and fires chrome.notifications for any newly
-//     active watched property
+//   - fetches per-city data/<city>/{properties,active,meta}.json from GitHub
+//     for every city in CITIES, merges them into a single payload the popup
+//     consumes as a flat list (with each record city-tagged + key-namespaced)
+//   - chrome.alarms periodic check: re-fetches, diffs merged active.json
+//     against the user's watchlist, and fires chrome.notifications for any
+//     newly-active watched property
 //   - notification click → opens the property detail page
+//
+// Multi-city note: the pipeline's data files keep their original
+// `street|building|apt` keys; namespacing to `city|street|building|apt` happens
+// here at merge time so the extension can mix cities without collisions. A
+// one-shot migration upgrades any legacy un-namespaced watchlist entries.
 
 // The watchlist module exposes globalThis.ZGM_WATCH when imported below.
 importScripts('watchlist.js');
 
 const REPO = '110kc3/zgm-gliwice';
 const BRANCH = 'main';
-const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data`;
+// Wave 1 popup scope: hardcode the city list. A future Wave 2 will lazily
+// fetch only the city matching the active tab's hostname.
+const CITIES = ['gliwice'];
+const RAW = (city) =>
+  `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/${city}`;
 const TTL_MS = 6 * 60 * 60 * 1000;       // 6h soft TTL for ad-hoc reads
 const ALARM_NAME = 'zgm-watchlist-check';
 const ALARM_INTERVAL_MIN = 240;          // 4h periodic watchlist scan
 
+// The merged-cache key embeds the schema version + the city set, so an old
+// cached merge from a previous build (e.g. before a city was added) is never
+// read back — adding/removing a city automatically invalidates the cache. Bump
+// `cacheSchema` only when the payload SHAPE changes.
+const CACHE_SCHEMA = 2;
 const KEYS = {
-  properties: 'cache:properties',
-  active: 'cache:active',
-  meta: 'cache:meta',
+  merged: `cache:v${CACHE_SCHEMA}:${[...CITIES].sort().join('+')}:merged`,
 };
+const MIGRATION_FLAG = 'watchlist:migrated_v2';
 
 async function fetchJson(url) {
   const res = await fetch(url, { cache: 'no-cache' });
@@ -36,37 +51,170 @@ async function saveToCache(key, payload) {
   await chrome.storage.local.set({ [key]: payload });
 }
 
+// ---------------- merging ----------------
+
+function nsKey(city, key) {
+  if (!key) return key;
+  // Already namespaced (looks like "<city>|...") — leave as-is.
+  if (key.startsWith(`${city}|`)) return key;
+  return `${city}|${key}`;
+}
+
+// Mutates each property to (a) prefix `key` with its city and (b) carry a
+// `city` field. Returns the same array for chaining.
+function namespaceProperties(properties, city) {
+  for (const p of properties) {
+    p.key = nsKey(city, p.key);
+    p.city = city;
+  }
+  return properties;
+}
+
+function namespaceActiveListings(listings, city) {
+  for (const l of listings) {
+    if (l.address && l.address.key) {
+      l.address.key = nsKey(city, l.address.key);
+    }
+    l.city = city;
+  }
+  return listings;
+}
+
+// Builds the merged payload the popup/archive consume. Each city contributes
+// its own three JSONs; key namespacing happens here.
+function mergeCityPayloads(cityPayloads) {
+  const allProperties = [];
+  const allActive = [];
+  const allWykaz = [];
+  const perCityMeta = {};
+  let totalSourcePdfs = 0;
+  let totalUnique = 0;
+  let totalActive = 0;
+  let totalWykaz = 0;
+  let latestGenerated = null;
+
+  for (const { city, properties, active, meta } of cityPayloads) {
+    const props = properties?.properties || [];
+    namespaceProperties(props, city);
+    allProperties.push(...props);
+
+    const listings = active?.listings || [];
+    namespaceActiveListings(listings, city);
+    allActive.push(...listings);
+
+    const wykaz = active?.wykaz || [];
+    for (const w of wykaz) w.city = city;
+    allWykaz.push(...wykaz);
+
+    perCityMeta[city] = meta || null;
+    totalSourcePdfs += meta?.source_pdf_count || 0;
+    totalUnique += meta?.unique_properties || props.length;
+    totalActive += meta?.active_listings || listings.length;
+    totalWykaz += meta?.wykaz_entries || wykaz.length;
+    if (meta?.generated_at) {
+      if (!latestGenerated || meta.generated_at > latestGenerated) {
+        latestGenerated = meta.generated_at;
+      }
+    }
+  }
+
+  // Mirror the legacy shape the popup/archive already expect:
+  //   payload.properties.properties = [...]
+  //   payload.active.listings       = [...]
+  //   payload.active.wykaz          = [...]
+  //   payload.meta                  = { ...aggregates, per_city }
+  return {
+    properties: {
+      schema_version: 1,
+      properties: allProperties,
+    },
+    active: {
+      schema_version: 1,
+      listings: allActive,
+      wykaz: allWykaz,
+    },
+    meta: {
+      schema_version: 1,
+      generated_at: latestGenerated,
+      source_pdf_count: totalSourcePdfs,
+      unique_properties: totalUnique,
+      active_listings: totalActive,
+      wykaz_entries: totalWykaz,
+      cities: CITIES,
+      per_city: perCityMeta,
+    },
+  };
+}
+
+async function fetchCity(city) {
+  const base = RAW(city);
+  try {
+    const [properties, active, meta] = await Promise.all([
+      fetchJson(`${base}/properties.json`),
+      fetchJson(`${base}/active.json`),
+      fetchJson(`${base}/meta.json`),
+    ]);
+    return { city, properties, active, meta };
+  } catch (err) {
+    // A city whose data isn't published yet (e.g. just added to CITIES, not yet
+    // pushed) must NOT blank the whole extension. Skip it; the others still load.
+    console.warn(`[ZGM ext] skipping city "${city}": ${err.message}`);
+    return null;
+  }
+}
+
 async function getOrFetch(force = false) {
   const now = Date.now();
-  const cachedProps = await loadFromCache(KEYS.properties);
-  if (!force && cachedProps && now - cachedProps.fetched_at < TTL_MS) {
-    const cachedActive = await loadFromCache(KEYS.active);
-    const cachedMeta = await loadFromCache(KEYS.meta);
+  const cached = await loadFromCache(KEYS.merged);
+  if (!force && cached && now - cached.fetched_at < TTL_MS) {
     return {
-      properties: cachedProps.data,
-      active: cachedActive?.data,
-      meta: cachedMeta?.data,
-      fetched_at: cachedProps.fetched_at,
+      properties: cached.data.properties,
+      active: cached.data.active,
+      meta: cached.data.meta,
+      fetched_at: cached.fetched_at,
     };
   }
-  const [properties, active, meta] = await Promise.all([
-    fetchJson(`${RAW}/properties.json`),
-    fetchJson(`${RAW}/active.json`),
-    fetchJson(`${RAW}/meta.json`),
-  ]);
+  const cityPayloads = (await Promise.all(CITIES.map((c) => fetchCity(c)))).filter(Boolean);
+  const merged = mergeCityPayloads(cityPayloads);
   const fetched_at = Date.now();
-  await Promise.all([
-    saveToCache(KEYS.properties, { data: properties, fetched_at }),
-    saveToCache(KEYS.active, { data: active, fetched_at }),
-    saveToCache(KEYS.meta, { data: meta, fetched_at }),
-  ]);
-  return { properties, active, meta, fetched_at };
+  await saveToCache(KEYS.merged, { data: merged, fetched_at });
+  return { ...merged, fetched_at };
+}
+
+// ---------------- watchlist migration ----------------
+
+// One-shot upgrade for keys saved by the pre-merge extension. Legacy keys
+// look like "street|building|apt" (2 pipes); namespaced keys look like
+// "city|street|building|apt" (3 pipes). Anything with <3 pipes is assumed to
+// be a Gliwice entry (the only city that existed when those keys were saved).
+async function migrateWatchlistOnce() {
+  try {
+    const flag = (await chrome.storage.local.get(MIGRATION_FLAG))[MIGRATION_FLAG];
+    if (flag) return;
+    const all = await ZGM_WATCH.getAll();
+    let changed = false;
+    const next = {};
+    for (const [key, entry] of Object.entries(all)) {
+      const pipes = (key.match(/\|/g) || []).length;
+      if (pipes < 3) {
+        const newKey = `gliwice|${key}`;
+        next[newKey] = entry;
+        changed = true;
+      } else {
+        next[key] = entry;
+      }
+    }
+    if (changed) {
+      await chrome.storage.local.set({ watchlist: next });
+    }
+    await chrome.storage.local.set({ [MIGRATION_FLAG]: true });
+  } catch (err) {
+    console.warn('[ZGM bg] watchlist migration skipped:', err);
+  }
 }
 
 // ---------------- watchlist diff + notifications ----------------
 
-// Returns a stable "this is the active listing right now" fingerprint that
-// we can compare across runs. Same date + same price = same listing.
 function activeFingerprint(listing) {
   return {
     auction_date: listing.auction_date,
@@ -89,18 +237,14 @@ function fmtPLN(n) {
 
 async function notifyNewListing(key, entry, listing) {
   const id = `zgm-watch-${key}-${listing.auction_date || 'now'}`;
-  // Stash the click-target URL alongside the notification id so onClicked
-  // can route correctly. Notification IDs are unique per session, so keep
-  // a tiny registry in chrome.storage.local.
   const reg = (await chrome.storage.local.get('notif:registry'))['notif:registry'] || {};
   reg[id] = entry.detail_url || `https://zgm-gliwice.pl/`;
   await chrome.storage.local.set({ 'notif:registry': reg });
 
-  // For now we hardcode the notification copy in PL (since the underlying
-  // app is PL by default). i18n hookup from a service worker is non-trivial
-  // because chrome.storage reads are async — we'd need to await ZGM_I18N
-  // here too. Keeping it simple: PL strings, since that's the default.
-  const title = 'ZGM — nowa aukcja obserwowanej nieruchomości';
+  // PL strings (the app's default). City prefix helps disambiguate now that
+  // notifications can fire for any of CITIES.
+  const cityLabel = entry.city ? ` [${entry.city}]` : '';
+  const title = `przetargimiejskie${cityLabel} — nowa aukcja obserwowanej nieruchomości`;
   const body = `${entry.addr} — aukcja ${listing.auction_date || '?'} po ${fmtPLN(listing.starting_price_pln)}`;
   await chrome.notifications.create(id, {
     type: 'basic',
@@ -112,6 +256,7 @@ async function notifyNewListing(key, entry, listing) {
 }
 
 async function runWatchlistCheck() {
+  await migrateWatchlistOnce();
   let payload;
   try {
     payload = await getOrFetch(true);
@@ -130,8 +275,6 @@ async function runWatchlistCheck() {
     const prop = propsByKey.get(key);
     const active = prop?.listings.find((l) => l.outcome === 'active');
     if (!active) {
-      // No current active listing. Clear last-seen so future re-listings
-      // trigger a fresh notification.
       if (entry.last_seen_active) {
         await ZGM_WATCH.markSeenActive(key, null);
       }
@@ -142,7 +285,6 @@ async function runWatchlistCheck() {
       starting_price_pln: active.starting_price_pln,
     });
     if (sameFingerprint(fp, entry.last_seen_active)) continue;
-    // Either no last_seen, or it's a different active listing now → notify.
     await notifyNewListing(key, entry, {
       auction_date: active.date,
       starting_price_pln: active.starting_price_pln,
@@ -155,10 +297,14 @@ async function runWatchlistCheck() {
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.alarms.create(ALARM_NAME, { periodInMinutes: ALARM_INTERVAL_MIN });
+  // Best-effort migration on upgrade so legacy watchlist keys don't silently
+  // stop matching once the merge starts namespacing.
+  migrateWatchlistOnce().catch(() => {});
 });
 
 chrome.runtime.onStartup.addListener(() => {
   chrome.alarms.create(ALARM_NAME, { periodInMinutes: ALARM_INTERVAL_MIN });
+  migrateWatchlistOnce().catch(() => {});
 });
 
 chrome.alarms.onAlarm.addListener((alarm) => {
@@ -184,9 +330,15 @@ chrome.notifications.onClicked.addListener(async (id) => {
 
 chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
   if (msg?.type === 'getData') {
-    getOrFetch(Boolean(msg.force))
-      .then((payload) => sendResponse({ ok: true, payload }))
-      .catch((err) => sendResponse({ ok: false, error: String(err) }));
+    (async () => {
+      try {
+        await migrateWatchlistOnce();
+        const payload = await getOrFetch(Boolean(msg.force));
+        sendResponse({ ok: true, payload });
+      } catch (err) {
+        sendResponse({ ok: false, error: String(err) });
+      }
+    })();
     return true;
   }
   if (msg?.type === 'runWatchlistCheck') {

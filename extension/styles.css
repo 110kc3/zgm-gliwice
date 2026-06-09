@@ -135,6 +135,14 @@
   line-height: 1.4;
 }
 
+/* Stats chip: round · price · area · zł/m² · auction date (from the dataset) */
+.zgm-ext-stats {
+  color: #1f3a5f;
+  background: #e8f0fb;
+  border-color: #bcd0ec;
+  font-weight: 600;
+}
+
 /* Inline zł/m² shown right after the price in a listing card */
 .zgm-ext-perm2 {
   color: #4a6fa5;

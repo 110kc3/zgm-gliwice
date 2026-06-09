@@ -7,6 +7,123 @@
   --amber-fg: #7a5500;
   --green-bg: #e6f4ea;
   --green-fg: #1e6b34;
+  --bg: #ffffff;
+  --bg-elev: #f9fafb;
+  --row-hover: #f3f4f6;
+  --chip-gliwice-bg: #e8efff;
+  --chip-gliwice-fg: #2a4d8f;
+  --chip-gliwice-border: #c8d6f0;
+  --chip-katowice-bg: #fdecec;
+  --chip-katowice-fg: #8a2a2a;
+  --chip-katowice-border: #f0caca;
+  --chip-bytom-bg: #e7f6ec;
+  --chip-bytom-fg: #1f6b3a;
+  --chip-bytom-border: #c5e6d1;
+  --chip-zabrze-bg: #fdecd9;
+  --chip-zabrze-fg: #8a531f;
+  --chip-zabrze-border: #f0d6b0;
+  --chip-sosnowiec-bg: #e2f4f2;
+  --chip-sosnowiec-fg: #1d6b62;
+  --chip-sosnowiec-border: #bfe6e0;
+  --chip-rybnik-bg: #efe7fb;
+  --chip-rybnik-fg: #5b3a8a;
+  --chip-rybnik-border: #ddccf0;
+  --chip-bielsko-bg: #fce8f3;
+  --chip-bielsko-fg: #9c2a6b;
+  --chip-bielsko-border: #f3c8de;
+  --chip-myslowice-bg: #e3f1fb;
+  --chip-myslowice-fg: #1f5b86;
+  --chip-myslowice-border: #c3def0;
+  --chip-swietochlowice-bg: #eef3da;
+  --chip-swietochlowice-fg: #5c6b1f;
+  --chip-swietochlowice-border: #dde6b8;
+}
+
+/* System-pref dark, *unless* the user has explicitly forced light via the
+   theme toggle. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #374151;
+    --accent: #93b4e0;
+    --amber-bg: #3a2d10;
+    --amber-fg: #f0c168;
+    --green-bg: #14321f;
+    --green-fg: #6fd292;
+    --bg: #111827;
+    --bg-elev: #1f2937;
+    --row-hover: #243244;
+    --chip-gliwice-bg: #1e2c4d;
+    --chip-gliwice-fg: #aac4ee;
+    --chip-gliwice-border: #2e3f6b;
+    --chip-katowice-bg: #4a1d1d;
+    --chip-katowice-fg: #f0a8a8;
+    --chip-katowice-border: #6b2929;
+    --chip-bytom-bg: #163a24;
+    --chip-bytom-fg: #9fd9b3;
+    --chip-bytom-border: #224a30;
+    --chip-zabrze-bg: #3a2a16;
+    --chip-zabrze-fg: #e0b07a;
+    --chip-zabrze-border: #5a3f22;
+    --chip-sosnowiec-bg: #163331;
+    --chip-sosnowiec-fg: #8fd4cc;
+    --chip-sosnowiec-border: #224a45;
+    --chip-rybnik-bg: #2a1f3d;
+    --chip-rybnik-fg: #c3a8e8;
+    --chip-rybnik-border: #3f2f5a;
+    --chip-bielsko-bg: #3d1628;
+    --chip-bielsko-fg: #e8a8c8;
+    --chip-bielsko-border: #5a2240;
+    --chip-myslowice-bg: #152d3d;
+    --chip-myslowice-fg: #8fc0e8;
+    --chip-myslowice-border: #22425a;
+    --chip-swietochlowice-bg: #2b3312;
+    --chip-swietochlowice-fg: #c4d488;
+    --chip-swietochlowice-border: #414a1f;
+  }
+}
+
+/* Explicit dark via the theme toggle — wins even on a light-pref system. */
+:root[data-theme="dark"] {
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #374151;
+  --accent: #93b4e0;
+  --amber-bg: #3a2d10;
+  --amber-fg: #f0c168;
+  --green-bg: #14321f;
+  --green-fg: #6fd292;
+  --bg: #111827;
+  --bg-elev: #1f2937;
+  --row-hover: #243244;
+  --chip-gliwice-bg: #1e2c4d;
+  --chip-gliwice-fg: #aac4ee;
+  --chip-gliwice-border: #2e3f6b;
+  --chip-katowice-bg: #4a1d1d;
+  --chip-katowice-fg: #f0a8a8;
+  --chip-katowice-border: #6b2929;
+  --chip-bytom-bg: #163a24;
+  --chip-bytom-fg: #9fd9b3;
+  --chip-bytom-border: #224a30;
+  --chip-zabrze-bg: #3a2a16;
+  --chip-zabrze-fg: #e0b07a;
+  --chip-zabrze-border: #5a3f22;
+  --chip-sosnowiec-bg: #163331;
+  --chip-sosnowiec-fg: #8fd4cc;
+  --chip-sosnowiec-border: #224a45;
+  --chip-rybnik-bg: #2a1f3d;
+  --chip-rybnik-fg: #c3a8e8;
+  --chip-rybnik-border: #3f2f5a;
+  --chip-bielsko-bg: #3d1628;
+  --chip-bielsko-fg: #e8a8c8;
+  --chip-bielsko-border: #5a2240;
+  --chip-myslowice-bg: #152d3d;
+  --chip-myslowice-fg: #8fc0e8;
+  --chip-myslowice-border: #22425a;
+  --chip-swietochlowice-bg: #2b3312;
+  --chip-swietochlowice-fg: #c4d488;
+  --chip-swietochlowice-border: #414a1f;
 }
 
 * { box-sizing: border-box; }
@@ -17,6 +134,7 @@ body {
   width: 540px;
   font: 13px/1.4 system-ui, -apple-system, sans-serif;
   color: var(--fg);
+  background: var(--bg);
 }
 
 header {
@@ -33,13 +151,29 @@ h1 {
 button {
   font: inherit;
   padding: 4px 10px;
-  background: #fff;
+  background: var(--bg);
   color: var(--accent);
   border: 1px solid var(--border);
   border-radius: 4px;
   cursor: pointer;
 }
-button:hover { background: #f9fafb; }
+button:hover { background: var(--bg-elev); }
+
+/* Anchor links promoted into the header-actions row — match button styling */
+.header-link {
+  font: inherit;
+  padding: 4px 10px;
+  background: var(--bg);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.header-link:hover { background: var(--bg-elev); }
+.header-link.zgm-support { color: var(--amber-fg); border-color: var(--amber-bg); font-weight: 600; }
+.header-link.zgm-support:hover { background: var(--amber-bg); }
 .muted { color: var(--muted); font-size: 12px; }
 
 table { width: 100%; border-collapse: collapse; }
@@ -51,7 +185,7 @@ th, td {
 }
 th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; }
 tbody tr { cursor: pointer; }
-tbody tr:hover { background: #f9fafb; }
+tbody tr:hover { background: var(--row-hover); }
 tbody tr:last-child td { border-bottom: none; }
 
 .zgm-fresh { color: var(--green-fg); }
@@ -81,6 +215,14 @@ footer a { color: var(--accent); }
   letter-spacing: 0.04em;
 }
 
+/* Compact icon button (theme toggle uses ☀ / ☾) */
+.icon-btn {
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1;
+  min-width: 30px;
+}
+
 /* Watching section + star toggle */
 h2 {
   margin: 12px 0 6px 0;
@@ -90,14 +232,17 @@ h2 {
   color: var(--muted);
   letter-spacing: 0.04em;
 }
-.zgm-star-cell { width: 24px; text-align: center; padding: 4px 0; }
+/* Both the `<td>` and the `<th>` in column 1 use this class so the header
+ * width tracks the star button (otherwise the unstyled <th> takes its own
+ * default share of the table width and shifts every column header right). */
+.zgm-star-cell, th.zgm-star-cell { width: 24px; text-align: center; padding: 4px 0; }
 .zgm-star {
   background: none;
   border: none;
   cursor: pointer;
   font-size: 16px;
   line-height: 1;
-  color: #c8ced8;
+  color: var(--border);
   padding: 0;
 }
 .zgm-star.on { color: #e9c95a; }
@@ -106,19 +251,57 @@ h2 {
 #watching-section .zgm-historical { color: var(--muted); }
 #watching-section td a { color: var(--accent); text-decoration: none; }
 
-.footer-links { display: flex; gap: 10px; }
+.footer-links { display: flex; gap: 10px; align-items: center; }
 .footer-links a { color: var(--accent); }
 .footer-links .zgm-support { color: var(--amber-fg); font-weight: 600; }
+.footer-links .version { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+
+/* Active-table column-header sort affordances. The historical archive uses
+ * the same pattern (see archive.css) — duplicated here because popup.css
+ * stands alone. */
+#active-table th[data-sort] { cursor: pointer; user-select: none; }
+#active-table th[data-sort]::after { content: ' ↕'; opacity: 0.3; }
+#active-table th.sorted-asc::after  { content: ' ↑'; opacity: 1; }
+#active-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
 
 /* Wadium-deadline highlight */
 .zgm-urgent { color: var(--amber-fg); font-weight: 600; }
 .zgm-past   { color: var(--muted); text-decoration: line-through; }
 
-/* Stacked dates cell */
+/* City chip prepended to property cells (popup mixes multiple cities) */
+.zgm-city-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: 1px;
+  background: var(--bg-elev);
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+.zgm-city-tag[data-city="gliwice"]  { background: var(--chip-gliwice-bg);  color: var(--chip-gliwice-fg);  border-color: var(--chip-gliwice-border); }
+.zgm-city-tag[data-city="katowice"] { background: var(--chip-katowice-bg); color: var(--chip-katowice-fg); border-color: var(--chip-katowice-border); }
+.zgm-city-tag[data-city="bytom"]    { background: var(--chip-bytom-bg);    color: var(--chip-bytom-fg);    border-color: var(--chip-bytom-border); }
+.zgm-city-tag[data-city="zabrze"]   { background: var(--chip-zabrze-bg);   color: var(--chip-zabrze-fg);   border-color: var(--chip-zabrze-border); }
+.zgm-city-tag[data-city="sosnowiec"] { background: var(--chip-sosnowiec-bg); color: var(--chip-sosnowiec-fg); border-color: var(--chip-sosnowiec-border); }
+.zgm-city-tag[data-city="rybnik"]   { background: var(--chip-rybnik-bg);    color: var(--chip-rybnik-fg);    border-color: var(--chip-rybnik-border); }
+.zgm-city-tag[data-city="bielsko"]  { background: var(--chip-bielsko-bg);   color: var(--chip-bielsko-fg);   border-color: var(--chip-bielsko-border); }
+.zgm-city-tag[data-city="myslowice"] { background: var(--chip-myslowice-bg); color: var(--chip-myslowice-fg); border-color: var(--chip-myslowice-border); }
+.zgm-city-tag[data-city="swietochlowice"] { background: var(--chip-swietochlowice-bg); color: var(--chip-swietochlowice-fg); border-color: var(--chip-swietochlowice-border); }
+
+/* Stacked dates cell. The label column has to fit the longest Polish label —
+ * "OGLĘDZINY" (viewing) at 9 characters — so 72px with box-sizing keeps it
+ * from overlapping the date next to it when the table is narrow. */
 .zgm-dates-cell { line-height: 1.4; white-space: nowrap; font-size: 12px; }
 .zgm-date-label {
   display: inline-block;
-  width: 50px;
+  box-sizing: border-box;
+  width: 72px;
+  padding-right: 6px;
   color: var(--muted);
   font-size: 10px;
   text-transform: uppercase;

@@ -1,68 +1,53 @@
 # zgm-gliwice
 
-A pipeline that scrapes auction results from [zgm-gliwice.pl](https://zgm-gliwice.pl/), OCRs the PDFs, parses them into structured JSON, and surfaces price history for municipal properties — so that when browsing an active auction listing you can see whether the property has been unsold before, how many times, at what prices, and how the city has been adjusting the asking price.
+A Chrome extension that surfaces auction price history for ZGM Gliwice municipal properties — so that when browsing an active auction listing you can see whether the property has been unsold before, how many times, at what prices, and how the city has been adjusting the asking price.
 
-The architecture is deliberately simple: **local pipeline → JSON committed to this repo → Chrome extension fetches the JSON from `raw.githubusercontent.com`.** No server, no paid service, no hosted database. See [PLAN.md](./PLAN.md) for the why.
+**The data pipeline now lives in [`110kc3/przetargimiejskie`](https://github.com/110kc3/przetargimiejskie)**, the multi-city successor that was built on top of this project. It scrapes + OCRs the ZGM Gliwice auction PDFs (and eight other Silesian cities) and publishes per-city JSON. This repo no longer scrapes anything itself: it **mirrors the Gliwice slice** of that published data into [`data/gliwice/`](./data/gliwice) and serves it to the extension from `raw.githubusercontent.com`. No server, no paid service, no hosted database. See [PLAN.md](./PLAN.md) for the original architecture rationale.
 
 ## What's here
 
 | Path | What it is |
 |---|---|
-| [`pipeline/`](./pipeline) | Node.js scraper + OCR + parser. Builds `data/*.json`. |
-| [`pipeline/ocr-cache/`](./pipeline/ocr-cache) | Committed OCR text per source PDF. Means each PDF is OCR'd exactly once over its lifetime. |
-| [`data/properties.json`](./data/properties.json) | One record per unique `(street, building, apt)` with the full chronological listings history. **The file the Chrome extension consumes.** |
-| [`data/active.json`](./data/active.json) | Currently-active auctions and "wykaz" pre-announcements. |
-| [`data/meta.json`](./data/meta.json) | Provenance: when the data was generated, schema/parser versions, counts. |
-| [`.github/workflows/refresh.yml`](./.github/workflows/refresh.yml) | Weekly GitHub Actions cron that re-runs the pipeline and commits any deltas. |
-| [`spike/ocr_samples/`](./spike/ocr_samples) | Raw OCR fixtures for the parser unit tests. |
+| [`extension/`](./extension) | The Chrome extension (MV3, no build step). **This is the product.** |
+| [`scripts/sync-from-przetargimiejskie.mjs`](./scripts/sync-from-przetargimiejskie.mjs) | Mirrors `data/gliwice/{properties,active,meta}.json` from the canonical przetargimiejskie pipeline into this repo. |
+| [`data/gliwice/properties.json`](./data/gliwice/properties.json) | One record per unique `(street, building, apt)` with the full chronological listings history. **The file the extension consumes.** |
+| [`data/gliwice/active.json`](./data/gliwice/active.json) | Currently-active auctions and "wykaz" pre-announcements. |
+| [`data/gliwice/meta.json`](./data/gliwice/meta.json) | Provenance: when the data was generated, schema/parser versions, counts. |
+| [`.github/workflows/refresh.yml`](./.github/workflows/refresh.yml) | Weekly GitHub Actions cron that re-syncs the Gliwice data and commits any deltas. |
+| [`spike/ocr_samples/`](./spike/ocr_samples) | Raw OCR fixtures from the original spike (kept for reference). |
 | [`PLAN.md`](./PLAN.md) | Full architecture & form-factor comparison. |
 | [`PRIVACY.md`](./PRIVACY.md) | Privacy policy for the Chrome extension (required for Web Store). |
 | [`SPIKE.md`](./SPIKE.md) | OCR-feasibility spike notes. |
 
-## How it runs
+## How the data flows
 
 ```
-       crawl-results.js  ──┐
-                           ├──>  ocr-pdf.js  ──>  parse-result.js  ──┐
-       crawl-active.js   ──┤      (tesseract -l pol, cached)         │
-                           │                                          ├──>  data/*.json
-                           └─────────────────────────────────────────┘
+   110kc3/przetargimiejskie  ──>  data/gliwice/*.json  ──>  raw.githubusercontent.com  ──>  extension
+   (scrape + OCR + parse,         (this repo, mirrored      (background.js fetches it,
+    the canonical pipeline)        by the sync script)        6h cache)
 ```
 
-1. **`crawl-results.js`** walks `/wyniki-przetargow/page/N/`, extracts every result-PDF URL and the auction date from the filename (handles three different ZGM filename conventions).
-2. **`ocr-pdf.js`** downloads each PDF, rasterizes at 300 DPI with `pdftoppm`, runs Polish-language tesseract, caches the resulting text in `pipeline/ocr-cache/`. The cache is checked into git so CI does work only for *new* PDFs.
-3. **`parse-result.js`** splits each PDF's text into the "sold" and "unsold" sections, pulls fields out with regex (round numeral, address, prices, outcome, unsold reason).
-4. **`normalize.js`** turns address strings into a stable `{street, building, apt}` join key tolerant of Polish-language conventions (`ul./al./pl.`), Roman-numeral commercial-unit apt numbers, OCR slash-as-`I` slips, garage-unit suffixes, building ranges, and so on.
-5. **`crawl-active.js`** scrapes the four "currently active" pages on the site.
-6. **`refresh.js`** is the orchestrator: it ties the above together and writes `data/properties.json`, `data/active.json`, `data/meta.json`.
+The Gliwice data format (`schema_version: 1`) is produced by przetargimiejskie's parser. Each active listing now carries a `round` field, and historical listings can have outcomes `sold` / `unsold` / `active` / `announced` / `archived`. The extension reads all of these.
 
-## Running locally
+## Syncing the data
 
 ```bash
-# one-time setup
-sudo apt-get install poppler-utils tesseract-ocr tesseract-ocr-pol  # or brew equivalents
-cd pipeline
-npm install
-
-# the full build
-npm run refresh
-
-# tests (only failures print)
-npm test
+# pull the latest Gliwice data from przetargimiejskie into data/gliwice/
+node scripts/sync-from-przetargimiejskie.mjs
 ```
 
-Output ends up in `../data/*.json`. The OCR cache lives in `pipeline/ocr-cache/` — commit it.
+Override the upstream when testing a fork/branch:
 
-The pipeline is incremental: deleting `pipeline/ocr-cache/` forces re-OCR; deleting `data/*.json` rebuilds from cached OCR text in seconds.
+```bash
+SOURCE_REPO=youruser/przetargimiejskie SOURCE_BRANCH=dev node scripts/sync-from-przetargimiejskie.mjs
+```
 
 ## Running on GitHub Actions
 
-The included workflow `.github/workflows/refresh.yml` runs every Monday at 06:00 UTC, plus on demand via the "Run workflow" button. It:
+The included workflow `.github/workflows/refresh.yml` runs every Monday at 07:00 UTC (an hour after upstream refreshes), plus on demand via the "Run workflow" button. It:
 
-1. Installs `poppler-utils` + `tesseract-ocr-pol` (~5 s).
-2. Runs the parser test suite (must pass — fail-fast against parser regressions).
-3. Runs `npm run refresh`.
-4. Commits and pushes `data/` + `pipeline/ocr-cache/` if any of them changed.
+1. Runs `node scripts/sync-from-przetargimiejskie.mjs`.
+2. Commits and pushes `data/` if it changed.
 
 The auto-provided `GITHUB_TOKEN` with `permissions: contents: write` is enough; no secrets needed.
 
@@ -78,11 +63,13 @@ Lives in [`extension/`](./extension). MV3, no build step, no dependencies. Load 
 
 What it does:
 
-- **Background service worker** (`background.js`) fetches `data/properties.json`, `data/active.json`, `data/meta.json` from `raw.githubusercontent.com/110kc3/zgm-gliwice/main/data/` and caches them in `chrome.storage.local` with a 6-hour TTL. The popup has a **Refresh data** button to bypass the TTL.
+- **Background service worker** (`background.js`) fetches `data/gliwice/{properties,active,meta}.json` from `raw.githubusercontent.com/110kc3/zgm-gliwice/main/data/gliwice/` and caches them in `chrome.storage.local` with a 6-hour TTL. The popup has a **Refresh data** button to bypass the TTL.
 - **Content script** (`content.js`) runs on `zgm-gliwice.pl`:
   - On listing index pages (mieszkalne / garaże / użytkowe / wykaz): adds a small color-coded badge to each Elementor card — green for first-time listings, gray for "previously sold" repeats, amber for one prior unsold attempt, red for ≥2 unsold attempts. Hover for a tooltip with the full prior-attempt table.
   - On property-detail pages (the slug-style `/zygmunta-starego-29-4-23-03-2026-r/` URLs): injects a sidebar near the top of the page with a chronological history table (date · round · kind · start price · outcome · final · reason · source PDF) and a price-delta summary versus the first historical attempt.
-- **Popup** (`popup.html` + `popup.js`) lists all currently-active properties sorted by most-relisted first. Click a row → opens that property's detail page on `zgm-gliwice.pl`. The footer shows when the cached data was last refreshed.
+- **Popup** (`popup.html` + `popup.js`) lists all currently-active properties, sortable by date / asking price / zł/m² / prior-attempt count (click a column header), defaulting to most-relisted first. A **watching** section at the top tracks starred properties. Click a row → opens that property's detail page on `zgm-gliwice.pl`. The footer shows when the cached data was last refreshed and the build version.
+- **Archive** (`archive.html`) is a full-page sortable/filterable table of all historical records with median sale-price / zł/m² summary tiles.
+- **Dark / light theme.** A ☀ / ☾ toggle in the popup and archive headers; follows the system `prefers-color-scheme` by default and persists an explicit override across tabs.
 - **Language: PL / EN.** The popup has a small `PL` / `EN` button in the header. Default is PL (since the source data is Polish municipal records). Toggle is persisted in `chrome.storage.local` and broadcast across tabs — flipping it in the popup retranslates open zgm-gliwice.pl tabs in place, no reload required. All user-facing strings live in [`extension/i18n.js`](./extension/i18n.js).
 
 **Address-key parity** — the extension's `normalize.js` and the pipeline's `normalize.js` produce identical `street_norm|building|apt` join keys. This is verified end-to-end against live data: every active listing in `active.json` round-trips from page-title → parsed address → matching property key in `properties.json`.

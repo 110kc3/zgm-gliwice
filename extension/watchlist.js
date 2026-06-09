@@ -45,6 +45,9 @@
       addr: meta?.addr || key,
       kind: meta?.kind || 'unknown',
       detail_url: meta?.detail_url || null,
+      // Persisted so the popup can render a city chip and the background SW
+      // can prefix notifications even when the city isn't otherwise derivable.
+      city: meta?.city || null,
       added_at: Date.now(),
       last_seen_active: null,
     };

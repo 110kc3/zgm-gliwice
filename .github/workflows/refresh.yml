@@ -1,53 +1,44 @@
-name: Refresh auction data
+name: Sync auction data
+
+# Data is no longer scraped here. The canonical pipeline lives in
+# 110kc3/przetargimiejskie, which scrapes + OCRs the ZGM Gliwice auction PDFs
+# and publishes per-city JSON. This workflow just mirrors the Gliwice slice
+# into data/gliwice/ so the extension keeps serving it from this repo.
 
 on:
   schedule:
-    - cron: '0 6 * * 1'      # Mondays 06:00 UTC. Daily also fine — runs are short.
+    - cron: '0 7 * * 1'      # Mondays 07:00 UTC — an hour after upstream refreshes.
   workflow_dispatch: {}      # adds a "Run workflow" button in the Actions UI
 
 permissions:
   contents: write
 
 concurrency:
-  group: refresh
+  group: sync
   cancel-in-progress: false
 
 jobs:
-  refresh:
+  sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install OCR toolchain
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-pol
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Install pipeline deps
-        working-directory: pipeline
-        run: npm ci || npm install
-
-      - name: Run parser tests
-        working-directory: pipeline
-        run: npm test
-
-      - name: Run pipeline (fetch new PDFs, OCR, parse, build data/)
-        working-directory: pipeline
-        run: npm run refresh
+      - name: Sync Gliwice data from przetargimiejskie
+        run: node scripts/sync-from-przetargimiejskie.mjs
 
       - name: Commit and push if data changed
         run: |
           git config user.name  "zgm-data-bot"
           git config user.email "zgm-data-bot@users.noreply.github.com"
-          git add data/ pipeline/ocr-cache/
+          git add data/
           if git diff --cached --quiet; then
             echo "No changes."
           else
-            git commit -m "data: refresh $(date -u +%Y-%m-%d)"
+            git commit -m "data: sync from przetargimiejskie $(date -u +%Y-%m-%d)"
             git push
           fi

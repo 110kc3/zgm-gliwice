@@ -2,13 +2,14 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8" />
-  <title>ZGM — archive</title>
+  <title>ZGM Gliwice — archive</title>
   <link rel="stylesheet" href="archive.css" />
 </head>
 <body>
   <header>
     <h1 data-i18n="archive.title"></h1>
     <div class="header-actions">
+      <button id="theme-toggle" type="button" class="icon-btn" title="">☀</button>
       <button id="lang-toggle" type="button"></button>
       <a href="popup.html" target="_blank" data-i18n="archive.back"></a>
     </div>
@@ -23,19 +24,19 @@
       <div class="tile" data-kind="mieszkalny">
         <h3 data-i18n="kind.mieszkalny"></h3>
         <p class="big"><span class="n">—</span> <span class="suffix" data-i18n="archive.sold_suffix"></span></p>
-        <p class="muted"><span data-i18n="archive.median"></span>: <span class="med-total">—</span></p>
+        <p class="muted"><span class="med-label" data-i18n="archive.median"></span>: <span class="med-total">—</span></p>
         <p class="muted"><span data-i18n="archive.median_m2"></span>: <span class="med-m2">—</span></p>
       </div>
       <div class="tile" data-kind="uzytkowy">
         <h3 data-i18n="kind.uzytkowy"></h3>
         <p class="big"><span class="n">—</span> <span class="suffix" data-i18n="archive.sold_suffix"></span></p>
-        <p class="muted"><span data-i18n="archive.median"></span>: <span class="med-total">—</span></p>
+        <p class="muted"><span class="med-label" data-i18n="archive.median"></span>: <span class="med-total">—</span></p>
         <p class="muted"><span data-i18n="archive.median_m2"></span>: <span class="med-m2">—</span></p>
       </div>
       <div class="tile" data-kind="garaz">
         <h3 data-i18n="kind.garaz"></h3>
         <p class="big"><span class="n">—</span> <span class="suffix" data-i18n="archive.sold_suffix"></span></p>
-        <p class="muted"><span data-i18n="archive.median"></span>: <span class="med-total">—</span></p>
+        <p class="muted"><span class="med-label" data-i18n="archive.median"></span>: <span class="med-total">—</span></p>
         <p class="muted"><span data-i18n="archive.median_m2"></span>: <span class="med-m2">—</span></p>
       </div>
     </div>
@@ -43,6 +44,20 @@
 
   <section id="filters" hidden>
     <div class="filter-row">
+      <label hidden><span data-i18n="archive.filter.city"></span>
+        <select id="filter-city">
+          <option value="all" data-i18n="archive.filter.all"></option>
+          <option value="gliwice" data-i18n="city.gliwice"></option>
+          <option value="katowice" data-i18n="city.katowice"></option>
+          <option value="bytom" data-i18n="city.bytom"></option>
+          <option value="zabrze" data-i18n="city.zabrze"></option>
+          <option value="sosnowiec" data-i18n="city.sosnowiec"></option>
+          <option value="rybnik" data-i18n="city.rybnik"></option>
+          <option value="bielsko" data-i18n="city.bielsko"></option>
+          <option value="myslowice" data-i18n="city.myslowice"></option>
+          <option value="swietochlowice" data-i18n="city.swietochlowice"></option>
+        </select>
+      </label>
       <label><span data-i18n="archive.filter.kind"></span>
         <select id="filter-kind">
           <option value="all" data-i18n="archive.filter.all"></option>
@@ -56,6 +71,12 @@
           <option value="all" data-i18n="archive.filter.all"></option>
           <option value="sold" data-i18n="outcome.sold"></option>
           <option value="unsold" data-i18n="outcome.unsold"></option>
+          <option value="archived" data-i18n="outcome.archived"></option>
+        </select>
+      </label>
+      <label><span data-i18n="archive.filter.year"></span>
+        <select id="filter-year">
+          <!-- populated by archive.js from the distinct years present in the data -->
         </select>
       </label>
       <label><span data-i18n="archive.filter.search"></span>
@@ -65,12 +86,36 @@
     </div>
   </section>
 
+  <section id="active-section" hidden>
+    <h2 data-i18n="popup.active_section"></h2>
+    <table id="active-table">
+      <thead>
+        <tr>
+          <th data-i18n="popup.col.property"></th>
+          <th data-i18n="popup.col.kind"></th>
+          <th data-sort="date" data-i18n="popup.col.dates"></th>
+          <th data-sort="ask" data-i18n="popup.col.ask"></th>
+          <th data-sort="m2" data-i18n="popup.col.ask_per_m2"></th>
+          <th data-sort="prior" data-i18n="popup.col.prior"></th>
+          <th data-i18n="popup.col.last_unsold"></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p id="active-empty" hidden data-i18n="archive.active_empty"></p>
+  </section>
+
+  <section id="historical-section" hidden>
+    <h2 data-i18n="archive.historical_section"></h2>
+  </section>
+
   <table id="archive-table" hidden>
     <thead>
       <tr>
         <th data-sort="date" data-i18n="col.date"></th>
         <th data-i18n="popup.col.property"></th>
         <th data-i18n="col.kind"></th>
+        <th data-sort="round" data-i18n="col.round"></th>
         <th data-sort="area" data-i18n="archive.col.area"></th>
         <th data-sort="price" data-i18n="col.start_price"></th>
         <th data-sort="final" data-i18n="col.final"></th>
@@ -86,7 +131,9 @@
     <a class="zgm-support" target="_blank" rel="noopener" href="https://buycoffee.to/kc-it" data-i18n="popup.support"></a>
   </footer>
 
+  <script src="theme.js"></script>
   <script src="i18n.js"></script>
+  <script src="settings.js"></script>
   <script src="archive.js"></script>
 </body>
 </html>

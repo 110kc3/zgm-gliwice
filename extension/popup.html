@@ -2,15 +2,18 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8" />
-  <title>ZGM auction history</title>
+  <title>ZGM Gliwice — historia aukcji</title>
   <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
   <header>
     <h1 data-i18n="popup.currently_active"></h1>
     <div class="header-actions">
+      <button id="theme-toggle" type="button" class="icon-btn" title="">☀</button>
       <button id="lang-toggle" type="button" title="PL / EN"></button>
       <button id="refresh" type="button" data-i18n="popup.refresh"></button>
+      <a id="archive-link" class="header-link" href="archive.html" target="_blank" data-i18n="popup.archive_link"></a>
+      <a class="header-link zgm-support" target="_blank" rel="noopener" href="https://buycoffee.to/kc-it" data-i18n="popup.support"></a>
     </div>
   </header>
   <p id="status" class="muted"></p>
@@ -19,9 +22,8 @@
     <table id="watching-table">
       <thead>
         <tr>
-          <th></th>
-          <th></th>
-        <th data-i18n="popup.col.property"></th>
+          <th class="zgm-star-cell"></th>
+          <th data-i18n="popup.col.property"></th>
           <th data-i18n="popup.col.status"></th>
           <th></th>
         </tr>
@@ -33,12 +35,13 @@
   <table id="active-table" hidden>
     <thead>
       <tr>
+        <th class="zgm-star-cell"></th>
         <th data-i18n="popup.col.property"></th>
         <th data-i18n="popup.col.kind"></th>
-        <th data-i18n="popup.col.dates"></th>
-        <th data-i18n="popup.col.ask"></th>
-        <th data-i18n="popup.col.ask_per_m2"></th>
-        <th data-i18n="popup.col.prior"></th>
+        <th data-sort="date" data-i18n="popup.col.dates"></th>
+        <th data-sort="ask" data-i18n="popup.col.ask"></th>
+        <th data-sort="m2" data-i18n="popup.col.ask_per_m2"></th>
+        <th data-sort="prior" data-i18n="popup.col.prior"></th>
         <th data-i18n="popup.col.last_unsold"></th>
       </tr>
     </thead>
@@ -47,13 +50,14 @@
   <footer>
     <span id="meta" class="muted"></span>
     <span class="footer-links">
-      <a class="zgm-support" target="_blank" rel="noopener" href="https://buycoffee.to/kc-it" data-i18n="popup.support"></a>
-      <a id="archive-link" href="archive.html" target="_blank" data-i18n="popup.archive_link"></a>
+      <span class="version">v2.0.0</span>
       <a target="_blank" rel="noopener" href="https://github.com/110kc3/zgm-gliwice" data-i18n="popup.repo"></a>
     </span>
   </footer>
+  <script src="theme.js"></script>
   <script src="i18n.js"></script>
   <script src="watchlist.js"></script>
+  <script src="settings.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

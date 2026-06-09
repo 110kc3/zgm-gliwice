@@ -7,6 +7,122 @@
   --green-fg: #1e6b34;
   --amber-fg: #7a5500;
   --red-fg: #8b1c1c;
+  --bg: #ffffff;
+  --bg-elev: #f4f6fa;
+  --row-hover: #f3f4f6;
+  --chip-gliwice-bg: #e8efff;
+  --chip-gliwice-fg: #2a4d8f;
+  --chip-gliwice-border: #c8d6f0;
+  --chip-katowice-bg: #fdecec;
+  --chip-katowice-fg: #8a2a2a;
+  --chip-katowice-border: #f0caca;
+  --chip-bytom-bg: #e7f6ec;
+  --chip-bytom-fg: #1f6b3a;
+  --chip-bytom-border: #c5e6d1;
+  --chip-zabrze-bg: #fdecd9;
+  --chip-zabrze-fg: #8a531f;
+  --chip-zabrze-border: #f0d6b0;
+  --chip-sosnowiec-bg: #e2f4f2;
+  --chip-sosnowiec-fg: #1d6b62;
+  --chip-sosnowiec-border: #bfe6e0;
+  --chip-rybnik-bg: #efe7fb;
+  --chip-rybnik-fg: #5b3a8a;
+  --chip-rybnik-border: #ddccf0;
+  --chip-bielsko-bg: #fce8f3;
+  --chip-bielsko-fg: #9c2a6b;
+  --chip-bielsko-border: #f3c8de;
+  --chip-myslowice-bg: #e3f1fb;
+  --chip-myslowice-fg: #1f5b86;
+  --chip-myslowice-border: #c3def0;
+  --chip-swietochlowice-bg: #eef3da;
+  --chip-swietochlowice-fg: #5c6b1f;
+  --chip-swietochlowice-border: #dde6b8;
+}
+
+/* System-pref dark, unless explicitly forced light via the theme toggle. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #374151;
+    --accent: #93b4e0;
+    --tile-bg: #1c2533;
+    --green-fg: #6fd292;
+    --amber-fg: #f0c168;
+    --red-fg: #f08989;
+    --bg: #111827;
+    --bg-elev: #1f2937;
+    --row-hover: #243244;
+    --chip-gliwice-bg: #1e2c4d;
+    --chip-gliwice-fg: #aac4ee;
+    --chip-gliwice-border: #2e3f6b;
+    --chip-katowice-bg: #4a1d1d;
+    --chip-katowice-fg: #f0a8a8;
+    --chip-katowice-border: #6b2929;
+    --chip-bytom-bg: #163a24;
+    --chip-bytom-fg: #9fd9b3;
+    --chip-bytom-border: #224a30;
+    --chip-zabrze-bg: #3a2a16;
+    --chip-zabrze-fg: #e0b07a;
+    --chip-zabrze-border: #5a3f22;
+    --chip-sosnowiec-bg: #163331;
+    --chip-sosnowiec-fg: #8fd4cc;
+    --chip-sosnowiec-border: #224a45;
+    --chip-rybnik-bg: #2a1f3d;
+    --chip-rybnik-fg: #c3a8e8;
+    --chip-rybnik-border: #3f2f5a;
+    --chip-bielsko-bg: #3d1628;
+    --chip-bielsko-fg: #e8a8c8;
+    --chip-bielsko-border: #5a2240;
+    --chip-myslowice-bg: #152d3d;
+    --chip-myslowice-fg: #8fc0e8;
+    --chip-myslowice-border: #22425a;
+    --chip-swietochlowice-bg: #2b3312;
+    --chip-swietochlowice-fg: #c4d488;
+    --chip-swietochlowice-border: #414a1f;
+  }
+}
+
+/* Explicit dark via the theme toggle — wins even on a light-pref system. */
+:root[data-theme="dark"] {
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #374151;
+  --accent: #93b4e0;
+  --tile-bg: #1c2533;
+  --green-fg: #6fd292;
+  --amber-fg: #f0c168;
+  --red-fg: #f08989;
+  --bg: #111827;
+  --bg-elev: #1f2937;
+  --row-hover: #243244;
+  --chip-gliwice-bg: #1e2c4d;
+  --chip-gliwice-fg: #aac4ee;
+  --chip-gliwice-border: #2e3f6b;
+  --chip-katowice-bg: #4a1d1d;
+  --chip-katowice-fg: #f0a8a8;
+  --chip-katowice-border: #6b2929;
+  --chip-bytom-bg: #163a24;
+  --chip-bytom-fg: #9fd9b3;
+  --chip-bytom-border: #224a30;
+  --chip-zabrze-bg: #3a2a16;
+  --chip-zabrze-fg: #e0b07a;
+  --chip-zabrze-border: #5a3f22;
+  --chip-sosnowiec-bg: #163331;
+  --chip-sosnowiec-fg: #8fd4cc;
+  --chip-sosnowiec-border: #224a45;
+  --chip-rybnik-bg: #2a1f3d;
+  --chip-rybnik-fg: #c3a8e8;
+  --chip-rybnik-border: #3f2f5a;
+  --chip-bielsko-bg: #3d1628;
+  --chip-bielsko-fg: #e8a8c8;
+  --chip-bielsko-border: #5a2240;
+  --chip-myslowice-bg: #152d3d;
+  --chip-myslowice-fg: #8fc0e8;
+  --chip-myslowice-border: #22425a;
+  --chip-swietochlowice-bg: #2b3312;
+  --chip-swietochlowice-fg: #c4d488;
+  --chip-swietochlowice-border: #414a1f;
 }
 
 * { box-sizing: border-box; }
@@ -19,6 +135,7 @@ body {
   margin-right: auto;
   font: 13px/1.45 system-ui, -apple-system, sans-serif;
   color: var(--fg);
+  background: var(--bg);
 }
 
 header {
@@ -36,7 +153,7 @@ header h1 {
 .header-actions a {
   font: inherit;
   padding: 5px 12px;
-  background: #fff;
+  background: var(--bg);
   color: var(--accent);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -44,7 +161,15 @@ header h1 {
   text-decoration: none;
 }
 .header-actions button:hover,
-.header-actions a:hover { background: #f4f6fa; }
+.header-actions a:hover { background: var(--bg-elev); }
+
+/* Compact icon button (theme toggle uses ☀ / ☾) */
+.header-actions .icon-btn {
+  padding: 5px 10px;
+  font-size: 15px;
+  line-height: 1;
+  min-width: 32px;
+}
 
 .muted { color: var(--muted); }
 
@@ -113,7 +238,7 @@ section h2 {
   font: inherit;
   margin-top: 2px;
   padding: 4px 8px;
-  background: #fff;
+  background: var(--bg);
   color: var(--fg);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -142,17 +267,117 @@ section h2 {
   letter-spacing: 0.04em;
   position: sticky;
   top: 0;
-  background: #fff;
+  background: var(--bg);
   cursor: pointer;
   user-select: none;
 }
-#archive-table th[data-sort]::after { content: ' ↕'; opacity: 0.3; }
-#archive-table th.sorted-asc::after  { content: ' ↑'; opacity: 1; }
-#archive-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
+#archive-table th[data-sort],
+#active-table th[data-sort] {
+  cursor: pointer;
+  user-select: none;
+}
+#archive-table th[data-sort]::after,
+#active-table th[data-sort]::after { content: ' ↕'; opacity: 0.3; }
+#archive-table th.sorted-asc::after,
+#active-table th.sorted-asc::after  { content: ' ↑'; opacity: 1; }
+#archive-table th.sorted-desc::after,
+#active-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
 
 #archive-table tr.zgm-ext-row-sold td   { color: var(--green-fg); }
 #archive-table tr.zgm-ext-row-unsold td { color: var(--red-fg); }
-#archive-table tr:hover td { background: #f9fafb; }
+#archive-table tr:hover td { background: var(--row-hover); }
+
+/* City chip prepended to property cells (archive mixes multiple cities) */
+.zgm-city-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: 1px;
+  background: var(--bg-elev);
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+.zgm-city-tag[data-city="gliwice"]  { background: var(--chip-gliwice-bg);  color: var(--chip-gliwice-fg);  border-color: var(--chip-gliwice-border); }
+.zgm-city-tag[data-city="katowice"] { background: var(--chip-katowice-bg); color: var(--chip-katowice-fg); border-color: var(--chip-katowice-border); }
+.zgm-city-tag[data-city="bytom"]    { background: var(--chip-bytom-bg);    color: var(--chip-bytom-fg);    border-color: var(--chip-bytom-border); }
+.zgm-city-tag[data-city="zabrze"]   { background: var(--chip-zabrze-bg);   color: var(--chip-zabrze-fg);   border-color: var(--chip-zabrze-border); }
+.zgm-city-tag[data-city="sosnowiec"] { background: var(--chip-sosnowiec-bg); color: var(--chip-sosnowiec-fg); border-color: var(--chip-sosnowiec-border); }
+.zgm-city-tag[data-city="rybnik"]   { background: var(--chip-rybnik-bg);    color: var(--chip-rybnik-fg);    border-color: var(--chip-rybnik-border); }
+.zgm-city-tag[data-city="bielsko"]  { background: var(--chip-bielsko-bg);   color: var(--chip-bielsko-fg);   border-color: var(--chip-bielsko-border); }
+.zgm-city-tag[data-city="myslowice"] { background: var(--chip-myslowice-bg); color: var(--chip-myslowice-fg); border-color: var(--chip-myslowice-border); }
+.zgm-city-tag[data-city="swietochlowice"] { background: var(--chip-swietochlowice-bg); color: var(--chip-swietochlowice-fg); border-color: var(--chip-swietochlowice-border); }
+/* Override the row-color cascade so the chip stays legible on sold/unsold rows */
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag,
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag {
+  color: inherit;
+}
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="gliwice"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="gliwice"]   { color: var(--chip-gliwice-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="katowice"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="katowice"]  { color: var(--chip-katowice-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="bytom"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="bytom"]     { color: var(--chip-bytom-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="zabrze"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="zabrze"]    { color: var(--chip-zabrze-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="sosnowiec"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="sosnowiec"] { color: var(--chip-sosnowiec-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="rybnik"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="rybnik"]    { color: var(--chip-rybnik-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="bielsko"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="bielsko"]   { color: var(--chip-bielsko-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="myslowice"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="myslowice"] { color: var(--chip-myslowice-fg); }
+#archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="swietochlowice"],
+#archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="swietochlowice"] { color: var(--chip-swietochlowice-fg); }
+
+/* Currently-active section: bigger version of the popup's active table */
+#active-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+}
+#active-table th,
+#active-table td {
+  padding: 6px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+#active-table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  user-select: none;
+}
+#active-table tbody tr { cursor: pointer; }
+#active-table tbody tr:hover td { background: var(--row-hover); }
+#active-table a { color: var(--accent); }
+#active-table .zgm-fresh { color: var(--green-fg); }
+#active-table .zgm-prior { color: var(--amber-fg); font-weight: 600; }
+#active-table .zgm-urgent { color: var(--amber-fg); font-weight: 600; }
+#active-table .zgm-past   { color: var(--muted); text-decoration: line-through; }
+#active-table .zgm-dates-cell { line-height: 1.4; white-space: nowrap; font-size: 12px; }
+#active-table .zgm-date-label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 72px;            /* must fit "OGLĘDZINY" — the longest Polish label */
+  padding-right: 6px;
+  color: var(--muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+#active-empty { color: var(--muted); padding: 10px 4px; font-style: italic; }
 
 #archive-table a { color: var(--accent); }
 
