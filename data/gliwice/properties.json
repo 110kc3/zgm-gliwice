@@ -55,7 +55,8 @@
           "area_m2": 68.14,
           "detail_url": "https://zgm-gliwice.pl/rybnicka-25-19-01-12-2025-r/",
           "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-26"
+          "viewing_date": "2026-06-26",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
         }
       ],
       "area_m2": 68.14
@@ -89,7 +90,8 @@
           "area_m2": 47.5,
           "detail_url": "https://zgm-gliwice.pl/swietojanska-39-3-04-05-2026-r/",
           "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-25"
+          "viewing_date": "2026-06-25",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
         }
       ],
       "area_m2": 47.5
@@ -123,7 +125,8 @@
           "area_m2": 49,
           "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
           "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-24"
+          "viewing_date": "2026-06-24",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
         }
       ],
       "area_m2": 49
@@ -157,7 +160,8 @@
           "area_m2": 71.07,
           "detail_url": "https://zgm-gliwice.pl/zwyciestwa-11-6c-30-03-2026-r/",
           "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-23"
+          "viewing_date": "2026-06-23",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
         }
       ],
       "area_m2": 71.07
@@ -203,7 +207,8 @@
           "area_m2": 45.29,
           "detail_url": "https://zgm-gliwice.pl/rybitwy-13-17-01-12-2025-r/",
           "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-26"
+          "viewing_date": "2026-06-26",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
         }
       ],
       "area_m2": 45.29
@@ -225,10 +230,46 @@
           "area_m2": 51.59,
           "detail_url": "https://zgm-gliwice.pl/daszynskiego-65-10-30-03-2026-r/",
           "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-23"
+          "viewing_date": "2026-06-23",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
         }
       ],
       "area_m2": 51.59
+    },
+    {
+      "key": "karola libelta|10|1",
+      "street": "Karola Libelta",
+      "street_norm": "karola libelta",
+      "building": "10",
+      "apt": "1",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-03-30",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 334100,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/30.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 47.67
+        },
+        {
+          "date": "2026-07-06",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 267280,
+          "outcome": "active",
+          "area_m2": 47.67,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        }
+      ],
+      "area_m2": 47.67
     },
     {
       "key": "krolewskiej tamy|55|2",
@@ -271,7 +312,8 @@
           "area_m2": 25.27,
           "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-55-2-09-03-2026-r/",
           "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-17"
+          "viewing_date": "2026-06-17",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1"
         }
       ],
       "area_m2": 25.27
@@ -317,7 +359,8 @@
           "area_m2": 26.89,
           "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-5-2-09-03-2026-r/",
           "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-17"
+          "viewing_date": "2026-06-17",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1"
         }
       ],
       "area_m2": 26.89
@@ -387,7 +430,8 @@
           "area_m2": 64.78,
           "detail_url": "https://zgm-gliwice.pl/zwyciestwa-45-7-08-12-2025-r/",
           "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-15"
+          "viewing_date": "2026-06-15",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1"
         }
       ],
       "area_m2": 64.78
@@ -433,7 +477,8 @@
           "area_m2": 38.09,
           "detail_url": "https://zgm-gliwice.pl/poniatowskiego-1-13-19-01-2026-r/",
           "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-18"
+          "viewing_date": "2026-06-18",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1"
         }
       ],
       "area_m2": 38.09
@@ -479,7 +524,8 @@
           "area_m2": 52.45,
           "detail_url": "https://zgm-gliwice.pl/plebiscytowa-4-9-19-01-2026-r/",
           "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-16"
+          "viewing_date": "2026-06-16",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1"
         }
       ],
       "area_m2": 52.45
@@ -501,7 +547,8 @@
           "area_m2": 16.92,
           "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
           "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-16"
+          "viewing_date": "2026-06-16",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1"
         }
       ],
       "area_m2": 16.92
@@ -535,7 +582,8 @@
           "area_m2": 86.79,
           "detail_url": "https://zgm-gliwice.pl/zygmunta-starego-29-4-23-03-2026-r/",
           "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-06"
+          "viewing_date": "2026-05-06",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
         }
       ],
       "area_m2": 86.79
@@ -569,7 +617,8 @@
           "area_m2": 81.81,
           "detail_url": "https://zgm-gliwice.pl/czarnieckiego-25-1-23-03-2026-r/",
           "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-07"
+          "viewing_date": "2026-05-07",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
         }
       ],
       "area_m2": 81.81
@@ -591,10 +640,69 @@
           "area_m2": 134.17,
           "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
           "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-08"
+          "viewing_date": "2026-05-08",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
         }
       ],
       "area_m2": 134.17
+    },
+    {
+      "key": "lompy|7|7",
+      "street": "Lompy",
+      "street_norm": "lompy",
+      "building": "7",
+      "apt": "7",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-03-23",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 969800,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/23.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 155.07
+        },
+        {
+          "date": "2026-06-22",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 872820,
+          "outcome": "active",
+          "area_m2": 155.07,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        }
+      ],
+      "area_m2": 155.07
+    },
+    {
+      "key": "chodkiewicza|12|11",
+      "street": "Chodkiewicza",
+      "street_norm": "chodkiewicza",
+      "building": "12",
+      "apt": "11",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-06-22",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 180557,
+          "outcome": "active",
+          "area_m2": 24.34,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-lokal-mieszkalny-przy-ul-chodkiewicza-1211wlasnosc-skarbu-panstwa",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        }
+      ],
+      "area_m2": 24.34
     },
     {
       "key": "zygmunta starego|33|5",
@@ -679,29 +787,6 @@
       "area_m2": 48.06
     },
     {
-      "key": "harcerskiej|13|3",
-      "street": "Harcerskiej",
-      "street_norm": "harcerskiej",
-      "building": "13",
-      "apt": "3",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-04-27",
-          "round": 3,
-          "kind": "mieszkalny",
-          "starting_price_pln": 253620,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 256160,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/27.04.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 47.55
-        }
-      ],
-      "area_m2": 47.55
-    },
-    {
       "key": "malinowskiego|10|8",
       "street": "Malinowskiego",
       "street_norm": "malinowskiego",
@@ -737,13 +822,25 @@
       "area_m2": 16.48
     },
     {
-      "key": "zabrskiej|30|2",
-      "street": "Zabrskiej",
-      "street_norm": "zabrskiej",
+      "key": "zabrska|30|2",
+      "street": "Zabrska",
+      "street_norm": "zabrska",
       "building": "30",
       "apt": "2",
       "kind": "mieszkalny",
       "listings": [
+        {
+          "date": "2026-03-16",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 315200,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/16.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 73.95
+        },
         {
           "date": "2026-04-27",
           "round": 2,
@@ -758,6 +855,53 @@
         }
       ],
       "area_m2": 73.95
+    },
+    {
+      "key": "harcerska|13|3",
+      "street": "Harcerska",
+      "street_norm": "harcerska",
+      "building": "13",
+      "apt": "3",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-01-26",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 281800,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/02/26.01.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 47.55
+        },
+        {
+          "date": "2026-03-09",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 253620,
+          "outcome": "unsold",
+          "unsold_reason": "unknown",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/09.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 47.55
+        },
+        {
+          "date": "2026-04-27",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 253620,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 256160,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/27.04.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 47.55
+        }
+      ],
+      "area_m2": 47.55
     },
     {
       "key": "styczynskiego|10|13",
@@ -842,29 +986,6 @@
       "area_m2": 36.1
     },
     {
-      "key": "piwnej|13|7",
-      "street": "Piwnej",
-      "street_norm": "piwnej",
-      "building": "13",
-      "apt": "7",
-      "kind": "uzytkowy",
-      "listings": [
-        {
-          "date": "2026-04-20",
-          "round": 3,
-          "kind": "uzytkowy",
-          "starting_price_pln": 106560,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 107630,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/20.04.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 42.37
-        }
-      ],
-      "area_m2": 42.37
-    },
-    {
       "key": "rybitwy|9|11",
       "street": "Rybitwy",
       "street_norm": "rybitwy",
@@ -931,6 +1052,53 @@
       ]
     },
     {
+      "key": "piwna|13|7",
+      "street": "Piwna",
+      "street_norm": "piwna",
+      "building": "13",
+      "apt": "7",
+      "kind": "uzytkowy",
+      "listings": [
+        {
+          "date": "2026-01-12",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 133200,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/01/12.01.2026-wyniki.pdf",
+          "notes": [],
+          "area_m2": 42.37
+        },
+        {
+          "date": "2026-02-23",
+          "round": 2,
+          "kind": "uzytkowy",
+          "starting_price_pln": 119880,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/23.02.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 42.37
+        },
+        {
+          "date": "2026-04-20",
+          "round": 3,
+          "kind": "uzytkowy",
+          "starting_price_pln": 106560,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 107630,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/20.04.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 42.37
+        }
+      ],
+      "area_m2": 42.37
+    },
+    {
       "key": "zwyciestwa|38|8",
       "street": "Zwycięstwa",
       "street_norm": "zwyciestwa",
@@ -977,29 +1145,6 @@
       "area_m2": 82.71
     },
     {
-      "key": "karola libelta|10|1",
-      "street": "Karola Libelta",
-      "street_norm": "karola libelta",
-      "building": "10",
-      "apt": "1",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-03-30",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 334100,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/30.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 47.67
-        }
-      ],
-      "area_m2": 47.67
-    },
-    {
       "key": "ignacego daszynskiego|65|10",
       "street": "Ignacego Daszyńskiego",
       "street_norm": "ignacego daszynskiego",
@@ -1023,31 +1168,8 @@
       "area_m2": 51.59
     },
     {
-      "key": "lompy|7|7",
-      "street": "Lompy",
-      "street_norm": "lompy",
-      "building": "7",
-      "apt": "7",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-03-23",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 969800,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/23.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 155.07
-        }
-      ],
-      "area_m2": 155.07
-    },
-    {
       "key": "plebiscytowej|16|11",
-      "street": "Plebiscytowej",
+      "street": "Plebiscytowa",
       "street_norm": "plebiscytowej",
       "building": "16",
       "apt": "11",
@@ -1067,29 +1189,6 @@
         }
       ],
       "area_m2": 39.47
-    },
-    {
-      "key": "zabrska|30|2",
-      "street": "Zabrska",
-      "street_norm": "zabrska",
-      "building": "30",
-      "apt": "2",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-03-16",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 315200,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/16.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 73.95
-        }
-      ],
-      "area_m2": 73.95
     },
     {
       "key": "zygmunta starego|2|2",
@@ -1162,48 +1261,35 @@
       "area_m2": 64.12
     },
     {
-      "key": "harcerska|13|3",
-      "street": "Harcerska",
-      "street_norm": "harcerska",
-      "building": "13",
-      "apt": "3",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-01-26",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 281800,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/02/26.01.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 47.55
-        },
-        {
-          "date": "2026-03-09",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 253620,
-          "outcome": "unsold",
-          "unsold_reason": "unknown",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/09.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 47.55
-        }
-      ],
-      "area_m2": 47.55
-    },
-    {
-      "key": "sportowej|6|2",
-      "street": "Sportowej",
-      "street_norm": "sportowej",
+      "key": "sportowa|6|2",
+      "street": "Sportowa",
+      "street_norm": "sportowa",
       "building": "6",
       "apt": "2",
       "kind": "mieszkalny",
       "listings": [
+        {
+          "date": "2025-11-17",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 177500,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/11/17.11.2025-r.-wyniki-przetargow.pdf",
+          "notes": []
+        },
+        {
+          "date": "2026-01-12",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 159750,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/01/12.01.2026-wyniki.pdf",
+          "notes": []
+        },
         {
           "date": "2026-02-23",
           "round": 3,
@@ -1216,41 +1302,6 @@
           "notes": []
         }
       ]
-    },
-    {
-      "key": "piwna|13|7",
-      "street": "Piwna",
-      "street_norm": "piwna",
-      "building": "13",
-      "apt": "7",
-      "kind": "uzytkowy",
-      "listings": [
-        {
-          "date": "2026-01-12",
-          "round": 1,
-          "kind": "uzytkowy",
-          "starting_price_pln": 133200,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/01/12.01.2026-wyniki.pdf",
-          "notes": [],
-          "area_m2": 42.37
-        },
-        {
-          "date": "2026-02-23",
-          "round": 2,
-          "kind": "uzytkowy",
-          "starting_price_pln": 119880,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/23.02.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 42.37
-        }
-      ],
-      "area_m2": 42.37
     },
     {
       "key": "lotnikow|44|2",
@@ -1298,29 +1349,6 @@
         }
       ],
       "area_m2": 50.96
-    },
-    {
-      "key": "piastowskiej|12|6",
-      "street": "Piastowskiej",
-      "street_norm": "piastowskiej",
-      "building": "12",
-      "apt": "6",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-02-16",
-          "round": 4,
-          "kind": "mieszkalny",
-          "starting_price_pln": 301600,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 367280,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/02/16.02.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 65.21
-        }
-      ],
-      "area_m2": 65.21
     },
     {
       "key": "libelta|8|3",
@@ -1381,9 +1409,56 @@
       "area_m2": 22.68
     },
     {
-      "key": "jagiellonskiej j|1|24",
-      "street": "Jagiellońskiej;j",
-      "street_norm": "jagiellonskiej j",
+      "key": "piastowska|12|6",
+      "street": "Piastowska",
+      "street_norm": "piastowska",
+      "building": "12",
+      "apt": "6",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2025-09-22",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 377000,
+          "outcome": "unsold",
+          "unsold_reason": "bidder_noshow",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/09/22.092025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 65.21
+        },
+        {
+          "date": "2025-12-15",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 339300,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/12/15.12.2025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 65.21
+        },
+        {
+          "date": "2026-02-16",
+          "round": 4,
+          "kind": "mieszkalny",
+          "starting_price_pln": 301600,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 367280,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/02/16.02.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 65.21
+        }
+      ],
+      "area_m2": 65.21
+    },
+    {
+      "key": "jagiellonskiej|1|24",
+      "street": "Jagiellońskiej",
+      "street_norm": "jagiellonskiej",
       "building": "1",
       "apt": "24",
       "kind": "mieszkalny",
@@ -1397,13 +1472,15 @@
           "unsold_reason": null,
           "final_price_pln": 212060,
           "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/02/16.02.2026-r.-wyniki-przetargow.pdf",
-          "notes": []
+          "notes": [],
+          "area_m2": 34.47
         }
-      ]
+      ],
+      "area_m2": 34.47
     },
     {
       "key": "tarnogorskiej|109|3",
-      "street": "Tarnogórskiej",
+      "street": "Tarnogórska",
       "street_norm": "tarnogorskiej",
       "building": "109",
       "apt": "3",
@@ -1527,38 +1604,6 @@
       ]
     },
     {
-      "key": "sportowa|6|2",
-      "street": "Sportowa",
-      "street_norm": "sportowa",
-      "building": "6",
-      "apt": "2",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-11-17",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 177500,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/11/17.11.2025-r.-wyniki-przetargow.pdf",
-          "notes": []
-        },
-        {
-          "date": "2026-01-12",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 159750,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/01/12.01.2026-wyniki.pdf",
-          "notes": []
-        }
-      ]
-    },
-    {
       "key": "czajki|26|16",
       "street": "Czajki",
       "street_norm": "czajki",
@@ -1615,41 +1660,6 @@
       ]
     },
     {
-      "key": "piastowska|12|6",
-      "street": "Piastowska",
-      "street_norm": "piastowska",
-      "building": "12",
-      "apt": "6",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-09-22",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 377000,
-          "outcome": "unsold",
-          "unsold_reason": "bidder_noshow",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/09/22.092025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 65.21
-        },
-        {
-          "date": "2025-12-15",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 339300,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/12/15.12.2025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 65.21
-        }
-      ],
-      "area_m2": 65.21
-    },
-    {
       "key": "zwyciestwa|14C|9",
       "street": "Zwycięstwa",
       "street_norm": "zwyciestwa",
@@ -1674,7 +1684,7 @@
     },
     {
       "key": "piwnej|5|8",
-      "street": "Piwnej",
+      "street": "Piwna",
       "street_norm": "piwnej",
       "building": "5",
       "apt": "8",
@@ -1813,7 +1823,7 @@
     },
     {
       "key": "rybnickiej|52-54|",
-      "street": "Rybnickiej",
+      "street": "Rybnicka",
       "street_norm": "rybnickiej",
       "building": "52-54",
       "apt": null,
@@ -1877,27 +1887,6 @@
       "area_m2": 46.4
     },
     {
-      "key": "kurpiowskiej|16|",
-      "street": "Kurpiowskiej",
-      "street_norm": "kurpiowskiej",
-      "building": "16",
-      "apt": null,
-      "kind": "garaz",
-      "listings": [
-        {
-          "date": "2025-09-29",
-          "round": 4,
-          "kind": "garaz",
-          "starting_price_pln": 33250,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 33590,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/10/29.09.2025-r.-wyniki-przetargow.pdf",
-          "notes": []
-        }
-      ]
-    },
-    {
       "key": "domanskiego|6A|I",
       "street": "Domańskiego",
       "street_norm": "domanskiego",
@@ -1931,29 +1920,6 @@
         }
       ],
       "area_m2": 112.21
-    },
-    {
-      "key": "brzozowej|47|10",
-      "street": "Brzozowej",
-      "street_norm": "brzozowej",
-      "building": "47",
-      "apt": "10",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-09-29",
-          "round": 4,
-          "kind": "mieszkalny",
-          "starting_price_pln": 177400,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 185000,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/10/29.09.2025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 41.33
-        }
-      ],
-      "area_m2": 41.33
     },
     {
       "key": "grottgera|31|3",
@@ -2060,6 +2026,108 @@
         }
       ],
       "area_m2": 36.71
+    },
+    {
+      "key": "kurpiowska|16|",
+      "street": "Kurpiowska",
+      "street_norm": "kurpiowska",
+      "building": "16",
+      "apt": null,
+      "kind": "garaz",
+      "listings": [
+        {
+          "date": "2025-06-16",
+          "round": 1,
+          "kind": "garaz",
+          "starting_price_pln": 42800,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/06/16.06.2025-wyniki-przetargow.pdf",
+          "notes": []
+        },
+        {
+          "date": "2025-08-04",
+          "round": 2,
+          "kind": "garaz",
+          "starting_price_pln": 38000,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/08/04.08.2025-r.-wyniki-przetargow.pdf",
+          "notes": []
+        },
+        {
+          "date": "2025-09-29",
+          "round": 4,
+          "kind": "garaz",
+          "starting_price_pln": 33250,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 33590,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/10/29.09.2025-r.-wyniki-przetargow.pdf",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "key": "brzozowa|47|10",
+      "street": "Brzozowa",
+      "street_norm": "brzozowa",
+      "building": "47",
+      "apt": "10",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2025-02-17",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 221700,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/02/17.02.2025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 41.33
+        },
+        {
+          "date": "2025-03-31",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 199600,
+          "outcome": "unsold",
+          "unsold_reason": "unknown",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/04/31.03.2025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 41.33
+        },
+        {
+          "date": "2025-05-12",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 199600,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/05/12.05.2025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 41.33
+        },
+        {
+          "date": "2025-09-29",
+          "round": 4,
+          "kind": "mieszkalny",
+          "starting_price_pln": 177400,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 185000,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/10/29.09.2025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 41.33
+        }
+      ],
+      "area_m2": 41.33
     },
     {
       "key": "jasinskiego|11|3",
@@ -2213,11 +2281,11 @@
       "area_m2": 25.6
     },
     {
-      "key": "mastalerza na dzialce nr|233|1",
-      "street": "Mastalerza na działce nr",
-      "street_norm": "mastalerza na dzialce nr",
-      "building": "233",
-      "apt": "1",
+      "key": "mastalerza|0|garaz-233",
+      "street": "Mastalerza",
+      "street_norm": "mastalerza",
+      "building": "0",
+      "apt": "garaz-233",
       "kind": "garaz",
       "listings": [
         {
@@ -2316,7 +2384,7 @@
     },
     {
       "key": "jaskolczej|2|II",
-      "street": "Jaskółczej",
+      "street": "Jaskółcza",
       "street_norm": "jaskolczej",
       "building": "2",
       "apt": "II",
@@ -2336,38 +2404,6 @@
         }
       ],
       "area_m2": 16.8
-    },
-    {
-      "key": "kurpiowska|16|",
-      "street": "Kurpiowska",
-      "street_norm": "kurpiowska",
-      "building": "16",
-      "apt": null,
-      "kind": "garaz",
-      "listings": [
-        {
-          "date": "2025-06-16",
-          "round": 1,
-          "kind": "garaz",
-          "starting_price_pln": 42800,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/06/16.06.2025-wyniki-przetargow.pdf",
-          "notes": []
-        },
-        {
-          "date": "2025-08-04",
-          "round": 2,
-          "kind": "garaz",
-          "starting_price_pln": 38000,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/08/04.08.2025-r.-wyniki-przetargow.pdf",
-          "notes": []
-        }
-      ]
     },
     {
       "key": "domanskiego|6A|1",
@@ -2496,29 +2532,6 @@
       "area_m2": 41.61
     },
     {
-      "key": "pszczynskiej|7A|14",
-      "street": "Pszczyńskiej",
-      "street_norm": "pszczynskiej",
-      "building": "7A",
-      "apt": "14",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-06-16",
-          "round": 4,
-          "kind": "mieszkalny",
-          "starting_price_pln": 140000,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 141400,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/06/16.06.2025-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 42.78
-        }
-      ],
-      "area_m2": 42.78
-    },
-    {
       "key": "matejki|6|4",
       "street": "Matejki",
       "street_norm": "matejki",
@@ -2565,6 +2578,53 @@
       "area_m2": 24.28
     },
     {
+      "key": "pszczynska|7A|14",
+      "street": "Pszczyńska",
+      "street_norm": "pszczynska",
+      "building": "7A",
+      "apt": "14",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2025-01-20",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 200000,
+          "outcome": "unsold",
+          "unsold_reason": "bidder_noshow",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/01/20.01.2025-r.-wyniki.pdf",
+          "notes": [],
+          "area_m2": 42.78
+        },
+        {
+          "date": "2025-03-03",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 180000,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/03/03.03.2025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 42.78
+        },
+        {
+          "date": "2025-06-16",
+          "round": 4,
+          "kind": "mieszkalny",
+          "starting_price_pln": 140000,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 141400,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/06/16.06.2025-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 42.78
+        }
+      ],
+      "area_m2": 42.78
+    },
+    {
       "key": "sobieskiego|12|7",
       "street": "Sobieskiego",
       "street_norm": "sobieskiego",
@@ -2586,53 +2646,6 @@
         }
       ],
       "area_m2": 106.86
-    },
-    {
-      "key": "brzozowa|47|10",
-      "street": "Brzozowa",
-      "street_norm": "brzozowa",
-      "building": "47",
-      "apt": "10",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-02-17",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 221700,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/02/17.02.2025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 41.33
-        },
-        {
-          "date": "2025-03-31",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 199600,
-          "outcome": "unsold",
-          "unsold_reason": "unknown",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/04/31.03.2025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 41.33
-        },
-        {
-          "date": "2025-05-12",
-          "round": 3,
-          "kind": "mieszkalny",
-          "starting_price_pln": 199600,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/05/12.05.2025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 41.33
-        }
-      ],
-      "area_m2": 41.33
     },
     {
       "key": "toszeckiej|43|9",
@@ -2794,41 +2807,6 @@
       "area_m2": 64.19
     },
     {
-      "key": "pszczynska|7A|14",
-      "street": "Pszczyńska",
-      "street_norm": "pszczynska",
-      "building": "7A",
-      "apt": "14",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-01-20",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 200000,
-          "outcome": "unsold",
-          "unsold_reason": "bidder_noshow",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/01/20.01.2025-r.-wyniki.pdf",
-          "notes": [],
-          "area_m2": 42.78
-        },
-        {
-          "date": "2025-03-03",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 180000,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/03/03.03.2025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 42.78
-        }
-      ],
-      "area_m2": 42.78
-    },
-    {
       "key": "dunikowskiego|7|16",
       "street": "Dunikowskiego",
       "street_norm": "dunikowskiego",
@@ -2897,7 +2875,7 @@
     },
     {
       "key": "nadrzecznej|0|garaz-7",
-      "street": "Nadrzecznej",
+      "street": "Nadrzeczna",
       "street_norm": "nadrzecznej",
       "building": "0",
       "apt": "garaz-7",
@@ -2915,29 +2893,6 @@
           "notes": []
         }
       ]
-    },
-    {
-      "key": "arkonskiej|10|8",
-      "street": "Arkońskiej",
-      "street_norm": "arkonskiej",
-      "building": "10",
-      "apt": "8",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-01-27",
-          "round": 3,
-          "kind": "mieszkalny",
-          "starting_price_pln": 270200,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 297300,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/01/27.01.2025-r.-wyniki.pdf",
-          "notes": [],
-          "area_m2": 63.79
-        }
-      ],
-      "area_m2": 63.79
     },
     {
       "key": "lokietka|2|6",
@@ -2964,7 +2919,7 @@
     },
     {
       "key": "kozielskiej|65|14",
-      "street": "Kozielskiej",
+      "street": "Kozielska",
       "street_norm": "kozielskiej",
       "building": "65",
       "apt": "14",
@@ -2984,6 +2939,53 @@
         }
       ],
       "area_m2": 30.99
+    },
+    {
+      "key": "arkonska|10|8",
+      "street": "Arkońska",
+      "street_norm": "arkonska",
+      "building": "10",
+      "apt": "8",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2024-10-28",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 337700,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/11/28.10.2024-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 63.79
+        },
+        {
+          "date": "2024-12-09",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 304000,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/12/09.12.2024-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 63.79
+        },
+        {
+          "date": "2025-01-27",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 270200,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 297300,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/01/27.01.2025-r.-wyniki.pdf",
+          "notes": [],
+          "area_m2": 63.79
+        }
+      ],
+      "area_m2": 63.79
     },
     {
       "key": "plebanskiej|6|11",
@@ -3010,7 +3012,7 @@
     },
     {
       "key": "pszczynskiej|9A|4",
-      "street": "Pszczyńskiej",
+      "street": "Pszczyńska",
       "street_norm": "pszczynskiej",
       "building": "9A",
       "apt": "4",
@@ -3033,7 +3035,7 @@
     },
     {
       "key": "kozielskiej|27C|3",
-      "street": "Kozielskiej",
+      "street": "Kozielska",
       "street_norm": "kozielskiej",
       "building": "27C",
       "apt": "3",
@@ -3134,41 +3136,6 @@
       "area_m2": 237.46
     },
     {
-      "key": "arkonska|10|8",
-      "street": "Arkońska",
-      "street_norm": "arkonska",
-      "building": "10",
-      "apt": "8",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2024-10-28",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 337700,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/11/28.10.2024-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 63.79
-        },
-        {
-          "date": "2024-12-09",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 304000,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/12/09.12.2024-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 63.79
-        }
-      ],
-      "area_m2": 63.79
-    },
-    {
       "key": "raciborskiej|8|1",
       "street": "Raciborskiej",
       "street_norm": "raciborskiej",
@@ -3261,9 +3228,9 @@
       "area_m2": 36.27
     },
     {
-      "key": "rybnickie j|9|7",
-      "street": "Rybnickie;j",
-      "street_norm": "rybnickie j",
+      "key": "rybnickie|9|7",
+      "street": "Rybnickie",
+      "street_norm": "rybnickie",
       "building": "9",
       "apt": "7",
       "kind": "mieszkalny",
@@ -3502,7 +3469,7 @@
     },
     {
       "key": "gozdzikowej|8|2",
-      "street": "Goździkowej",
+      "street": "Goździkowa",
       "street_norm": "gozdzikowej",
       "building": "8",
       "apt": "2",
@@ -3640,7 +3607,7 @@
     },
     {
       "key": "piastowskiej|5|II",
-      "street": "Piastowskiej",
+      "street": "Piastowska",
       "street_norm": "piastowskiej",
       "building": "5",
       "apt": "II",
@@ -3686,7 +3653,7 @@
     },
     {
       "key": "arkonskiej|10|3",
-      "street": "Arkońskiej",
+      "street": "Arkońska",
       "street_norm": "arkonskiej",
       "building": "10",
       "apt": "3",
@@ -4028,7 +3995,7 @@
     },
     {
       "key": "brzozowej|41|2",
-      "street": "Brzozowej",
+      "street": "Brzozowa",
       "street_norm": "brzozowej",
       "building": "41",
       "apt": "2",
@@ -4085,29 +4052,6 @@
       "area_m2": 34.14
     },
     {
-      "key": "sredniej|24|4",
-      "street": "Sredniej",
-      "street_norm": "sredniej",
-      "building": "24",
-      "apt": "4",
-      "kind": "uzytkowy",
-      "listings": [
-        {
-          "date": "2024-04-15",
-          "round": 2,
-          "kind": "uzytkowy",
-          "starting_price_pln": 287900,
-          "outcome": "sold",
-          "unsold_reason": null,
-          "final_price_pln": 345500,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/04/15.04.2024-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 74.52
-        }
-      ],
-      "area_m2": 74.52
-    },
-    {
       "key": "zwyciestwa|41|19",
       "street": "Zwycięstwa",
       "street_norm": "zwyciestwa",
@@ -4129,6 +4073,41 @@
         }
       ],
       "area_m2": 58.52
+    },
+    {
+      "key": "srednia|24|4",
+      "street": "Średnia",
+      "street_norm": "srednia",
+      "building": "24",
+      "apt": "4",
+      "kind": "uzytkowy",
+      "listings": [
+        {
+          "date": "2024-02-26",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 319800,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/03/26.02.24-r.-wyniki.pdf",
+          "notes": [],
+          "area_m2": 74.52
+        },
+        {
+          "date": "2024-04-15",
+          "round": 2,
+          "kind": "uzytkowy",
+          "starting_price_pln": 287900,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 345500,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/04/15.04.2024-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 74.52
+        }
+      ],
+      "area_m2": 74.52
     },
     {
       "key": "korfantego|23|3",
@@ -4224,7 +4203,7 @@
     },
     {
       "key": "pszczynskiej|112C|23",
-      "street": "Pszczyńskiej",
+      "street": "Pszczyńska",
       "street_norm": "pszczynskiej",
       "building": "112C",
       "apt": "23",
@@ -4462,9 +4441,9 @@
       "listings": [
         {
           "date": "2024-03-11",
-          "round": 2,
+          "round": 1,
           "kind": "mieszkalny",
-          "starting_price_pln": 112600,
+          "starting_price_pln": 109700,
           "outcome": "unsold",
           "unsold_reason": "unknown",
           "final_price_pln": null,
@@ -4589,29 +4568,6 @@
       "area_m2": 43.6
     },
     {
-      "key": "srednia|24|4",
-      "street": "Średnia",
-      "street_norm": "srednia",
-      "building": "24",
-      "apt": "4",
-      "kind": "uzytkowy",
-      "listings": [
-        {
-          "date": "2024-02-26",
-          "round": 1,
-          "kind": "uzytkowy",
-          "starting_price_pln": 319800,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/03/26.02.24-r.-wyniki.pdf",
-          "notes": [],
-          "area_m2": 74.52
-        }
-      ],
-      "area_m2": 74.52
-    },
-    {
       "key": "modelarzy|14|II",
       "street": "Modelarzy",
       "street_norm": "modelarzy",
@@ -4659,7 +4615,7 @@
     },
     {
       "key": "nowej|6|5",
-      "street": "Nowej",
+      "street": "Nowa",
       "street_norm": "nowej",
       "building": "6",
       "apt": "5",
@@ -4723,6 +4679,54 @@
           "notes": []
         }
       ]
+    },
+    {
+      "key": "korfantego|32A|III",
+      "street": "Korfantego",
+      "street_norm": "korfantego",
+      "building": "32A",
+      "apt": "III",
+      "kind": "uzytkowy",
+      "listings": [
+        {
+          "date": "2024-02-19",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 63300,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/02/19.02.2024-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 29.45
+        }
+      ],
+      "area_m2": 29.45
+    },
+    {
+      "key": "korfantego|32A|IV",
+      "street": "Korfantego",
+      "street_norm": "korfantego",
+      "building": "32A",
+      "apt": "IV",
+      "kind": "uzytkowy",
+      "listings": [
+        {
+          "date": "2024-02-19",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 35700,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2024/02/19.02.2024-r.-wyniki-przetargow.pdf",
+          "notes": [
+            "OCR-quirk: apt 'TV' interpreted as 'IV'"
+          ],
+          "area_m2": 18.55
+        }
+      ],
+      "area_m2": 18.55
     },
     {
       "key": "dolnych walow|27|11",
@@ -4979,6 +4983,23 @@
           "kind": "unknown",
           "outcome": "announced",
           "wykaz_no": "ZGM/DS/57/2026"
+        }
+      ]
+    },
+    {
+      "key": "wielkiej niedzwiedzicy|11|9",
+      "street": "Wielkiej Niedźwiedzicy",
+      "street_norm": "wielkiej niedzwiedzicy",
+      "building": "11",
+      "apt": "9",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/104/2026"
         }
       ]
     }
