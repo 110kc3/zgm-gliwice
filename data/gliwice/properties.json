@@ -222,8 +222,20 @@
       "kind": "mieszkalny",
       "listings": [
         {
-          "date": "2026-07-06",
+          "date": "2026-05-11",
           "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 240840,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/11.05.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 51.59
+        },
+        {
+          "date": "2026-07-06",
+          "round": 2,
           "kind": "mieszkalny",
           "starting_price_pln": 214080,
           "outcome": "active",
@@ -578,12 +590,11 @@
           "round": 2,
           "kind": "mieszkalny",
           "starting_price_pln": 461430,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 86.79,
           "detail_url": "https://zgm-gliwice.pl/zygmunta-starego-29-4-23-03-2026-r/",
           "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-06",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
+          "viewing_date": "2026-05-06"
         }
       ],
       "area_m2": 86.79
@@ -613,12 +624,11 @@
           "round": 2,
           "kind": "mieszkalny",
           "starting_price_pln": 435780,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 81.81,
           "detail_url": "https://zgm-gliwice.pl/czarnieckiego-25-1-23-03-2026-r/",
           "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-07",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
+          "viewing_date": "2026-05-07"
         }
       ],
       "area_m2": 81.81
@@ -636,12 +646,11 @@
           "round": 1,
           "kind": "mieszkalny",
           "starting_price_pln": 796320,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 134.17,
           "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
           "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-08",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
+          "viewing_date": "2026-05-08"
         }
       ],
       "area_m2": 134.17
@@ -671,7 +680,7 @@
           "round": 2,
           "kind": "mieszkalny",
           "starting_price_pln": 872820,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 155.07,
           "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-22062026-ul-zygmunta-starego-294-ul-czarnieckiego-251-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne",
           "wadium_deadline": null,
@@ -694,7 +703,7 @@
           "round": 1,
           "kind": "mieszkalny",
           "starting_price_pln": 180557,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 24.34,
           "detail_url": "https://bip.gliwice.eu/sprzedaz-lokal-mieszkalny-przy-ul-chodkiewicza-1211wlasnosc-skarbu-panstwa",
           "wadium_deadline": null,
@@ -703,6 +712,100 @@
         }
       ],
       "area_m2": 24.34
+    },
+    {
+      "key": "zawiszy czarnego|6|3",
+      "street": "Zawiszy Czarnego",
+      "street_norm": "zawiszy czarnego",
+      "building": "6",
+      "apt": "3",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-03-30",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 426780,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/30.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 82.71
+        },
+        {
+          "date": "2026-05-11",
+          "round": 4,
+          "kind": "mieszkalny",
+          "starting_price_pln": 379360,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 383160,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/11.05.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 82.71
+        }
+      ],
+      "area_m2": 82.71
+    },
+    {
+      "key": "dolnych walow|21A|2",
+      "street": "Dolnych Wałów",
+      "street_norm": "dolnych walow",
+      "building": "21A",
+      "apt": "2",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2025-12-08",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 412400,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/12/08.12.2025-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 64.12
+        },
+        {
+          "date": "2026-01-26",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 371160,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/02/26.01.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 64.12
+        },
+        {
+          "date": "2026-03-09",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 329920,
+          "outcome": "unsold",
+          "unsold_reason": "unknown",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/09.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 64.12
+        },
+        {
+          "date": "2026-05-11",
+          "round": 4,
+          "kind": "mieszkalny",
+          "starting_price_pln": 288680,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 291570,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/11.05.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 64.12
+        }
+      ],
+      "area_m2": 64.12
     },
     {
       "key": "zygmunta starego|33|5",
@@ -1122,29 +1225,6 @@
       "area_m2": 21.12
     },
     {
-      "key": "zawiszy czarnego|6|3",
-      "street": "Zawiszy Czarnego",
-      "street_norm": "zawiszy czarnego",
-      "building": "6",
-      "apt": "3",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-03-30",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 426780,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/30.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 82.71
-        }
-      ],
-      "area_m2": 82.71
-    },
-    {
       "key": "ignacego daszynskiego|65|10",
       "street": "Ignacego Daszyńskiego",
       "street_norm": "ignacego daszynskiego",
@@ -1212,53 +1292,6 @@
         }
       ],
       "area_m2": 47.8
-    },
-    {
-      "key": "dolnych walow|21A|2",
-      "street": "Dolnych Wałów",
-      "street_norm": "dolnych walow",
-      "building": "21A",
-      "apt": "2",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2025-12-08",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 412400,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2025/12/08.12.2025-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 64.12
-        },
-        {
-          "date": "2026-01-26",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 371160,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/02/26.01.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 64.12
-        },
-        {
-          "date": "2026-03-09",
-          "round": 3,
-          "kind": "mieszkalny",
-          "starting_price_pln": 329920,
-          "outcome": "unsold",
-          "unsold_reason": "unknown",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/03/09.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 64.12
-        }
-      ],
-      "area_m2": 64.12
     },
     {
       "key": "sportowa|6|2",
