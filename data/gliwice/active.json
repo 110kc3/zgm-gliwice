@@ -4,86 +4,6 @@
   "listings": [
     {
       "kind": "mieszkalny",
-      "address_raw": "Królewskiej Tamy 55/2",
-      "address": {
-        "street": "Królewskiej Tamy",
-        "street_norm": "krolewskiej tamy",
-        "building": "55",
-        "apt": "2",
-        "key": "krolewskiej tamy|55|2",
-        "warning": null
-      },
-      "auction_date": "2026-06-29",
-      "area_m2": 25.27,
-      "starting_price_pln": 99200,
-      "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-55-2-09-03-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
-      "wadium_deadline": "2026-06-23",
-      "viewing_date": "2026-06-17",
-      "round": 3
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Królewskiej Tamy 53/2",
-      "address": {
-        "street": "Królewskiej Tamy",
-        "street_norm": "krolewskiej tamy",
-        "building": "53",
-        "apt": "2",
-        "key": "krolewskiej tamy|53|2",
-        "warning": null
-      },
-      "auction_date": "2026-06-29",
-      "area_m2": 26.89,
-      "starting_price_pln": 105400,
-      "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-5-2-09-03-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
-      "wadium_deadline": "2026-06-23",
-      "viewing_date": "2026-06-17",
-      "round": 3
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Plebiscytowa 4/9",
-      "address": {
-        "street": "Plebiscytowa",
-        "street_norm": "plebiscytowa",
-        "building": "4",
-        "apt": "9",
-        "key": "plebiscytowa|4|9",
-        "warning": null
-      },
-      "auction_date": "2026-06-29",
-      "area_m2": 52.45,
-      "starting_price_pln": 198800,
-      "detail_url": "https://zgm-gliwice.pl/plebiscytowa-4-9-19-01-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
-      "wadium_deadline": "2026-06-23",
-      "viewing_date": "2026-06-16",
-      "round": 3
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Poniatowskiego 1/13",
-      "address": {
-        "street": "Poniatowskiego",
-        "street_norm": "poniatowskiego",
-        "building": "1",
-        "apt": "13",
-        "key": "poniatowskiego|1|13",
-        "warning": null
-      },
-      "auction_date": "2026-06-29",
-      "area_m2": 38.09,
-      "starting_price_pln": 137550,
-      "detail_url": "https://zgm-gliwice.pl/poniatowskiego-1-13-19-01-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
-      "wadium_deadline": "2026-06-23",
-      "viewing_date": "2026-06-18",
-      "round": 3
-    },
-    {
-      "kind": "mieszkalny",
       "address_raw": "Daszyńskiego 65/10",
       "address": {
         "street": "Daszyńskiego",
@@ -197,30 +117,8 @@
       "area_m2": 16.92,
       "starting_price_pln": 44820,
       "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
       "wadium_deadline": "2026-06-23",
-      "viewing_date": "2026-06-16",
-      "round": 1
-    },
-    {
-      "kind": "uzytkowy",
-      "address_raw": "Zwycięstwa 45/7",
-      "address": {
-        "street": "Zwycięstwa",
-        "street_norm": "zwyciestwa",
-        "building": "45",
-        "apt": "7",
-        "key": "zwyciestwa|45|7",
-        "warning": null
-      },
-      "auction_date": "2026-06-29",
-      "area_m2": 64.78,
-      "starting_price_pln": 177660,
-      "detail_url": "https://zgm-gliwice.pl/zwyciestwa-45-7-08-12-2025-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
-      "wadium_deadline": "2026-06-23",
-      "viewing_date": "2026-06-15",
-      "round": 5
+      "viewing_date": "2026-06-16"
     },
     {
       "kind": "uzytkowy",
@@ -241,6 +139,26 @@
       "wadium_deadline": "2026-06-30",
       "viewing_date": "2026-06-24",
       "round": 2
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Chodkiewicza 12/11",
+      "address": {
+        "street": "Chodkiewicza",
+        "street_norm": "chodkiewicza",
+        "building": "12",
+        "apt": "11",
+        "key": "chodkiewicza|12|11",
+        "warning": null
+      },
+      "auction_date": "2026-08-24",
+      "area_m2": 24.34,
+      "starting_price_pln": 180557,
+      "round": 2,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-lokal-mieszkalny-przy-ul-chodkiewicza-1211-wlasnosc-skarbu-panstwa",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
     },
     {
       "kind": "mieszkalny",
@@ -273,32 +191,6 @@
         "building": "11",
         "apt": "9",
         "key": "wielkiej niedzwiedzicy|11|9",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/91/2026",
-      "address_raw": "Plebiscytowa garaż nr 11",
-      "address": {
-        "street": "Plebiscytowa",
-        "street_norm": "plebiscytowa",
-        "building": "0",
-        "apt": "garaz-11",
-        "key": "plebiscytowa|0|garaz-11",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/93/2026",
-      "address_raw": "Górnych Wałów 31-31A garaż nr 1",
-      "address": {
-        "street": "Górnych Wałów",
-        "street_norm": "gornych walow",
-        "building": "31-31A",
-        "apt": "garaz-1",
-        "key": "gornych walow|31-31A|garaz-1",
         "warning": null
       },
       "published_date": null

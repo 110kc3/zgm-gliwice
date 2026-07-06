@@ -3,6 +3,41 @@
   "city": "gliwice",
   "properties": [
     {
+      "key": "chodkiewicza|12|11",
+      "street": "Chodkiewicza",
+      "street_norm": "chodkiewicza",
+      "building": "12",
+      "apt": "11",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-06-22",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 180557,
+          "outcome": "archived",
+          "area_m2": 24.34,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-lokal-mieszkalny-przy-ul-chodkiewicza-1211wlasnosc-skarbu-panstwa",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        },
+        {
+          "date": "2026-08-24",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 180557,
+          "outcome": "active",
+          "area_m2": 24.34,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-lokal-mieszkalny-przy-ul-chodkiewicza-1211-wlasnosc-skarbu-panstwa",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        }
+      ],
+      "area_m2": 24.34
+    },
+    {
       "key": "rybnicka|25|19",
       "street": "Rybnicka",
       "street_norm": "rybnicka",
@@ -320,7 +355,7 @@
           "round": 3,
           "kind": "mieszkalny",
           "starting_price_pln": 99200,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 25.27,
           "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-55-2-09-03-2026-r/",
           "wadium_deadline": "2026-06-23",
@@ -367,7 +402,7 @@
           "round": 3,
           "kind": "mieszkalny",
           "starting_price_pln": 105400,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 26.89,
           "detail_url": "https://zgm-gliwice.pl/krolewskiej-tamy-5-2-09-03-2026-r/",
           "wadium_deadline": "2026-06-23",
@@ -438,7 +473,7 @@
           "round": 5,
           "kind": "uzytkowy",
           "starting_price_pln": 177660,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 64.78,
           "detail_url": "https://zgm-gliwice.pl/zwyciestwa-45-7-08-12-2025-r/",
           "wadium_deadline": "2026-06-23",
@@ -485,7 +520,7 @@
           "round": 3,
           "kind": "mieszkalny",
           "starting_price_pln": 137550,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 38.09,
           "detail_url": "https://zgm-gliwice.pl/poniatowskiego-1-13-19-01-2026-r/",
           "wadium_deadline": "2026-06-23",
@@ -532,7 +567,7 @@
           "round": 3,
           "kind": "mieszkalny",
           "starting_price_pln": 198800,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 52.45,
           "detail_url": "https://zgm-gliwice.pl/plebiscytowa-4-9-19-01-2026-r/",
           "wadium_deadline": "2026-06-23",
@@ -555,12 +590,11 @@
           "round": 1,
           "kind": "garaz",
           "starting_price_pln": 44820,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 16.92,
           "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
           "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-16",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-29062026-ul-krolewskiej-tamy-552-ul-krolewskiej-tamy-532-ul-plebiscytowa-4-9-ul-poniatowskiego-113-lokale-mieszkalne-ul-zwyciestwa-457-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1"
+          "viewing_date": "2026-06-16"
         }
       ],
       "area_m2": 16.92
@@ -590,11 +624,12 @@
           "round": 2,
           "kind": "mieszkalny",
           "starting_price_pln": 461430,
-          "outcome": "archived",
-          "area_m2": 86.79,
-          "detail_url": "https://zgm-gliwice.pl/zygmunta-starego-29-4-23-03-2026-r/",
-          "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-06"
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/06/22.06.2026-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 86.79
         }
       ],
       "area_m2": 86.79
@@ -624,11 +659,12 @@
           "round": 2,
           "kind": "mieszkalny",
           "starting_price_pln": 435780,
-          "outcome": "archived",
-          "area_m2": 81.81,
-          "detail_url": "https://zgm-gliwice.pl/czarnieckiego-25-1-23-03-2026-r/",
-          "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-07"
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 440140,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/06/22.06.2026-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 81.81
         }
       ],
       "area_m2": 81.81
@@ -689,29 +725,6 @@
         }
       ],
       "area_m2": 155.07
-    },
-    {
-      "key": "chodkiewicza|12|11",
-      "street": "Chodkiewicza",
-      "street_norm": "chodkiewicza",
-      "building": "12",
-      "apt": "11",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-06-22",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 180557,
-          "outcome": "archived",
-          "area_m2": 24.34,
-          "detail_url": "https://bip.gliwice.eu/sprzedaz-lokal-mieszkalny-przy-ul-chodkiewicza-1211wlasnosc-skarbu-panstwa",
-          "wadium_deadline": null,
-          "viewing_date": null,
-          "source": "bip"
-        }
-      ],
-      "area_m2": 24.34
     },
     {
       "key": "zawiszy czarnego|6|3",
@@ -1420,7 +1433,7 @@
     },
     {
       "key": "czestochowskiej|4|9",
-      "street": "Częstochowskiej",
+      "street": "Częstochowska",
       "street_norm": "czestochowskiej",
       "building": "4",
       "apt": "9",
@@ -2081,7 +2094,7 @@
         },
         {
           "date": "2025-08-04",
-          "round": 2,
+          "round": 1,
           "kind": "garaz",
           "starting_price_pln": 38000,
           "outcome": "unsold",
@@ -2230,7 +2243,7 @@
         },
         {
           "date": "2025-08-04",
-          "round": 2,
+          "round": 1,
           "kind": "mieszkalny",
           "starting_price_pln": 318300,
           "outcome": "unsold",
@@ -2292,7 +2305,7 @@
     },
     {
       "key": "raciborskiej|1|XIV",
-      "street": "Raciborskiej",
+      "street": "Raciborska",
       "street_norm": "raciborskiej",
       "building": "1",
       "apt": "XIV",
@@ -3170,7 +3183,7 @@
     },
     {
       "key": "raciborskiej|8|1",
-      "street": "Raciborskiej",
+      "street": "Raciborska",
       "street_norm": "raciborskiej",
       "building": "8",
       "apt": "1",
@@ -3216,7 +3229,7 @@
     },
     {
       "key": "wroclawskiej|13|8",
-      "street": "Wrocławskiej",
+      "street": "Wrocławska",
       "street_norm": "wroclawskiej",
       "building": "13",
       "apt": "8",
@@ -4487,7 +4500,7 @@
     },
     {
       "key": "opawskiej|1|I",
-      "street": "Opawskiej",
+      "street": "Opawska",
       "street_norm": "opawskiej",
       "building": "1",
       "apt": "I",
