@@ -4,103 +4,122 @@
   "listings": [
     {
       "kind": "mieszkalny",
-      "address_raw": "Daszyńskiego 65/10",
+      "address_raw": "Staszica 13/1",
       "address": {
-        "street": "Daszyńskiego",
-        "street_norm": "daszynskiego",
-        "building": "65",
-        "apt": "10",
-        "key": "daszynskiego|65|10",
-        "warning": null
-      },
-      "auction_date": "2026-07-06",
-      "area_m2": 51.59,
-      "starting_price_pln": 214080,
-      "detail_url": "https://zgm-gliwice.pl/daszynskiego-65-10-30-03-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-23",
-      "round": 2
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Zwycięstwa 11/6c",
-      "address": {
-        "street": "Zwycięstwa",
-        "street_norm": "zwyciestwa",
-        "building": "11",
-        "apt": "6C",
-        "key": "zwyciestwa|11|6C",
-        "warning": null
-      },
-      "auction_date": "2026-07-06",
-      "area_m2": 71.07,
-      "starting_price_pln": 361600,
-      "detail_url": "https://zgm-gliwice.pl/zwyciestwa-11-6c-30-03-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-23",
-      "round": 2
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Świętojańska 39/3",
-      "address": {
-        "street": "Świętojańska",
-        "street_norm": "swietojanska",
-        "building": "39",
-        "apt": "3",
-        "key": "swietojanska|39|3",
-        "warning": null
-      },
-      "auction_date": "2026-07-06",
-      "area_m2": 47.5,
-      "starting_price_pln": 264000,
-      "detail_url": "https://zgm-gliwice.pl/swietojanska-39-3-04-05-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-25",
-      "round": 2
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Rybnicka 25/19",
-      "address": {
-        "street": "Rybnicka",
-        "street_norm": "rybnicka",
-        "building": "25",
-        "apt": "19",
-        "key": "rybnicka|25|19",
-        "warning": null
-      },
-      "auction_date": "2026-07-06",
-      "area_m2": 68.14,
-      "starting_price_pln": 245490,
-      "detail_url": "https://zgm-gliwice.pl/rybnicka-25-19-01-12-2025-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-26",
-      "round": 4
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Rybitwy 13/17",
-      "address": {
-        "street": "Rybitwy",
-        "street_norm": "rybitwy",
+        "street": "Staszica",
+        "street_norm": "staszica",
         "building": "13",
-        "apt": "17",
-        "key": "rybitwy|13|17",
+        "apt": "1",
+        "key": "staszica|13|1",
         "warning": null
       },
-      "auction_date": "2026-07-06",
-      "area_m2": 45.29,
-      "starting_price_pln": 251440,
-      "detail_url": "https://zgm-gliwice.pl/rybitwy-13-17-01-12-2025-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-26",
+      "auction_date": "2026-08-10",
+      "area_m2": 37.99,
+      "starting_price_pln": 201000,
+      "detail_url": "https://zgm-gliwice.pl/staszica-13-1-10-08-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "wadium_deadline": "2026-08-04",
+      "viewing_date": "2026-07-28",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Gałczyńskiego 11/1",
+      "address": {
+        "street": "Gałczyńskiego",
+        "street_norm": "galczynskiego",
+        "building": "11",
+        "apt": "1",
+        "key": "galczynskiego|11|1",
+        "warning": null
+      },
+      "auction_date": "2026-08-10",
+      "area_m2": 52.1,
+      "starting_price_pln": 296600,
+      "detail_url": "https://zgm-gliwice.pl/galczynskiego-11-1-10-08-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "wadium_deadline": null,
+      "viewing_date": "2026-07-27",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Styczyńskiego 14/13",
+      "address": {
+        "street": "Styczyńskiego",
+        "street_norm": "styczynskiego",
+        "building": "14",
+        "apt": "13",
+        "key": "styczynskiego|14|13",
+        "warning": null
+      },
+      "auction_date": "2026-08-10",
+      "area_m2": 36.73,
+      "starting_price_pln": 236700,
+      "detail_url": "https://zgm-gliwice.pl/elementor-42275/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "wadium_deadline": "2026-08-04",
+      "viewing_date": "2026-07-29",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Zygmunta Starego 29/4",
+      "address": {
+        "street": "Zygmunta Starego",
+        "street_norm": "zygmunta starego",
+        "building": "29",
+        "apt": "4",
+        "key": "zygmunta starego|29|4",
+        "warning": null
+      },
+      "auction_date": "2026-08-10",
+      "area_m2": 86.79,
+      "starting_price_pln": 410160,
+      "detail_url": "https://zgm-gliwice.pl/zygmunta-starego-29-4-23-03-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "wadium_deadline": "2026-06-16",
+      "viewing_date": "2026-05-06",
       "round": 3
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Błogosławionego Czesława 48/3",
+      "address": {
+        "street": "Błogosławionego Czesława",
+        "street_norm": "blogoslawionego czeslawa",
+        "building": "48",
+        "apt": "3",
+        "key": "blogoslawionego czeslawa|48|3",
+        "warning": null
+      },
+      "auction_date": "2026-08-10",
+      "area_m2": 31.44,
+      "starting_price_pln": 146100,
+      "detail_url": "https://zgm-gliwice.pl/blogoslawionego-czeslawa-48-3-10-08-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "wadium_deadline": "2026-08-04",
+      "viewing_date": "2026-07-28",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Lompy 7/7",
+      "address": {
+        "street": "Lompy",
+        "street_norm": "lompy",
+        "building": "7",
+        "apt": "7",
+        "key": "lompy|7|7",
+        "warning": null
+      },
+      "auction_date": "2026-09-14",
+      "area_m2": 155.07,
+      "starting_price_pln": 775840,
+      "detail_url": "https://zgm-gliwice.pl/lompy-7-7-23-03-2026-r/",
+      "wadium_deadline": "2026-09-08",
+      "viewing_date": "2026-08-13",
+      "round": 2
     },
     {
       "kind": "garaz",
@@ -113,32 +132,54 @@
         "key": "kozielska|13|garaz-1",
         "warning": null
       },
-      "auction_date": "2026-06-29",
+      "auction_date": "2026-08-10",
       "area_m2": 16.92,
-      "starting_price_pln": 44820,
+      "starting_price_pln": 39840,
       "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
       "wadium_deadline": "2026-06-23",
-      "viewing_date": "2026-06-16"
+      "viewing_date": "2026-06-16",
+      "round": 1
     },
     {
       "kind": "uzytkowy",
-      "address_raw": "Chorzowska 40/12",
+      "address_raw": "Zwycięstwa 34/9a",
       "address": {
-        "street": "Chorzowska",
-        "street_norm": "chorzowska",
-        "building": "40",
-        "apt": "12",
-        "key": "chorzowska|40|12",
+        "street": "Zwycięstwa",
+        "street_norm": "zwyciestwa",
+        "building": "34",
+        "apt": "9A",
+        "key": "zwyciestwa|34|9A",
         "warning": null
       },
-      "auction_date": "2026-07-06",
-      "area_m2": 49,
-      "starting_price_pln": 131850,
-      "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-24",
-      "round": 2
+      "auction_date": "2026-08-10",
+      "area_m2": 18.06,
+      "starting_price_pln": 89900,
+      "detail_url": "https://zgm-gliwice.pl/zwyciestwa-34-9a-10-08-2026r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "wadium_deadline": "2026-08-04",
+      "viewing_date": "2026-07-29",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "PAWŁA STALMACHA 7/3",
+      "address": {
+        "street": "PAWŁA STALMACHA",
+        "street_norm": "pawla stalmacha",
+        "building": "7",
+        "apt": "3",
+        "key": "pawla stalmacha|7|3",
+        "warning": null
+      },
+      "auction_date": "2026-08-10",
+      "area_m2": 29.07,
+      "starting_price_pln": 167500,
+      "round": 1,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
     },
     {
       "kind": "mieszkalny",
@@ -159,29 +200,35 @@
       "source": "bip",
       "wadium_deadline": null,
       "viewing_date": null
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "KAROLA LIBELTA 10/1",
-      "address": {
-        "street": "KAROLA LIBELTA",
-        "street_norm": "karola libelta",
-        "building": "10",
-        "apt": "1",
-        "key": "karola libelta|10|1",
-        "warning": null
-      },
-      "auction_date": "2026-07-06",
-      "area_m2": 47.67,
-      "starting_price_pln": 267280,
-      "round": 3,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy",
-      "source": "bip",
-      "wadium_deadline": null,
-      "viewing_date": null
     }
   ],
   "wykaz": [
+    {
+      "wykaz_no": "ZGM/DS/112/2026",
+      "address_raw": "Ziemowita 6 garaż nr 2",
+      "address": {
+        "street": "Ziemowita",
+        "street_norm": "ziemowita",
+        "building": "6",
+        "apt": "garaz-2",
+        "key": "ziemowita|6|garaz-2",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/113/2026",
+      "address_raw": "Ziemowita 8/9",
+      "address": {
+        "street": "Ziemowita",
+        "street_norm": "ziemowita",
+        "building": "8",
+        "apt": "9",
+        "key": "ziemowita|8|9",
+        "warning": null
+      },
+      "published_date": null
+    },
     {
       "wykaz_no": "ZGM/DS/104/2026",
       "address_raw": "Wielkiej Niedźwiedzicy 11/9",
