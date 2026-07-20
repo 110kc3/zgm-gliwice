@@ -104,6 +104,26 @@
     },
     {
       "kind": "mieszkalny",
+      "address_raw": "Świętojańska 39/3",
+      "address": {
+        "street": "Świętojańska",
+        "street_norm": "swietojanska",
+        "building": "39",
+        "apt": "3",
+        "key": "swietojanska|39|3",
+        "warning": null
+      },
+      "auction_date": "2026-08-17",
+      "area_m2": 47.5,
+      "starting_price_pln": 237600,
+      "detail_url": "https://zgm-gliwice.pl/swietojanska-39-3-04-05-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-25",
+      "round": 3
+    },
+    {
+      "kind": "mieszkalny",
       "address_raw": "Lompy 7/7",
       "address": {
         "street": "Lompy",
@@ -117,6 +137,7 @@
       "area_m2": 155.07,
       "starting_price_pln": 775840,
       "detail_url": "https://zgm-gliwice.pl/lompy-7-7-23-03-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne",
       "wadium_deadline": "2026-09-08",
       "viewing_date": "2026-08-13",
       "round": 2
@@ -142,6 +163,25 @@
       "round": 1
     },
     {
+      "kind": "garaz",
+      "address_raw": "Plebiscytowa-Mielęckiego garaż nr 11",
+      "address": {
+        "street": "Plebiscytowa-Mielęckiego",
+        "street_norm": "plebiscytowa mieleckiego",
+        "building": "0",
+        "apt": "garaz-11",
+        "key": "plebiscytowa mieleckiego|0|garaz-11",
+        "warning": null
+      },
+      "auction_date": "2026-08-17",
+      "area_m2": 28.25,
+      "starting_price_pln": 29900,
+      "detail_url": "https://zgm-gliwice.pl/plebiscytowa-mieleckiego-garaz-11-17-08-2026-r/",
+      "wadium_deadline": "2026-08-11",
+      "viewing_date": "2026-08-04",
+      "round": 1
+    },
+    {
       "kind": "uzytkowy",
       "address_raw": "Zwycięstwa 34/9a",
       "address": {
@@ -160,6 +200,66 @@
       "wadium_deadline": "2026-08-04",
       "viewing_date": "2026-07-29",
       "round": 1
+    },
+    {
+      "kind": "uzytkowy",
+      "address_raw": "Chorzowska 40/12",
+      "address": {
+        "street": "Chorzowska",
+        "street_norm": "chorzowska",
+        "building": "40",
+        "apt": "12",
+        "key": "chorzowska|40|12",
+        "warning": null
+      },
+      "auction_date": "2026-08-17",
+      "area_m2": 49,
+      "starting_price_pln": 117200,
+      "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-24",
+      "round": 2
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "KONSTANTEGO DAMROTA 9/4",
+      "address": {
+        "street": "KONSTANTEGO DAMROTA",
+        "street_norm": "konstantego damrota",
+        "building": "9",
+        "apt": "4",
+        "key": "konstantego damrota|9|4",
+        "warning": null
+      },
+      "auction_date": "2026-08-17",
+      "area_m2": 39.68,
+      "starting_price_pln": 242000,
+      "round": 1,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "PRZYJAŹNI 9/5",
+      "address": {
+        "street": "PRZYJAŹNI",
+        "street_norm": "przyjazni",
+        "building": "9",
+        "apt": "5",
+        "key": "przyjazni|9|5",
+        "warning": null
+      },
+      "auction_date": "2026-09-14",
+      "area_m2": 134.17,
+      "starting_price_pln": 707840,
+      "round": 3,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
     },
     {
       "kind": "mieszkalny",
@@ -203,6 +303,19 @@
     }
   ],
   "wykaz": [
+    {
+      "wykaz_no": "ZGM/DS/97/2026",
+      "address_raw": "Mewy 3/9",
+      "address": {
+        "street": "Mewy",
+        "street_norm": "mewy",
+        "building": "3",
+        "apt": "9",
+        "key": "mewy|3|9",
+        "warning": null
+      },
+      "published_date": null
+    },
     {
       "wykaz_no": "ZGM/DS/112/2026",
       "address_raw": "Ziemowita 6 garaż nr 2",

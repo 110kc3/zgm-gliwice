@@ -43,10 +43,45 @@
           "area_m2": 155.07,
           "detail_url": "https://zgm-gliwice.pl/lompy-7-7-23-03-2026-r/",
           "wadium_deadline": "2026-09-08",
-          "viewing_date": "2026-08-13"
+          "viewing_date": "2026-08-13",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
         }
       ],
       "area_m2": 155.07
+    },
+    {
+      "key": "przyjazni|9|5",
+      "street": "PRZYJAŹNI",
+      "street_norm": "przyjazni",
+      "building": "9",
+      "apt": "5",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-06-22",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 796320,
+          "outcome": "archived",
+          "area_m2": 134.17,
+          "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
+          "wadium_deadline": "2026-06-16",
+          "viewing_date": "2026-05-08"
+        },
+        {
+          "date": "2026-09-14",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 707840,
+          "outcome": "active",
+          "area_m2": 134.17,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        }
+      ],
+      "area_m2": 134.17
     },
     {
       "key": "chodkiewicza|12|11",
@@ -82,6 +117,145 @@
         }
       ],
       "area_m2": 24.34
+    },
+    {
+      "key": "swietojanska|39|3",
+      "street": "Świętojańska",
+      "street_norm": "swietojanska",
+      "building": "39",
+      "apt": "3",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-05-04",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 264000,
+          "outcome": "unsold",
+          "unsold_reason": "unknown",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/04.05.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 47.5
+        },
+        {
+          "date": "2026-07-06",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 264000,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/07/06.07.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 47.5
+        },
+        {
+          "date": "2026-08-17",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 237600,
+          "outcome": "active",
+          "area_m2": 47.5,
+          "detail_url": "https://zgm-gliwice.pl/swietojanska-39-3-04-05-2026-r/",
+          "wadium_deadline": "2026-06-30",
+          "viewing_date": "2026-06-25",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11"
+        }
+      ],
+      "area_m2": 47.5
+    },
+    {
+      "key": "chorzowska|40|12",
+      "street": "Chorzowska",
+      "street_norm": "chorzowska",
+      "building": "40",
+      "apt": "12",
+      "kind": "uzytkowy",
+      "listings": [
+        {
+          "date": "2026-05-04",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 146500,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/04.05.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 49
+        },
+        {
+          "date": "2026-07-06",
+          "round": 2,
+          "kind": "uzytkowy",
+          "starting_price_pln": 131850,
+          "outcome": "archived",
+          "area_m2": 49,
+          "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
+          "wadium_deadline": "2026-06-30",
+          "viewing_date": "2026-06-24",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
+        },
+        {
+          "date": "2026-08-17",
+          "round": 2,
+          "kind": "uzytkowy",
+          "starting_price_pln": 117200,
+          "outcome": "active",
+          "area_m2": 49,
+          "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
+          "wadium_deadline": "2026-06-30",
+          "viewing_date": "2026-06-24",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11"
+        }
+      ],
+      "area_m2": 49
+    },
+    {
+      "key": "konstantego damrota|9|4",
+      "street": "KONSTANTEGO DAMROTA",
+      "street_norm": "konstantego damrota",
+      "building": "9",
+      "apt": "4",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-08-17",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 242000,
+          "outcome": "active",
+          "area_m2": 39.68,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        }
+      ],
+      "area_m2": 39.68
+    },
+    {
+      "key": "plebiscytowa mieleckiego|0|garaz-11",
+      "street": "Plebiscytowa-Mielęckiego",
+      "street_norm": "plebiscytowa mieleckiego",
+      "building": "0",
+      "apt": "garaz-11",
+      "kind": "garaz",
+      "listings": [
+        {
+          "date": "2026-08-17",
+          "round": 1,
+          "kind": "garaz",
+          "starting_price_pln": 29900,
+          "outcome": "active",
+          "area_m2": 28.25,
+          "detail_url": "https://zgm-gliwice.pl/plebiscytowa-mieleckiego-garaz-11-17-08-2026-r/",
+          "wadium_deadline": "2026-08-11",
+          "viewing_date": "2026-08-04"
+        }
+      ],
+      "area_m2": 28.25
     },
     {
       "key": "kozielska|13|garaz-1",
@@ -247,76 +421,6 @@
       "area_m2": 68.14
     },
     {
-      "key": "swietojanska|39|3",
-      "street": "Świętojańska",
-      "street_norm": "swietojanska",
-      "building": "39",
-      "apt": "3",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-05-04",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 264000,
-          "outcome": "unsold",
-          "unsold_reason": "unknown",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/04.05.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 47.5
-        },
-        {
-          "date": "2026-07-06",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 264000,
-          "outcome": "archived",
-          "area_m2": 47.5,
-          "detail_url": "https://zgm-gliwice.pl/swietojanska-39-3-04-05-2026-r/",
-          "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-25",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
-        }
-      ],
-      "area_m2": 47.5
-    },
-    {
-      "key": "chorzowska|40|12",
-      "street": "Chorzowska",
-      "street_norm": "chorzowska",
-      "building": "40",
-      "apt": "12",
-      "kind": "uzytkowy",
-      "listings": [
-        {
-          "date": "2026-05-04",
-          "round": 1,
-          "kind": "uzytkowy",
-          "starting_price_pln": 146500,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/04.05.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 49
-        },
-        {
-          "date": "2026-07-06",
-          "round": 2,
-          "kind": "uzytkowy",
-          "starting_price_pln": 131850,
-          "outcome": "archived",
-          "area_m2": 49,
-          "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
-          "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-24",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
-        }
-      ],
-      "area_m2": 49
-    },
-    {
       "key": "zwyciestwa|11|6C",
       "street": "Zwycięstwa",
       "street_norm": "zwyciestwa",
@@ -385,15 +489,15 @@
         },
         {
           "date": "2026-07-06",
-          "round": 3,
+          "round": 5,
           "kind": "mieszkalny",
           "starting_price_pln": 251440,
-          "outcome": "archived",
-          "area_m2": 45.29,
-          "detail_url": "https://zgm-gliwice.pl/rybitwy-13-17-01-12-2025-r/",
-          "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-26",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 253960,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/07/06.07.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 45.29
         }
       ],
       "area_m2": 45.29
@@ -423,12 +527,12 @@
           "round": 2,
           "kind": "mieszkalny",
           "starting_price_pln": 214080,
-          "outcome": "archived",
-          "area_m2": 51.59,
-          "detail_url": "https://zgm-gliwice.pl/daszynskiego-65-10-30-03-2026-r/",
-          "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-23",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-6072026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-swietojanska-393-ul-rybnicka-2519-ul-rybitwy-1317-lokale-mieszkalne-ul-chorzowska-4012-lokal-uzytkowy"
+          "outcome": "unsold",
+          "unsold_reason": "bidder_noshow",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/07/06.07.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 51.59
         }
       ],
       "area_m2": 51.59
@@ -761,28 +865,6 @@
         }
       ],
       "area_m2": 81.81
-    },
-    {
-      "key": "przyjazni|9|5",
-      "street": "Przyjaźni",
-      "street_norm": "przyjazni",
-      "building": "9",
-      "apt": "5",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-06-22",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 796320,
-          "outcome": "archived",
-          "area_m2": 134.17,
-          "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
-          "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-08"
-        }
-      ],
-      "area_m2": 134.17
     },
     {
       "key": "zawiszy czarnego|6|3",
@@ -5208,6 +5290,23 @@
           "kind": "unknown",
           "outcome": "announced",
           "wykaz_no": "ZGM/DS/113/2026"
+        }
+      ]
+    },
+    {
+      "key": "mewy|3|9",
+      "street": "Mewy",
+      "street_norm": "mewy",
+      "building": "3",
+      "apt": "9",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/97/2026"
         }
       ]
     }
