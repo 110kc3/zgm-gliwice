@@ -164,6 +164,25 @@
     },
     {
       "kind": "garaz",
+      "address_raw": "Górnych Wałów 31A garaż nr 1",
+      "address": {
+        "street": "Górnych Wałów",
+        "street_norm": "gornych walow",
+        "building": "31A",
+        "apt": "garaz-1",
+        "key": "gornych walow|31A|garaz-1",
+        "warning": null
+      },
+      "auction_date": "2026-08-17",
+      "area_m2": 16.56,
+      "starting_price_pln": 38200,
+      "detail_url": "https://zgm-gliwice.pl/gornych-walow-31a-garaz-nr-1-17-08-2026-r/",
+      "wadium_deadline": "2026-08-11",
+      "viewing_date": "2026-08-04",
+      "round": 1
+    },
+    {
+      "kind": "garaz",
       "address_raw": "Plebiscytowa-Mielęckiego garaż nr 11",
       "address": {
         "street": "Plebiscytowa-Mielęckiego",
@@ -220,6 +239,25 @@
       "wadium_deadline": "2026-06-30",
       "viewing_date": "2026-06-24",
       "round": 2
+    },
+    {
+      "kind": "uzytkowy",
+      "address_raw": "Korfantego 17/I",
+      "address": {
+        "street": "Korfantego",
+        "street_norm": "korfantego",
+        "building": "17",
+        "apt": "I",
+        "key": "korfantego|17|I",
+        "warning": null
+      },
+      "auction_date": "2026-08-17",
+      "area_m2": 41.14,
+      "starting_price_pln": 171800,
+      "detail_url": "https://zgm-gliwice.pl/korfantego-17-i-16-10-2023-r/",
+      "wadium_deadline": "2026-08-11",
+      "viewing_date": "2026-08-03",
+      "round": 1
     },
     {
       "kind": "mieszkalny",
@@ -304,6 +342,71 @@
   ],
   "wykaz": [
     {
+      "wykaz_no": "ZGM/DS/153/2026",
+      "address_raw": "Lipcowa 9/21",
+      "address": {
+        "street": "Lipcowa",
+        "street_norm": "lipcowa",
+        "building": "9",
+        "apt": "21",
+        "key": "lipcowa|9|21",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/162/2026",
+      "address_raw": "Paulińska 5/1",
+      "address": {
+        "street": "Paulińska",
+        "street_norm": "paulinska",
+        "building": "5",
+        "apt": "1",
+        "key": "paulinska|5|1",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/161/2026",
+      "address_raw": "Królowej Jadwigi 8/9",
+      "address": {
+        "street": "Królowej Jadwigi",
+        "street_norm": "krolowej jadwigi",
+        "building": "8",
+        "apt": "9",
+        "key": "krolowej jadwigi|8|9",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/142/2026",
+      "address_raw": "Uszczyka 10/11",
+      "address": {
+        "street": "Uszczyka",
+        "street_norm": "uszczyka",
+        "building": "10",
+        "apt": "11",
+        "key": "uszczyka|10|11",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/120/2026",
+      "address_raw": "Strzody 3/8",
+      "address": {
+        "street": "Strzody",
+        "street_norm": "strzody",
+        "building": "3",
+        "apt": "8",
+        "key": "strzody|3|8",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
       "wykaz_no": "ZGM/DS/97/2026",
       "address_raw": "Mewy 3/9",
       "address": {
@@ -338,19 +441,6 @@
         "building": "8",
         "apt": "9",
         "key": "ziemowita|8|9",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/104/2026",
-      "address_raw": "Wielkiej Niedźwiedzicy 11/9",
-      "address": {
-        "street": "Wielkiej Niedźwiedzicy",
-        "street_norm": "wielkiej niedzwiedzicy",
-        "building": "11",
-        "apt": "9",
-        "key": "wielkiej niedzwiedzicy|11|9",
         "warning": null
       },
       "published_date": null

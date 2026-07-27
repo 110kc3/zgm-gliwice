@@ -258,6 +258,28 @@
       "area_m2": 28.25
     },
     {
+      "key": "gornych walow|31A|garaz-1",
+      "street": "Górnych Wałów",
+      "street_norm": "gornych walow",
+      "building": "31A",
+      "apt": "garaz-1",
+      "kind": "garaz",
+      "listings": [
+        {
+          "date": "2026-08-17",
+          "round": 1,
+          "kind": "garaz",
+          "starting_price_pln": 38200,
+          "outcome": "active",
+          "area_m2": 16.56,
+          "detail_url": "https://zgm-gliwice.pl/gornych-walow-31a-garaz-nr-1-17-08-2026-r/",
+          "wadium_deadline": "2026-08-11",
+          "viewing_date": "2026-08-04"
+        }
+      ],
+      "area_m2": 16.56
+    },
+    {
       "key": "kozielska|13|garaz-1",
       "street": "Kozielska",
       "street_norm": "kozielska",
@@ -5150,8 +5172,19 @@
       "street_norm": "korfantego",
       "building": "17",
       "apt": "I",
-      "kind": "unknown",
+      "kind": "uzytkowy",
       "listings": [
+        {
+          "date": "2026-08-17",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 171800,
+          "outcome": "active",
+          "area_m2": 41.14,
+          "detail_url": "https://zgm-gliwice.pl/korfantego-17-i-16-10-2023-r/",
+          "wadium_deadline": "2026-08-11",
+          "viewing_date": "2026-08-03"
+        },
         {
           "date": null,
           "round": null,
@@ -5307,6 +5340,91 @@
           "kind": "unknown",
           "outcome": "announced",
           "wykaz_no": "ZGM/DS/97/2026"
+        }
+      ]
+    },
+    {
+      "key": "paulinska|5|1",
+      "street": "Paulińska",
+      "street_norm": "paulinska",
+      "building": "5",
+      "apt": "1",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/162/2026"
+        }
+      ]
+    },
+    {
+      "key": "krolowej jadwigi|8|9",
+      "street": "Królowej Jadwigi",
+      "street_norm": "krolowej jadwigi",
+      "building": "8",
+      "apt": "9",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/161/2026"
+        }
+      ]
+    },
+    {
+      "key": "uszczyka|10|11",
+      "street": "Uszczyka",
+      "street_norm": "uszczyka",
+      "building": "10",
+      "apt": "11",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/142/2026"
+        }
+      ]
+    },
+    {
+      "key": "strzody|3|8",
+      "street": "Strzody",
+      "street_norm": "strzody",
+      "building": "3",
+      "apt": "8",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/120/2026"
+        }
+      ]
+    },
+    {
+      "key": "lipcowa|9|21",
+      "street": "Lipcowa",
+      "street_norm": "lipcowa",
+      "building": "9",
+      "apt": "21",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/153/2026"
         }
       ]
     }
