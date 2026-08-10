@@ -104,6 +104,26 @@
     },
     {
       "kind": "mieszkalny",
+      "address_raw": "Stalmacha 7/3",
+      "address": {
+        "street": "Stalmacha",
+        "street_norm": "stalmacha",
+        "building": "7",
+        "apt": "3",
+        "key": "stalmacha|7|3",
+        "warning": null
+      },
+      "auction_date": "2026-08-10",
+      "area_m2": 29.07,
+      "starting_price_pln": 167500,
+      "detail_url": "https://zgm-gliwice.pl/stalmacha-7-3-10-08-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
+      "wadium_deadline": "2026-08-04",
+      "viewing_date": "2026-07-30",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
       "address_raw": "Świętojańska 39/3",
       "address": {
         "street": "Świętojańska",
@@ -121,6 +141,126 @@
       "wadium_deadline": "2026-06-30",
       "viewing_date": "2026-06-25",
       "round": 3
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Damrota 9/4",
+      "address": {
+        "street": "Damrota",
+        "street_norm": "damrota",
+        "building": "9",
+        "apt": "4",
+        "key": "damrota|9|4",
+        "warning": null
+      },
+      "auction_date": "2026-08-17",
+      "area_m2": 39.68,
+      "starting_price_pln": 242000,
+      "detail_url": "https://zgm-gliwice.pl/damrota-9-4-17-08-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
+      "wadium_deadline": "2026-08-11",
+      "viewing_date": "2026-08-04",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Daszyńskiego 65/10",
+      "address": {
+        "street": "Daszyńskiego",
+        "street_norm": "daszynskiego",
+        "building": "65",
+        "apt": "10",
+        "key": "daszynskiego|65|10",
+        "warning": null
+      },
+      "auction_date": "2026-09-07",
+      "area_m2": 51.59,
+      "starting_price_pln": 214080,
+      "detail_url": "https://zgm-gliwice.pl/daszynskiego-65-10-07-09-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne",
+      "wadium_deadline": "2026-09-01",
+      "viewing_date": "2026-08-26",
+      "round": 3
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Zwycięstwa 11/6c",
+      "address": {
+        "street": "Zwycięstwa",
+        "street_norm": "zwyciestwa",
+        "building": "11",
+        "apt": "6C",
+        "key": "zwyciestwa|11|6C",
+        "warning": null
+      },
+      "auction_date": "2026-09-07",
+      "area_m2": 71.07,
+      "starting_price_pln": 316400,
+      "detail_url": "https://zgm-gliwice.pl/zwyciestwa-11-6c-30-03-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne",
+      "wadium_deadline": "2026-06-30",
+      "viewing_date": "2026-06-23",
+      "round": 2
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Libelta 10/1",
+      "address": {
+        "street": "Libelta",
+        "street_norm": "libelta",
+        "building": "10",
+        "apt": "1",
+        "key": "libelta|10|1",
+        "warning": null
+      },
+      "auction_date": "2026-09-07",
+      "area_m2": 47.67,
+      "starting_price_pln": 233870,
+      "detail_url": "https://zgm-gliwice.pl/libelta-10-1-30-03-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne",
+      "wadium_deadline": "2026-09-01",
+      "viewing_date": "2026-08-27",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Wielkiej Niedźwiedzicy 11/9",
+      "address": {
+        "street": "Wielkiej Niedźwiedzicy",
+        "street_norm": "wielkiej niedzwiedzicy",
+        "building": "11",
+        "apt": "9",
+        "key": "wielkiej niedzwiedzicy|11|9",
+        "warning": null
+      },
+      "auction_date": "2026-09-07",
+      "area_m2": 62.64,
+      "starting_price_pln": 402200,
+      "detail_url": "https://zgm-gliwice.pl/wielkiej-niedzwiedzicy-11-9-07-09-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne",
+      "wadium_deadline": "2026-09-01",
+      "viewing_date": "2026-08-28",
+      "round": 1
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Przyjaźni 9/5",
+      "address": {
+        "street": "Przyjaźni",
+        "street_norm": "przyjazni",
+        "building": "9",
+        "apt": "5",
+        "key": "przyjazni|9|5",
+        "warning": null
+      },
+      "auction_date": "2026-09-14",
+      "area_m2": 134.17,
+      "starting_price_pln": 707840,
+      "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne",
+      "wadium_deadline": "2026-06-16",
+      "viewing_date": "2026-05-08",
+      "round": 1
     },
     {
       "kind": "mieszkalny",
@@ -258,66 +398,6 @@
       "wadium_deadline": "2026-08-11",
       "viewing_date": "2026-08-03",
       "round": 1
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "KONSTANTEGO DAMROTA 9/4",
-      "address": {
-        "street": "KONSTANTEGO DAMROTA",
-        "street_norm": "konstantego damrota",
-        "building": "9",
-        "apt": "4",
-        "key": "konstantego damrota|9|4",
-        "warning": null
-      },
-      "auction_date": "2026-08-17",
-      "area_m2": 39.68,
-      "starting_price_pln": 242000,
-      "round": 1,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
-      "source": "bip",
-      "wadium_deadline": null,
-      "viewing_date": null
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "PRZYJAŹNI 9/5",
-      "address": {
-        "street": "PRZYJAŹNI",
-        "street_norm": "przyjazni",
-        "building": "9",
-        "apt": "5",
-        "key": "przyjazni|9|5",
-        "warning": null
-      },
-      "auction_date": "2026-09-14",
-      "area_m2": 134.17,
-      "starting_price_pln": 707840,
-      "round": 3,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne",
-      "source": "bip",
-      "wadium_deadline": null,
-      "viewing_date": null
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "PAWŁA STALMACHA 7/3",
-      "address": {
-        "street": "PAWŁA STALMACHA",
-        "street_norm": "pawla stalmacha",
-        "building": "7",
-        "apt": "3",
-        "key": "pawla stalmacha|7|3",
-        "warning": null
-      },
-      "auction_date": "2026-08-10",
-      "area_m2": 29.07,
-      "starting_price_pln": 167500,
-      "round": 1,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-10082026-ul-galczynskiego-111-ul-staszica-131-ul-styczynskiego-1413-ul-zygmunta-starego-294-ul-stalmacha-73-ul-bl-czeslawa-483-lokale-mieszkalne-ul-kozielska-13-garaz-nr-1-ul-zwyciestwa-349a-lokal-uzytkowy",
-      "source": "bip",
-      "wadium_deadline": null,
-      "viewing_date": null
     },
     {
       "kind": "mieszkalny",

@@ -2,16 +2,16 @@
   "schema_version": 1,
   "parser_version": "0.2.0",
   "city": "gliwice",
-  "generated_at": "2026-08-03T10:26:11.478Z",
+  "generated_at": "2026-08-10T05:20:45.463Z",
   "source_pdf_count": 44,
   "parsed_records": 242,
   "parser_note_count": 14,
-  "unique_properties": 189,
-  "active_listings": 17,
-  "active_auctions": 17,
+  "unique_properties": 190,
+  "active_listings": 21,
+  "active_auctions": 23,
   "archived_auctions": 255,
   "wykaz_entries": 8,
   "land_plots": 78,
-  "land_listings": 82,
-  "retained_properties": 9
+  "land_listings": 81,
+  "retained_properties": 8
 }
