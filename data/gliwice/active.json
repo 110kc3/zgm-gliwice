@@ -4,48 +4,6 @@
   "listings": [
     {
       "kind": "mieszkalny",
-      "address_raw": "Świętojańska 39/3",
-      "address": {
-        "street": "Świętojańska",
-        "street_norm": "swietojanska",
-        "building": "39",
-        "apt": "3",
-        "key": "swietojanska|39|3",
-        "warning": null
-      },
-      "auction_date": "2026-08-17",
-      "area_m2": 47.5,
-      "starting_price_pln": 237600,
-      "detail_url": "https://zgm-gliwice.pl/swietojanska-39-3-04-05-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
-      "round": 3,
-      "round_source": "explicit",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-25"
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Damrota 9/4",
-      "address": {
-        "street": "Damrota",
-        "street_norm": "damrota",
-        "building": "9",
-        "apt": "4",
-        "key": "damrota|9|4",
-        "warning": null
-      },
-      "auction_date": "2026-08-17",
-      "area_m2": 39.68,
-      "starting_price_pln": 242000,
-      "detail_url": "https://zgm-gliwice.pl/damrota-9-4-17-08-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
-      "round": 1,
-      "round_source": "explicit",
-      "wadium_deadline": "2026-08-11",
-      "viewing_date": "2026-08-04"
-    },
-    {
-      "kind": "mieszkalny",
       "address_raw": "Daszyńskiego 65/10",
       "address": {
         "street": "Daszyńskiego",
@@ -171,87 +129,6 @@
       "viewing_date": "2026-08-13"
     },
     {
-      "kind": "garaz",
-      "address_raw": "Górnych Wałów 31A garaż nr 1",
-      "address": {
-        "street": "Górnych Wałów",
-        "street_norm": "gornych walow",
-        "building": "31A",
-        "apt": "garaz-1",
-        "key": "gornych walow|31A|garaz-1",
-        "warning": null
-      },
-      "auction_date": "2026-08-17",
-      "area_m2": 16.56,
-      "starting_price_pln": 38200,
-      "detail_url": "https://zgm-gliwice.pl/gornych-walow-31a-garaz-nr-1-17-08-2026-r/",
-      "wadium_deadline": "2026-08-11",
-      "viewing_date": "2026-08-04",
-      "round": 1,
-      "round_source": "inferred"
-    },
-    {
-      "kind": "garaz",
-      "address_raw": "Plebiscytowa-Mielęckiego garaż nr 11",
-      "address": {
-        "street": "Plebiscytowa-Mielęckiego",
-        "street_norm": "plebiscytowa mieleckiego",
-        "building": "0",
-        "apt": "garaz-11",
-        "key": "plebiscytowa mieleckiego|0|garaz-11",
-        "warning": null
-      },
-      "auction_date": "2026-08-17",
-      "area_m2": 28.25,
-      "starting_price_pln": 29900,
-      "detail_url": "https://zgm-gliwice.pl/plebiscytowa-mieleckiego-garaz-11-17-08-2026-r/",
-      "wadium_deadline": "2026-08-11",
-      "viewing_date": "2026-08-04",
-      "round": 1,
-      "round_source": "inferred"
-    },
-    {
-      "kind": "uzytkowy",
-      "address_raw": "Chorzowska 40/12",
-      "address": {
-        "street": "Chorzowska",
-        "street_norm": "chorzowska",
-        "building": "40",
-        "apt": "12",
-        "key": "chorzowska|40|12",
-        "warning": null
-      },
-      "auction_date": "2026-08-17",
-      "area_m2": 49,
-      "starting_price_pln": 117200,
-      "detail_url": "https://zgm-gliwice.pl/chorzowska-40-12-04-05-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-17082026-ul-swietojanska-393-ul-konstantego-damrota-94-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-chorzowska-4012-lokale-uzytkowe-rejon-ul-gornych-walow-31-31agaraz-nr-1-rejon-ulic-mieleckiego-i-plebiscytowejgaraz-nr-11",
-      "round": 3,
-      "round_source": "explicit",
-      "wadium_deadline": "2026-06-30",
-      "viewing_date": "2026-06-24"
-    },
-    {
-      "kind": "uzytkowy",
-      "address_raw": "Korfantego 17/I",
-      "address": {
-        "street": "Korfantego",
-        "street_norm": "korfantego",
-        "building": "17",
-        "apt": "I",
-        "key": "korfantego|17|I",
-        "warning": null
-      },
-      "auction_date": "2026-08-17",
-      "area_m2": 41.14,
-      "starting_price_pln": 171800,
-      "detail_url": "https://zgm-gliwice.pl/korfantego-17-i-16-10-2023-r/",
-      "wadium_deadline": "2026-08-11",
-      "viewing_date": "2026-08-03",
-      "round": 1,
-      "round_source": "inferred"
-    },
-    {
       "kind": "mieszkalny",
       "address_raw": "Chodkiewicza 12/11",
       "address": {
@@ -274,6 +151,19 @@
     }
   ],
   "wykaz": [
+    {
+      "wykaz_no": "ZGM/DS/181/2026",
+      "address_raw": "Królowej Jadwigi 14/18",
+      "address": {
+        "street": "Królowej Jadwigi",
+        "street_norm": "krolowej jadwigi",
+        "building": "14",
+        "apt": "18",
+        "key": "krolowej jadwigi|14|18",
+        "warning": null
+      },
+      "published_date": null
+    },
     {
       "wykaz_no": "ZGM/DS/126/2026",
       "address_raw": "Derkacza 2/8",
@@ -353,19 +243,6 @@
       "published_date": null
     },
     {
-      "wykaz_no": "ZGM/DS/97/2026",
-      "address_raw": "Mewy 3/9",
-      "address": {
-        "street": "Mewy",
-        "street_norm": "mewy",
-        "building": "3",
-        "apt": "9",
-        "key": "mewy|3|9",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
       "wykaz_no": "ZGM/DS/112/2026",
       "address_raw": "Ziemowita 6 garaż nr 2",
       "address": {
@@ -374,19 +251,6 @@
         "building": "6",
         "apt": "garaz-2",
         "key": "ziemowita|6|garaz-2",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/113/2026",
-      "address_raw": "Ziemowita 8/9",
-      "address": {
-        "street": "Ziemowita",
-        "street_norm": "ziemowita",
-        "building": "8",
-        "apt": "9",
-        "key": "ziemowita|8|9",
         "warning": null
       },
       "published_date": null
