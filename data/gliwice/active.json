@@ -127,30 +127,22 @@
       "round_source": "explicit",
       "wadium_deadline": "2026-09-08",
       "viewing_date": "2026-08-13"
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Chodkiewicza 12/11",
-      "address": {
-        "street": "Chodkiewicza",
-        "street_norm": "chodkiewicza",
-        "building": "12",
-        "apt": "11",
-        "key": "chodkiewicza|12|11",
-        "warning": null
-      },
-      "auction_date": "2026-08-24",
-      "area_m2": 24.34,
-      "starting_price_pln": 180557,
-      "round": 2,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-lokal-mieszkalny-przy-ul-chodkiewicza-1211-wlasnosc-skarbu-panstwa",
-      "source": "bip",
-      "owner_type": "state_treasury",
-      "wadium_deadline": null,
-      "viewing_date": null
     }
   ],
   "wykaz": [
+    {
+      "wykaz_no": "ZGM/DS/197/2026",
+      "address_raw": "Wyszyńskiego 14D/V",
+      "address": {
+        "street": "Wyszyńskiego",
+        "street_norm": "wyszynskiego",
+        "building": "14D",
+        "apt": "V",
+        "key": "wyszynskiego|14D|V",
+        "warning": null
+      },
+      "published_date": null
+    },
     {
       "wykaz_no": "ZGM/DS/181/2026",
       "address_raw": "Królowej Jadwigi 14/18",
