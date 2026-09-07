@@ -6042,6 +6042,23 @@
           "wykaz_no": "ZGM/DS/197/2026"
         }
       ]
+    },
+    {
+      "key": "rozy luksemburg|15|4",
+      "street": "Róży Luksemburg",
+      "street_norm": "rozy luksemburg",
+      "building": "15",
+      "apt": "4",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/182/2026"
+        }
+      ]
     }
   ]
 }

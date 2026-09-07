@@ -131,6 +131,19 @@
   ],
   "wykaz": [
     {
+      "wykaz_no": "ZGM/DS/182/2026",
+      "address_raw": "Róży Luksemburg 15/4",
+      "address": {
+        "street": "Róży Luksemburg",
+        "street_norm": "rozy luksemburg",
+        "building": "15",
+        "apt": "4",
+        "key": "rozy luksemburg|15|4",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
       "wykaz_no": "ZGM/DS/197/2026",
       "address_raw": "Wyszyńskiego 14D/V",
       "address": {
@@ -165,84 +178,6 @@
         "building": "2",
         "apt": "8",
         "key": "derkacza|2|8",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/153/2026",
-      "address_raw": "Lipcowa 9/21",
-      "address": {
-        "street": "Lipcowa",
-        "street_norm": "lipcowa",
-        "building": "9",
-        "apt": "21",
-        "key": "lipcowa|9|21",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/162/2026",
-      "address_raw": "Paulińska 5/1",
-      "address": {
-        "street": "Paulińska",
-        "street_norm": "paulinska",
-        "building": "5",
-        "apt": "1",
-        "key": "paulinska|5|1",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/161/2026",
-      "address_raw": "Królowej Jadwigi 8/9",
-      "address": {
-        "street": "Królowej Jadwigi",
-        "street_norm": "krolowej jadwigi",
-        "building": "8",
-        "apt": "9",
-        "key": "krolowej jadwigi|8|9",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/142/2026",
-      "address_raw": "Uszczyka 10/11",
-      "address": {
-        "street": "Uszczyka",
-        "street_norm": "uszczyka",
-        "building": "10",
-        "apt": "11",
-        "key": "uszczyka|10|11",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/120/2026",
-      "address_raw": "Strzody 3/8",
-      "address": {
-        "street": "Strzody",
-        "street_norm": "strzody",
-        "building": "3",
-        "apt": "8",
-        "key": "strzody|3|8",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/112/2026",
-      "address_raw": "Ziemowita 6 garaż nr 2",
-      "address": {
-        "street": "Ziemowita",
-        "street_norm": "ziemowita",
-        "building": "6",
-        "apt": "garaz-2",
-        "key": "ziemowita|6|garaz-2",
         "warning": null
       },
       "published_date": null
