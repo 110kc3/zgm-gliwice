@@ -3,54 +3,26 @@
   "city": "gliwice",
   "properties": [
     {
-      "key": "lompy|7|7",
-      "street": "Lompy",
-      "street_norm": "lompy",
-      "building": "7",
-      "apt": "7",
-      "kind": "mieszkalny",
+      "key": "prymasa stefana wyszynskiego|14D|V",
+      "street": "Prymasa Stefana Wyszyńskiego",
+      "street_norm": "prymasa stefana wyszynskiego",
+      "building": "14D",
+      "apt": "V",
+      "kind": "uzytkowy",
       "listings": [
         {
-          "date": "2026-03-23",
+          "date": "2026-12-14",
           "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 969800,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/23.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 155.07,
-          "round_source": "inferred"
-        },
-        {
-          "date": "2026-06-22",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 872820,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/06/22.06.2026-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 155.07,
-          "round_source": "inferred"
-        },
-        {
-          "date": "2026-09-14",
-          "round": 3,
-          "round_source": "explicit",
-          "kind": "mieszkalny",
-          "starting_price_pln": 775840,
+          "kind": "uzytkowy",
+          "starting_price_pln": 4258300,
           "outcome": "active",
-          "area_m2": 155.07,
-          "detail_url": "https://zgm-gliwice.pl/lompy-7-7-23-03-2026-r/",
-          "wadium_deadline": "2026-09-08",
-          "viewing_date": "2026-08-13",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
+          "area_m2": null,
+          "detail_url": "https://zgm-gliwice.pl/prymasa-stefana-wyszynskiego-14d-v-14-12-2026-r/",
+          "wadium_deadline": "2026-12-08",
+          "viewing_date": "2026-10-27",
+          "round_source": "inferred"
         }
-      ],
-      "area_m2": 155.07
+      ]
     },
     {
       "key": "przyjazni|9|5",
@@ -92,12 +64,25 @@
           "round_source": "explicit",
           "kind": "mieszkalny",
           "starting_price_pln": 707840,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 134.17,
           "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
           "wadium_deadline": "2026-06-16",
           "viewing_date": "2026-05-08",
           "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
+        },
+        {
+          "date": "2026-12-07",
+          "round": 4,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 619360,
+          "outcome": "active",
+          "area_m2": 134.17,
+          "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
+          "wadium_deadline": "2026-06-16",
+          "viewing_date": "2026-05-08",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-al-przyjazni-95-lokal-mieszkalny"
         }
       ],
       "area_m2": 134.17
@@ -153,18 +138,298 @@
         {
           "date": "2026-09-07",
           "round": 4,
-          "round_source": "explicit",
           "kind": "mieszkalny",
           "starting_price_pln": 316400,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/09/07.09.2026-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 71.07,
+          "round_source": "inferred",
+          "detail_url": "https://zgm-gliwice.pl/zwyciestwa-11-6c-30-03-2026-r/",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne"
+        },
+        {
+          "date": "2026-11-09",
+          "round": 5,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 271200,
           "outcome": "active",
           "area_m2": 71.07,
-          "detail_url": "https://zgm-gliwice.pl/zwyciestwa-11-6c-30-03-2026-r/",
-          "wadium_deadline": "2026-06-30",
-          "viewing_date": "2026-06-23",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne"
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
         }
       ],
       "area_m2": 71.07
+    },
+    {
+      "key": "kozielska|13|garaz-1",
+      "street": "Kozielska",
+      "street_norm": "kozielska",
+      "building": "13",
+      "apt": "garaz-1",
+      "kind": "garaz",
+      "listings": [
+        {
+          "date": "2026-06-29",
+          "round": 1,
+          "kind": "garaz",
+          "starting_price_pln": 44820,
+          "outcome": "archived",
+          "area_m2": 16.92,
+          "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
+          "wadium_deadline": "2026-06-23",
+          "viewing_date": "2026-06-16",
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-08-10",
+          "round": 2,
+          "kind": "garaz",
+          "starting_price_pln": 39840,
+          "outcome": "archived",
+          "area_m2": 16.92,
+          "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
+          "wadium_deadline": "2026-06-23",
+          "viewing_date": "2026-06-16",
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-10-19",
+          "round": 4,
+          "round_source": "explicit",
+          "kind": "garaz",
+          "starting_price_pln": 34860,
+          "outcome": "active",
+          "area_m2": 16.92,
+          "detail_url": "https://zgm-gliwice.pl/kozielska-13-g-1-19-10-2026-r/",
+          "wadium_deadline": "2026-10-13",
+          "viewing_date": "2026-10-05",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-19102026-ul-ks-marcina-strzody-38-ul-zygmunta-starego-294-ul-mewy-39-lokale-mieszkalne-ul-paulinska-51-ul-krolowej-jadwigi-89-al-wojciecha-korfantego-17i-lokale-uzytkowe-ul-kozielska-13-garaz-nr-1"
+        }
+      ],
+      "area_m2": 16.92
+    },
+    {
+      "key": "zygmunta starego|29|4",
+      "street": "Zygmunta Starego",
+      "street_norm": "zygmunta starego",
+      "building": "29",
+      "apt": "4",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-03-23",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 512700,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/23.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 86.79,
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-06-22",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 461430,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/06/22.06.2026-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 86.79,
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-08-10",
+          "round": 3,
+          "kind": "mieszkalny",
+          "starting_price_pln": 410160,
+          "outcome": "archived",
+          "area_m2": 86.79,
+          "detail_url": "https://zgm-gliwice.pl/zygmunta-starego-29-4-23-03-2026-r/",
+          "wadium_deadline": "2026-06-16",
+          "viewing_date": "2026-05-06",
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-10-19",
+          "round": 4,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 358890,
+          "outcome": "active",
+          "area_m2": 86.79,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-19102026-ul-ks-marcina-strzody-38-ul-zygmunta-starego-294-ul-mewy-39-lokale-mieszkalne-ul-paulinska-51-ul-krolowej-jadwigi-89-al-wojciecha-korfantego-17i-lokale-uzytkowe-ul-kozielska-13-garaz-nr-1",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        }
+      ],
+      "area_m2": 86.79
+    },
+    {
+      "key": "z starego|29|4",
+      "street": "Z. Starego",
+      "street_norm": "z starego",
+      "building": "29",
+      "apt": "4",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-08-10",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 410160,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/08/10.08.26-Wyniki.pdf",
+          "notes": [],
+          "area_m2": 86.79,
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-10-19",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 358890,
+          "outcome": "active",
+          "area_m2": 86.79,
+          "detail_url": "https://zgm-gliwice.pl/z-starego-29-4-19-10-2026-r/",
+          "wadium_deadline": "2026-10-13",
+          "viewing_date": "2026-10-07",
+          "round_source": "inferred"
+        }
+      ],
+      "area_m2": 86.79
+    },
+    {
+      "key": "ks m strzody|3|8",
+      "street": "Ks. M. Strzody",
+      "street_norm": "ks m strzody",
+      "building": "3",
+      "apt": "8",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-10-19",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 348100,
+          "outcome": "active",
+          "area_m2": 56.61,
+          "detail_url": "https://zgm-gliwice.pl/ks-marcina-strzody-3-8-19-10-2026-r/",
+          "wadium_deadline": "2026-10-13",
+          "viewing_date": "2026-10-06",
+          "round_source": "inferred"
+        }
+      ],
+      "area_m2": 56.61
+    },
+    {
+      "key": "kr jadwigi|8|9",
+      "street": "Kr. Jadwigi",
+      "street_norm": "kr jadwigi",
+      "building": "8",
+      "apt": "9",
+      "kind": "uzytkowy",
+      "listings": [
+        {
+          "date": "2026-10-19",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 56500,
+          "outcome": "active",
+          "area_m2": 15.65,
+          "detail_url": "https://zgm-gliwice.pl/krolowej-jadwigi-8-9-19-10-2026-r/",
+          "wadium_deadline": "2026-10-13",
+          "viewing_date": "2026-10-08",
+          "round_source": "inferred"
+        }
+      ],
+      "area_m2": 15.65
+    },
+    {
+      "key": "al w korfantego|17|I",
+      "street": "Al.W.Korfantego",
+      "street_norm": "al w korfantego",
+      "building": "17",
+      "apt": "I",
+      "kind": "uzytkowy",
+      "listings": [
+        {
+          "date": "2026-10-19",
+          "round": 1,
+          "kind": "uzytkowy",
+          "starting_price_pln": 154620,
+          "outcome": "active",
+          "area_m2": 41.14,
+          "detail_url": "https://zgm-gliwice.pl/al-w-korfantego-17-i-19-10-2026-r/",
+          "wadium_deadline": "2026-10-13",
+          "viewing_date": "2026-10-05",
+          "round_source": "inferred"
+        }
+      ],
+      "area_m2": 41.14
+    },
+    {
+      "key": "lompy|7|7",
+      "street": "Lompy",
+      "street_norm": "lompy",
+      "building": "7",
+      "apt": "7",
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-03-23",
+          "round": 1,
+          "kind": "mieszkalny",
+          "starting_price_pln": 969800,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/23.03.2026-r.-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 155.07,
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-06-22",
+          "round": 2,
+          "kind": "mieszkalny",
+          "starting_price_pln": 872820,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/06/22.06.2026-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 155.07,
+          "round_source": "inferred"
+        },
+        {
+          "date": "2026-09-14",
+          "round": 3,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 775840,
+          "outcome": "archived",
+          "area_m2": 155.07,
+          "detail_url": "https://zgm-gliwice.pl/lompy-7-7-23-03-2026-r/",
+          "wadium_deadline": "2026-09-08",
+          "viewing_date": "2026-08-13",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-14092026-ul-lompy-77-al-przyjazni-95-lokale-mieszkalne"
+        }
+      ],
+      "area_m2": 155.07
     },
     {
       "key": "daszynskiego|65|10",
@@ -197,8 +462,8 @@
           "final_price_pln": null,
           "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/05/11.05.2026-r.-wyniki-przetargow.pdf",
           "notes": [],
-          "area_m2": 51.59,
-          "round_source": "inferred"
+          "round_source": "inferred",
+          "area_m2": 51.59
         },
         {
           "date": "2026-07-06",
@@ -210,8 +475,8 @@
           "final_price_pln": null,
           "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/07/06.07.2026-r.-wyniki-przetargow.pdf",
           "notes": [],
-          "area_m2": 51.59,
-          "round_source": "inferred"
+          "round_source": "inferred",
+          "area_m2": 51.59
         },
         {
           "date": "2026-09-07",
@@ -219,7 +484,7 @@
           "round_source": "explicit",
           "kind": "mieszkalny",
           "starting_price_pln": 214080,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 51.59,
           "detail_url": "https://zgm-gliwice.pl/daszynskiego-65-10-07-09-2026-r/",
           "wadium_deadline": "2026-09-01",
@@ -283,7 +548,7 @@
           "round_source": "explicit",
           "kind": "mieszkalny",
           "starting_price_pln": 233870,
-          "outcome": "active",
+          "outcome": "archived",
           "area_m2": 47.67,
           "detail_url": "https://zgm-gliwice.pl/libelta-10-1-30-03-2026-r/",
           "wadium_deadline": "2026-09-01",
@@ -292,6 +557,50 @@
         }
       ],
       "area_m2": 47.67
+    },
+    {
+      "key": "ignacego daszynskiego|65|",
+      "street": "Ignacego Daszyńskiego",
+      "street_norm": "ignacego daszynskiego",
+      "building": "65",
+      "apt": null,
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-09-07",
+          "round": 4,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 214080,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 216230,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/09/07.09.2026-wyniki-przetargow.pdf",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "key": "karola libelta|10|",
+      "street": "Karola Libelta",
+      "street_norm": "karola libelta",
+      "building": "10",
+      "apt": null,
+      "kind": "mieszkalny",
+      "listings": [
+        {
+          "date": "2026-09-07",
+          "round": 4,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 233870,
+          "outcome": "sold",
+          "unsold_reason": null,
+          "final_price_pln": 236210,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/09/07.09.2026-wyniki-przetargow.pdf",
+          "notes": []
+        }
+      ]
     },
     {
       "key": "chodkiewicza|12|11",
@@ -505,90 +814,6 @@
       "area_m2": 41.14
     },
     {
-      "key": "kozielska|13|garaz-1",
-      "street": "Kozielska",
-      "street_norm": "kozielska",
-      "building": "13",
-      "apt": "garaz-1",
-      "kind": "garaz",
-      "listings": [
-        {
-          "date": "2026-06-29",
-          "round": 1,
-          "kind": "garaz",
-          "starting_price_pln": 44820,
-          "outcome": "archived",
-          "area_m2": 16.92,
-          "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
-          "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-16",
-          "round_source": "inferred"
-        },
-        {
-          "date": "2026-08-10",
-          "round": 2,
-          "kind": "garaz",
-          "starting_price_pln": 39840,
-          "outcome": "archived",
-          "area_m2": 16.92,
-          "detail_url": "https://zgm-gliwice.pl/kozielska-13-garaz-nr-1-20-04-2026-r/",
-          "wadium_deadline": "2026-06-23",
-          "viewing_date": "2026-06-16",
-          "round_source": "inferred"
-        }
-      ],
-      "area_m2": 16.92
-    },
-    {
-      "key": "zygmunta starego|29|4",
-      "street": "Zygmunta Starego",
-      "street_norm": "zygmunta starego",
-      "building": "29",
-      "apt": "4",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-03-23",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 512700,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/04/23.03.2026-r.-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 86.79,
-          "round_source": "inferred"
-        },
-        {
-          "date": "2026-06-22",
-          "round": 2,
-          "kind": "mieszkalny",
-          "starting_price_pln": 461430,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/06/22.06.2026-wyniki-przetargow.pdf",
-          "notes": [],
-          "area_m2": 86.79,
-          "round_source": "inferred"
-        },
-        {
-          "date": "2026-08-10",
-          "round": 3,
-          "kind": "mieszkalny",
-          "starting_price_pln": 410160,
-          "outcome": "archived",
-          "area_m2": 86.79,
-          "detail_url": "https://zgm-gliwice.pl/zygmunta-starego-29-4-23-03-2026-r/",
-          "wadium_deadline": "2026-06-16",
-          "viewing_date": "2026-05-06",
-          "round_source": "inferred"
-        }
-      ],
-      "area_m2": 86.79
-    },
-    {
       "key": "kozielska|13|",
       "street": "Kozielska",
       "street_norm": "kozielska",
@@ -732,9 +957,11 @@
           "final_price_pln": null,
           "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/08/10.08.26-Wyniki.pdf",
           "notes": [],
+          "area_m2": 52.1,
           "round_source": "inferred"
         }
-      ]
+      ],
+      "area_m2": 52.1
     },
     {
       "key": "w styczynskiego|14|13",
@@ -754,31 +981,11 @@
           "final_price_pln": null,
           "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/08/10.08.26-Wyniki.pdf",
           "notes": [],
+          "area_m2": 36.73,
           "round_source": "inferred"
         }
-      ]
-    },
-    {
-      "key": "z starego|29|4",
-      "street": "Z. Starego",
-      "street_norm": "z starego",
-      "building": "29",
-      "apt": "4",
-      "kind": "mieszkalny",
-      "listings": [
-        {
-          "date": "2026-08-10",
-          "round": 1,
-          "kind": "mieszkalny",
-          "starting_price_pln": 410160,
-          "outcome": "unsold",
-          "unsold_reason": "no_deposits",
-          "final_price_pln": null,
-          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/08/10.08.26-Wyniki.pdf",
-          "notes": [],
-          "round_source": "inferred"
-        }
-      ]
+      ],
+      "area_m2": 36.73
     },
     {
       "key": "rybnicka|25|19",
@@ -5779,8 +5986,8 @@
           "final_price_pln": null,
           "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/08/10.08.26-Wyniki.pdf",
           "notes": [],
-          "round_source": "inferred",
-          "area_m2": 18.06
+          "area_m2": 18.06,
+          "round_source": "inferred"
         },
         {
           "date": null,
@@ -5835,15 +6042,30 @@
         {
           "date": "2026-09-07",
           "round": 1,
-          "round_source": "explicit",
           "kind": "mieszkalny",
           "starting_price_pln": 402200,
+          "outcome": "unsold",
+          "unsold_reason": "no_deposits",
+          "final_price_pln": null,
+          "source_pdf": "https://zgm-gliwice.pl/wp-content/uploads/2026/09/07.09.2026-wyniki-przetargow.pdf",
+          "notes": [],
+          "area_m2": 62.64,
+          "round_source": "inferred",
+          "detail_url": "https://zgm-gliwice.pl/wielkiej-niedzwiedzicy-11-9-07-09-2026-r/",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne"
+        },
+        {
+          "date": "2026-11-09",
+          "round": 2,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 361980,
           "outcome": "active",
           "area_m2": 62.64,
-          "detail_url": "https://zgm-gliwice.pl/wielkiej-niedzwiedzicy-11-9-07-09-2026-r/",
-          "wadium_deadline": "2026-09-01",
-          "viewing_date": "2026-08-28",
-          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7092026-ul-ignacego-daszynskiego-6510-ul-zwyciestwa-116c-ul-karola-libelta-101-ul-wielkiej-niedzwiedzicy-119-lokale-mieszkalne"
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
         },
         {
           "date": null,
@@ -5896,16 +6118,31 @@
       "street_norm": "mewy",
       "building": "3",
       "apt": "9",
-      "kind": "unknown",
+      "kind": "mieszkalny",
       "listings": [
+        {
+          "date": "2026-10-19",
+          "round": 1,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 204700,
+          "outcome": "active",
+          "area_m2": 28,
+          "detail_url": "https://zgm-gliwice.pl/mewy-3-9-19-10-2026-r/",
+          "wadium_deadline": "2026-10-13",
+          "viewing_date": "2026-10-07",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-19102026-ul-ks-marcina-strzody-38-ul-zygmunta-starego-294-ul-mewy-39-lokale-mieszkalne-ul-paulinska-51-ul-krolowej-jadwigi-89-al-wojciecha-korfantego-17i-lokale-uzytkowe-ul-kozielska-13-garaz-nr-1"
+        },
         {
           "date": null,
           "round": null,
           "kind": "unknown",
           "outcome": "announced",
-          "wykaz_no": "ZGM/DS/97/2026"
+          "wykaz_no": "ZGM/DS/97/2026",
+          "area_m2": 28
         }
-      ]
+      ],
+      "area_m2": 28
     },
     {
       "key": "paulinska|5|1",
@@ -5913,16 +6150,31 @@
       "street_norm": "paulinska",
       "building": "5",
       "apt": "1",
-      "kind": "unknown",
+      "kind": "uzytkowy",
       "listings": [
+        {
+          "date": "2026-10-19",
+          "round": 1,
+          "round_source": "explicit",
+          "kind": "uzytkowy",
+          "starting_price_pln": 57800,
+          "outcome": "active",
+          "area_m2": 15.62,
+          "detail_url": "https://zgm-gliwice.pl/paulinska-5-1-19-10-2026-r/",
+          "wadium_deadline": "2026-10-13",
+          "viewing_date": "2026-10-08",
+          "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-19102026-ul-ks-marcina-strzody-38-ul-zygmunta-starego-294-ul-mewy-39-lokale-mieszkalne-ul-paulinska-51-ul-krolowej-jadwigi-89-al-wojciecha-korfantego-17i-lokale-uzytkowe-ul-kozielska-13-garaz-nr-1"
+        },
         {
           "date": null,
           "round": null,
           "kind": "unknown",
           "outcome": "announced",
-          "wykaz_no": "ZGM/DS/162/2026"
+          "wykaz_no": "ZGM/DS/162/2026",
+          "area_m2": 15.62
         }
-      ]
+      ],
+      "area_m2": 15.62
     },
     {
       "key": "krolowej jadwigi|8|9",
@@ -5930,16 +6182,31 @@
       "street_norm": "krolowej jadwigi",
       "building": "8",
       "apt": "9",
-      "kind": "unknown",
+      "kind": "uzytkowy",
       "listings": [
+        {
+          "date": "2026-10-19",
+          "round": 1,
+          "round_source": "explicit",
+          "kind": "uzytkowy",
+          "starting_price_pln": 56500,
+          "outcome": "active",
+          "area_m2": 15.65,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-19102026-ul-ks-marcina-strzody-38-ul-zygmunta-starego-294-ul-mewy-39-lokale-mieszkalne-ul-paulinska-51-ul-krolowej-jadwigi-89-al-wojciecha-korfantego-17i-lokale-uzytkowe-ul-kozielska-13-garaz-nr-1",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        },
         {
           "date": null,
           "round": null,
           "kind": "unknown",
           "outcome": "announced",
-          "wykaz_no": "ZGM/DS/161/2026"
+          "wykaz_no": "ZGM/DS/161/2026",
+          "area_m2": 15.65
         }
-      ]
+      ],
+      "area_m2": 15.65
     },
     {
       "key": "uszczyka|10|11",
@@ -5981,16 +6248,31 @@
       "street_norm": "lipcowa",
       "building": "9",
       "apt": "21",
-      "kind": "unknown",
+      "kind": "mieszkalny",
       "listings": [
+        {
+          "date": "2026-11-09",
+          "round": 1,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 212700,
+          "outcome": "active",
+          "area_m2": 36.09,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        },
         {
           "date": null,
           "round": null,
           "kind": "unknown",
           "outcome": "announced",
-          "wykaz_no": "ZGM/DS/153/2026"
+          "wykaz_no": "ZGM/DS/153/2026",
+          "area_m2": 36.09
         }
-      ]
+      ],
+      "area_m2": 36.09
     },
     {
       "key": "derkacza|2|8",
@@ -5998,16 +6280,31 @@
       "street_norm": "derkacza",
       "building": "2",
       "apt": "8",
-      "kind": "unknown",
+      "kind": "mieszkalny",
       "listings": [
+        {
+          "date": "2026-11-09",
+          "round": 1,
+          "round_source": "explicit",
+          "kind": "mieszkalny",
+          "starting_price_pln": 239100,
+          "outcome": "active",
+          "area_m2": 36.87,
+          "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
+          "wadium_deadline": null,
+          "viewing_date": null,
+          "source": "bip"
+        },
         {
           "date": null,
           "round": null,
           "kind": "unknown",
           "outcome": "announced",
-          "wykaz_no": "ZGM/DS/126/2026"
+          "wykaz_no": "ZGM/DS/126/2026",
+          "area_m2": 36.87
         }
-      ]
+      ],
+      "area_m2": 36.87
     },
     {
       "key": "krolowej jadwigi|14|18",
@@ -6057,6 +6354,125 @@
           "kind": "unknown",
           "outcome": "announced",
           "wykaz_no": "ZGM/DS/182/2026"
+        }
+      ]
+    },
+    {
+      "key": "witkiewicza|32|7",
+      "street": "Witkiewicza",
+      "street_norm": "witkiewicza",
+      "building": "32",
+      "apt": "7",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/101/2026"
+        }
+      ]
+    },
+    {
+      "key": "strzody|6A|11",
+      "street": "Strzody",
+      "street_norm": "strzody",
+      "building": "6A",
+      "apt": "11",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/199/2026"
+        }
+      ]
+    },
+    {
+      "key": "zwyciestwa|3|IV",
+      "street": "Zwycięstwa",
+      "street_norm": "zwyciestwa",
+      "building": "3",
+      "apt": "IV",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/221/2026"
+        }
+      ]
+    },
+    {
+      "key": "krakusa|20|8",
+      "street": "Krakusa",
+      "street_norm": "krakusa",
+      "building": "20",
+      "apt": "8",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/166/2026"
+        }
+      ]
+    },
+    {
+      "key": "zawiszy czarnego|4|3",
+      "street": "Zawiszy Czarnego",
+      "street_norm": "zawiszy czarnego",
+      "building": "4",
+      "apt": "3",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/222/2026"
+        }
+      ]
+    },
+    {
+      "key": "mikolowska|20|14",
+      "street": "Mikołowska",
+      "street_norm": "mikolowska",
+      "building": "20",
+      "apt": "14",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/186/2026"
+        }
+      ]
+    },
+    {
+      "key": "mikolowska|20|2",
+      "street": "Mikołowska",
+      "street_norm": "mikolowska",
+      "building": "20",
+      "apt": "2",
+      "kind": "unknown",
+      "listings": [
+        {
+          "date": null,
+          "round": null,
+          "kind": "unknown",
+          "outcome": "announced",
+          "wykaz_no": "ZGM/DS/188/2026"
         }
       ]
     }
