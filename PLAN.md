@@ -275,9 +275,9 @@ So to answer directly: yes, the whole "fetch newest results, convert them, push"
 
 ## What I'd suggest as next steps (when you say go)
 
-1. ✅ **OCR spike** — done; local tesseract is good enough. See [SPIKE.md](computer://C:\Users\K\repos\zgm-gliwice/SPIKE.md).
-2. **Build the pipeline** (~half a day): crawler → OCR cache → regex parser → `data/properties.json`. The parser is the only fiddly part; everything else is glue.
-3. **Set up the GitHub repo** and a minimal Actions workflow that runs the pipeline weekly and commits any deltas. Confirm a `raw.githubusercontent.com` fetch returns the JSON with permissive CORS.
-4. **Build the Chrome extension** (MV3): manifest, background fetch+cache of the JSON, content script that injects the badge on listing pages and the history panel on property pages, a popup with the "most-relisted active listings" view.
-5. **Validate end-to-end** against current active listings — sanity-check that at least a couple of the active properties actually do show up in the history (otherwise something in the address normalization is off).
+1. ✅ **OCR spike** — done; local tesseract is good enough. See [SPIKE.md](./SPIKE.md).
+2. ✅ **Build the pipeline** — done; canonical pipeline moved to [`110kc3/przetargimiejskie`](https://github.com/110kc3/przetargimiejskie) and mirrored via `scripts/sync-from-przetargimiejskie.mjs` into `data/gliwice/`.
+3. ✅ **Set up the GitHub repo and Actions workflow** — done; `.github/workflows/refresh.yml` runs weekly at 07:00 UTC Mondays and commits any deltas.
+4. ✅ **Build the Chrome extension (MV3)** — done; full extension in `extension/` with content script badges, history tooltips, popup, archive view, and dark/light themes.
+5. ✅ **Validate end-to-end** — done; verified data schema, address normalization, and slug parsing in `test/normalize.test.mjs` (11 unit tests pass).
 6. *(Optional)* extension badge polish: color-coding, price-delta indicator, sparkline.

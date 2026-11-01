@@ -81,10 +81,11 @@ What it does:
 
 See [PRIVACY.md](./PRIVACY.md). The short version: nothing leaves your computer. The extension fetches three public JSON files from GitHub and reads pages you're already viewing on `zgm-gliwice.pl` — that's the entire network footprint. No analytics, no tracking, no third-party services. For Chrome Web Store submission, link to the GitHub-hosted raw URL: `https://github.com/110kc3/zgm-gliwice/blob/main/PRIVACY.md`.
 
-### Roadmap
+### Testing & Roadmap
 
-- Icons (manifest currently has no `icons` entry — Chrome will fall back to a default).
-- Optional CI step: validate the extension's address parser against current `data/` as part of `.github/workflows/refresh.yml`.
+- **Testing:** Unit tests run via Node's built-in test runner (`node --test test/normalize.test.mjs`), validating address parsing, diacritics stripping, slug extraction, manifest MV3 schema, and data contract integrity.
+- **Icons:** Configured in `extension/manifest.json` across 16px, 32px, 48px, and 128px assets.
+- **CI step:** Validates address parsing and data integrity on push to `main` and during weekly sync in `.github/workflows/refresh.yml`.
 
 ## Current coverage (data quality notes)
 

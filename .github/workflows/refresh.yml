@@ -6,6 +6,8 @@ name: Sync auction data
 # into data/gliwice/ so the extension keeps serving it from this repo.
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '0 7 * * 1'      # Mondays 07:00 UTC — an hour after upstream refreshes.
   workflow_dispatch: {}      # adds a "Run workflow" button in the Actions UI
@@ -28,8 +30,14 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Run unit tests
+        run: node --test test/normalize.test.mjs
+
       - name: Sync Gliwice data from przetargimiejskie
         run: node scripts/sync-from-przetargimiejskie.mjs
+
+      - name: Re-run unit tests against updated data
+        run: node --test test/normalize.test.mjs
 
       - name: Commit and push if data changed
         run: |
