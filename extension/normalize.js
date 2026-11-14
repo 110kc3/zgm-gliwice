@@ -1,5 +1,3 @@
-// Exposes a single global: window.ZGM_NORMALIZE.parseAddress(raw).
-
 (function () {
   const POLISH_LOWER = (s) =>
     s

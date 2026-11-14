@@ -17,4 +17,6 @@ node --test test/normalize.test.mjs
 node scripts/sync-from-przetargimiejskie.mjs
 ```
 
+Override the upstream with `SOURCE_REPO=owner/repo SOURCE_BRANCH=branch` when testing a fork.
+
 To use the extension, open `chrome://extensions`, enable **Developer mode**, and load the [`extension/`](extension/) directory unpacked.

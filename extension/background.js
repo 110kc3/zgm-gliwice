@@ -1,5 +1,3 @@
-
-// The watchlist module exposes globalThis.ZGM_WATCH when imported below.
 importScripts('watchlist.js');
 
 const REPO = '110kc3/zgm-gliwice';
@@ -31,7 +29,6 @@ async function loadFromCache(key) {
 async function saveToCache(key, payload) {
   await chrome.storage.local.set({ [key]: payload });
 }
-
 
 function nsKey(city, key) {
   if (!key) return key;
@@ -149,7 +146,6 @@ async function getOrFetch(force = false) {
   return { ...merged, fetched_at };
 }
 
-
 async function migrateWatchlistOnce() {
   try {
     const flag = (await chrome.storage.local.get(MIGRATION_FLAG))[MIGRATION_FLAG];
@@ -175,7 +171,6 @@ async function migrateWatchlistOnce() {
     console.warn('[ZGM bg] watchlist migration skipped:', err);
   }
 }
-
 
 function activeFingerprint(listing) {
   return {
@@ -253,7 +248,6 @@ async function runWatchlistCheck() {
   }
 }
 
-
 chrome.runtime.onInstalled.addListener(() => {
   chrome.alarms.create(ALARM_NAME, { periodInMinutes: ALARM_INTERVAL_MIN });
   migrateWatchlistOnce().catch(() => {});
@@ -272,7 +266,6 @@ chrome.alarms.onAlarm.addListener((alarm) => {
   }
 });
 
-
 chrome.notifications.onClicked.addListener(async (id) => {
   const reg = (await chrome.storage.local.get('notif:registry'))['notif:registry'] || {};
   const url = reg[id];
@@ -281,7 +274,6 @@ chrome.notifications.onClicked.addListener(async (id) => {
   delete reg[id];
   await chrome.storage.local.set({ 'notif:registry': reg });
 });
-
 
 chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
   if (msg?.type === 'getData') {

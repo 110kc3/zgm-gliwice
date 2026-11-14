@@ -1,4 +1,3 @@
-
 const $status = document.getElementById('status');
 const $summary = document.getElementById('summary');
 const $filters = document.getElementById('filters');
@@ -181,7 +180,6 @@ function matchesYear(r, year) {
   return !!r.date && r.date.slice(0, 4) === year;
 }
 
-// (newest first), with an "All years" option on top. Preserves the current
 function populateYears() {
   if (!$filterYear) return;
   const years = [...new Set(
@@ -308,7 +306,6 @@ function outcomeLabel(r) {
   if (r.outcome === 'archived') return t('outcome.archived');
   return r.outcome;
 }
-
 
 function renderProvenance() {
   if (!records.length) return;

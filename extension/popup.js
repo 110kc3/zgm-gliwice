@@ -1,4 +1,3 @@
-
 const $status = document.getElementById('status');
 const $table = document.getElementById('active-table');
 const $tbody = $table.querySelector('tbody');
@@ -51,7 +50,6 @@ function wadiumCellHtml(date) {
   return date;
 }
 
-
 function applyStaticI18n() {
   document.documentElement.lang = window.ZGM_I18N.getLang();
   for (const el of document.querySelectorAll('[data-i18n]')) {
@@ -65,7 +63,6 @@ function applyStaticI18n() {
 let lastPayload = null;
 let lastWatchlist = {};
 
-// (most-relisted first, then prior count, then area) — preserves the
 let activeSortKey = null;
 let activeSortDir = 'asc';
 

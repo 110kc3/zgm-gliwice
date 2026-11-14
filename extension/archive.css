@@ -365,7 +365,7 @@ section h2 {
 #active-table .zgm-date-label {
   display: inline-block;
   box-sizing: border-box;
-  width: 72px;            
+  width: 72px;
   padding-right: 6px;
   color: var(--muted);
   font-size: 10px;

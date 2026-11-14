@@ -1,4 +1,3 @@
-
 (function () {
   const STORAGE_KEY = 'watchlist';
   const listeners = new Set();
@@ -59,7 +58,6 @@
     });
   } catch {}
 
-  // (globalThis) so background.js can import without bundling.
   const api = { getAll, isWatched, watch, unwatch, markSeenActive, onChange };
   if (typeof window !== 'undefined') window.ZGM_WATCH = api;
   if (typeof globalThis !== 'undefined') globalThis.ZGM_WATCH = api;

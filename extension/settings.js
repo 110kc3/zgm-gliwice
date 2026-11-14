@@ -1,5 +1,3 @@
-// API exposed on window.ZGM_SETTINGS (and globalThis.ZGM_SETTINGS for the SW):
-
 (function () {
   const KEY = 'minHistoryYear';
   const NOW_YEAR = new Date().getFullYear();
