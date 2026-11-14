@@ -1,22 +1,10 @@
-// Lightweight i18n for the extension. Two languages, one toggle. PL is the
-// default since the source data is Polish municipal records.
-//
-// API exposed on window.ZGM_I18N:
-//   t(key, vars?)        format a translated string with ${name} substitution
-//   getLang()            'pl' | 'en'
-//   setLang(lang)        persist + broadcast (returns Promise)
-//   onChange(fn)         fn(lang) when the lang storage key changes
-//
-// Translations are flat key→string maps. Keys missing in PL fall back to EN.
 
 (function () {
   const STORAGE_KEY = 'lang';
   const DEFAULT_LANG = 'pl';
 
-  /** @type {Record<string, Record<string, string>>} */
   const STRINGS = {
     en: {
-      // popup
       'popup.title': 'ZGM Gliwice — auction history',
       'popup.currently_active': 'Currently active',
       'popup.refresh': 'Refresh data',
@@ -77,7 +65,6 @@
       'theme.toggle.to_dark': 'Switch to dark mode',
       'theme.toggle.to_light': 'Switch to light mode',
 
-      // badges on listing index pages
       'badge.first': 'no prior auctions',
       'badge.no_archive': 'no archive data',
       'badge.prev_unsold':
@@ -86,7 +73,6 @@
       'badge.prev_sold': 'prev ${n}× sold',
       'chip.round': 'auction ${r}',
 
-      // tooltip/table headers
       'col.date': 'date',
       'col.round': 'round',
       'col.start_price': 'start price',
@@ -99,26 +85,22 @@
       'col.reason': 'reason',
       'col.src': 'src',
 
-      // outcomes
       'outcome.sold': 'sold',
       'outcome.unsold': 'unsold',
       'outcome.archived': 'past (result not published)',
       'outcome.no_winner': 'no winner',
       'outcome.sold_for': 'sold ${price}',
 
-      // unsold reason enum
       'reason.no_deposits': 'no bidders registered',
       'reason.bidder_withdrew': 'bidder withdrew',
       'reason.bidder_noshow': 'bidder no-show',
       'reason.unknown': 'reason unknown',
 
-      // kind enum
       'kind.mieszkalny': 'residential',
       'kind.uzytkowy': 'commercial',
       'kind.garaz': 'garage',
       'kind.unknown': 'unknown',
 
-      // city labels (popup chip)
       'city.gliwice': 'Gliwice',
       'city.katowice': 'Katowice',
       'city.bytom': 'Bytom',
@@ -129,7 +111,6 @@
       'city.myslowice': 'Mysłowice',
       'city.swietochlowice': 'Świętochłowice',
 
-      // detail-page panel
       'panel.title': 'Auction history — ${addr}',
       'panel.none':
         'No prior listings found for this property in the archive (since 2024-02).',
@@ -143,7 +124,6 @@
     },
 
     pl: {
-      // popup
       'popup.title': 'ZGM Gliwice — historia aukcji',
       'popup.currently_active': 'Aktualne aukcje',
       'popup.refresh': 'Odśwież dane',
@@ -204,7 +184,6 @@
       'theme.toggle.to_dark': 'Przełącz na ciemny motyw',
       'theme.toggle.to_light': 'Przełącz na jasny motyw',
 
-      // badges
       'badge.first': 'brak wcześniejszych aukcji',
       'badge.no_archive': 'brak danych archiwalnych',
       'badge.prev_unsold':
@@ -213,7 +192,6 @@
       'badge.prev_sold': 'poprzednio ${n}× sprzedane',
       'chip.round': '${r}. przetarg',
 
-      // tooltip/table headers
       'col.date': 'data',
       'col.round': 'runda',
       'col.start_price': 'cena wywoławcza',
@@ -226,26 +204,22 @@
       'col.reason': 'powód',
       'col.src': 'źródło',
 
-      // outcomes
       'outcome.sold': 'sprzedane',
       'outcome.unsold': 'bez sprzedaży',
       'outcome.archived': 'zakończone (brak wyniku)',
       'outcome.no_winner': 'brak nabywcy',
       'outcome.sold_for': 'sprzedane za ${price}',
 
-      // unsold reasons
       'reason.no_deposits': 'brak ofert',
       'reason.bidder_withdrew': 'uczestnik wycofał się',
       'reason.bidder_noshow': 'uczestnik nie stawił się',
       'reason.unknown': 'powód nieznany',
 
-      // kind enum
       'kind.mieszkalny': 'mieszkalny',
       'kind.uzytkowy': 'użytkowy',
       'kind.garaz': 'garaż',
       'kind.unknown': 'nieznany',
 
-      // city labels (popup chip)
       'city.gliwice': 'Gliwice',
       'city.katowice': 'Katowice',
       'city.bytom': 'Bytom',
@@ -256,7 +230,6 @@
       'city.myslowice': 'Mysłowice',
       'city.swietochlowice': 'Świętochłowice',
 
-      // detail-page panel
       'panel.title': 'Historia aukcji — ${addr}',
       'panel.none':
         'Brak wcześniejszych aukcji tej nieruchomości w archiwum (od lutego 2024).',
@@ -308,8 +281,6 @@
     return () => listeners.delete(fn);
   }
 
-  // Initial load. Resolves once chrome.storage has been read. Other scripts
-  // should `await window.ZGM_I18N.ready` before reading t() if it matters.
   const ready = (async () => {
     try {
       const v = await chrome.storage.local.get(STORAGE_KEY);
@@ -319,7 +290,6 @@
     } catch {}
   })();
 
-  // Sync across windows / tabs.
   try {
     chrome.storage.onChanged.addListener((changes, area) => {
       if (area !== 'local' || !changes[STORAGE_KEY]) return;

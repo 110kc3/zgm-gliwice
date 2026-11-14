@@ -1,18 +1,4 @@
-// Lightweight per-user settings persisted to chrome.storage.local. Currently
-// holds one setting: minHistoryYear — the cutoff used by the archive, the
-// content-script's prior-history tooltips and the detail-page panel to hide
-// older sold/unsold records.
-//
-// Default = current_year - 3 (3 years of history); the pipeline applies its
-// own broader floor (see pipeline/src/refresh.js PIPELINE_MIN_HISTORY_YEAR),
-// so the UI can never reveal records the pipeline already dropped.
-//
 // API exposed on window.ZGM_SETTINGS (and globalThis.ZGM_SETTINGS for the SW):
-//   getMinHistoryYear()        → number
-//   setMinHistoryYear(year)    → Promise<void>     persist + broadcast
-//   minYearOptions()           → number[]          sensible dropdown values
-//   onChange(fn)               → unsubscribe()
-//   ready                      → Promise           resolves after first read
 
 (function () {
   const KEY = 'minHistoryYear';
@@ -50,10 +36,6 @@
     }
   }
 
-  // Dropdown options for any UI control. Covers the typical "last N years"
-  // range; bounded by the broader pipeline floor (PIPELINE_MIN_HISTORY_YEAR
-  // is 2020 today). If the pipeline floor ever moves, widen this list to
-  // match — the extension can't render what isn't shipped.
   function minYearOptions() {
     const earliest = Math.min(2020, DEFAULT_FLOOR);
     const out = [];
@@ -66,7 +48,6 @@
     return () => listeners.delete(fn);
   }
 
-  // Cross-tab sync.
   try {
     chrome.storage.onChanged.addListener((changes, area) => {
       if (area !== 'local' || !changes[KEY]) return;

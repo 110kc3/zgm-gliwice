@@ -1,10 +1,3 @@
-// Gliwice site adapter — zgm-gliwice.pl (WordPress + Elementor).
-//
-// Listing-index pages are the four ZGM auction-board paths; their cards are
-// Elementor image-boxes whose text looks like
-//   "<address> - DD.MM.YYYY r. <area> m² - <price> zł".
-// Detail pages have slug URLs like /zygmunta-starego-29-4-23-03-2026-r/ and a
-// <title> that starts with the address before the date dash.
 
 (function () {
   if (!window.ZGM_SITES) return;
@@ -13,7 +6,6 @@
     /^\/(przetargi-lokale-mieszkalne|przetargi-garaze|przetargi-lokale-uzytkowe|wykaz-lokali-przeznaczonych-do-sprzedazy-w-przetargu)\/?/;
   const DETAIL_RE = /^\/[a-z0-9-]+-\d{2}-\d{2}-\d{4}-r\/?$/;
 
-  // "…m² - <price> zł" → { area_m2, price_pln } (either may be null).
   function parseCardFigures(text) {
     const m = /(\d{1,4}(?:[,.]\d{1,3})?)\s*m[²2]\s*-\s*([\d.,\s]+)\s*z[łl]/i.exec(text);
     if (!m) return { area_m2: null, price_pln: null };
@@ -56,7 +48,6 @@
     },
 
     detailAddress() {
-      // Title is authoritative; slug fallback only.
       let guess = null;
       const titleM = /^([^–—\-]+?)\s+[–—-]/.exec(
         document.title.replace(/&#8211;/g, '–'),

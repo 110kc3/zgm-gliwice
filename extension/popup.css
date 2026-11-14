@@ -39,8 +39,6 @@
   --chip-swietochlowice-border: #dde6b8;
 }
 
-/* System-pref dark, *unless* the user has explicitly forced light via the
-   theme toggle. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --fg: #e5e7eb;
@@ -84,7 +82,6 @@
   }
 }
 
-/* Explicit dark via the theme toggle — wins even on a light-pref system. */
 :root[data-theme="dark"] {
   --fg: #e5e7eb;
   --muted: #9ca3af;
@@ -159,7 +156,6 @@ button {
 }
 button:hover { background: var(--bg-elev); }
 
-/* Anchor links promoted into the header-actions row — match button styling */
 .header-link {
   font: inherit;
   padding: 4px 10px;
@@ -202,8 +198,6 @@ footer {
 }
 footer a { color: var(--accent); }
 
-
-/* header actions (lang toggle + refresh) */
 .header-actions {
   display: flex;
   gap: 6px;
@@ -215,7 +209,6 @@ footer a { color: var(--accent); }
   letter-spacing: 0.04em;
 }
 
-/* Compact icon button (theme toggle uses ☀ / ☾) */
 .icon-btn {
   padding: 4px 8px;
   font-size: 14px;
@@ -223,7 +216,6 @@ footer a { color: var(--accent); }
   min-width: 30px;
 }
 
-/* Watching section + star toggle */
 h2 {
   margin: 12px 0 6px 0;
   font-size: 12px;
@@ -232,9 +224,7 @@ h2 {
   color: var(--muted);
   letter-spacing: 0.04em;
 }
-/* Both the `<td>` and the `<th>` in column 1 use this class so the header
- * width tracks the star button (otherwise the unstyled <th> takes its own
- * default share of the table width and shifts every column header right). */
+
 .zgm-star-cell, th.zgm-star-cell { width: 24px; text-align: center; padding: 4px 0; }
 .zgm-star {
   background: none;
@@ -256,19 +246,14 @@ h2 {
 .footer-links .zgm-support { color: var(--amber-fg); font-weight: 600; }
 .footer-links .version { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 
-/* Active-table column-header sort affordances. The historical archive uses
- * the same pattern (see archive.css) — duplicated here because popup.css
- * stands alone. */
 #active-table th[data-sort] { cursor: pointer; user-select: none; }
 #active-table th[data-sort]::after { content: ' ↕'; opacity: 0.3; }
 #active-table th.sorted-asc::after  { content: ' ↑'; opacity: 1; }
 #active-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
 
-/* Wadium-deadline highlight */
 .zgm-urgent { color: var(--amber-fg); font-weight: 600; }
 .zgm-past   { color: var(--muted); text-decoration: line-through; }
 
-/* City chip prepended to property cells (popup mixes multiple cities) */
 .zgm-city-tag {
   display: inline-block;
   font-size: 10px;
@@ -293,9 +278,6 @@ h2 {
 .zgm-city-tag[data-city="myslowice"] { background: var(--chip-myslowice-bg); color: var(--chip-myslowice-fg); border-color: var(--chip-myslowice-border); }
 .zgm-city-tag[data-city="swietochlowice"] { background: var(--chip-swietochlowice-bg); color: var(--chip-swietochlowice-fg); border-color: var(--chip-swietochlowice-border); }
 
-/* Stacked dates cell. The label column has to fit the longest Polish label —
- * "OGLĘDZINY" (viewing) at 9 characters — so 72px with box-sizing keeps it
- * from overlapping the date next to it when the table is narrow. */
 .zgm-dates-cell { line-height: 1.4; white-space: nowrap; font-size: 12px; }
 .zgm-date-label {
   display: inline-block;

@@ -1,5 +1,4 @@
-/* Styles for DOM injected into zgm-gliwice.pl pages by content.js.
- * Prefixed with .zgm-ext- so we don't collide with the host site's CSS. */
+
 
 .zgm-ext-badge {
   display: inline-block;
@@ -51,7 +50,6 @@
 .zgm-ext-row-sold td { color: #1e6b34; }
 .zgm-ext-row-unsold td { color: #8b1c1c; }
 
-/* Detail-page panel */
 .zgm-ext-panel {
   display: block;
   margin: 16px 0;
@@ -94,7 +92,6 @@
 }
 .zgm-ext-footer a { color: #4a6fa5; }
 
-/* Watch button on the detail-page panel */
 .zgm-ext-panel-head {
   display: flex;
   align-items: center;
@@ -121,7 +118,6 @@
   color: #7a5500;
 }
 
-/* Info chip on index-page cards: zł/m² + wadium/viewing dates */
 .zgm-ext-infochip {
   display: block;
   margin-top: 6px;
@@ -135,7 +131,6 @@
   line-height: 1.4;
 }
 
-/* Stats chip: round · price · area · zł/m² · auction date (from the dataset) */
 .zgm-ext-stats {
   color: #1f3a5f;
   background: #e8f0fb;
@@ -143,7 +138,6 @@
   font-weight: 600;
 }
 
-/* Inline zł/m² shown right after the price in a listing card */
 .zgm-ext-perm2 {
   color: #4a6fa5;
   font-weight: 600;

@@ -1,35 +1,16 @@
-// Service worker:
-//   - fetches per-city data/<city>/{properties,active,meta}.json from GitHub
-//     for every city in CITIES, merges them into a single payload the popup
-//     consumes as a flat list (with each record city-tagged + key-namespaced)
-//   - chrome.alarms periodic check: re-fetches, diffs merged active.json
-//     against the user's watchlist, and fires chrome.notifications for any
-//     newly-active watched property
-//   - notification click → opens the property detail page
-//
-// Multi-city note: the pipeline's data files keep their original
-// `street|building|apt` keys; namespacing to `city|street|building|apt` happens
-// here at merge time so the extension can mix cities without collisions. A
-// one-shot migration upgrades any legacy un-namespaced watchlist entries.
 
 // The watchlist module exposes globalThis.ZGM_WATCH when imported below.
 importScripts('watchlist.js');
 
 const REPO = '110kc3/zgm-gliwice';
 const BRANCH = 'main';
-// Wave 1 popup scope: hardcode the city list. A future Wave 2 will lazily
-// fetch only the city matching the active tab's hostname.
 const CITIES = ['gliwice'];
 const RAW = (city) =>
   `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/${city}`;
-const TTL_MS = 6 * 60 * 60 * 1000;       // 6h soft TTL for ad-hoc reads
+const TTL_MS = 6 * 60 * 60 * 1000;
 const ALARM_NAME = 'zgm-watchlist-check';
-const ALARM_INTERVAL_MIN = 240;          // 4h periodic watchlist scan
+const ALARM_INTERVAL_MIN = 240;
 
-// The merged-cache key embeds the schema version + the city set, so an old
-// cached merge from a previous build (e.g. before a city was added) is never
-// read back — adding/removing a city automatically invalidates the cache. Bump
-// `cacheSchema` only when the payload SHAPE changes.
 const CACHE_SCHEMA = 2;
 const KEYS = {
   merged: `cache:v${CACHE_SCHEMA}:${[...CITIES].sort().join('+')}:merged`,
@@ -51,17 +32,13 @@ async function saveToCache(key, payload) {
   await chrome.storage.local.set({ [key]: payload });
 }
 
-// ---------------- merging ----------------
 
 function nsKey(city, key) {
   if (!key) return key;
-  // Already namespaced (looks like "<city>|...") — leave as-is.
   if (key.startsWith(`${city}|`)) return key;
   return `${city}|${key}`;
 }
 
-// Mutates each property to (a) prefix `key` with its city and (b) carry a
-// `city` field. Returns the same array for chaining.
 function namespaceProperties(properties, city) {
   for (const p of properties) {
     p.key = nsKey(city, p.key);
@@ -80,8 +57,6 @@ function namespaceActiveListings(listings, city) {
   return listings;
 }
 
-// Builds the merged payload the popup/archive consume. Each city contributes
-// its own three JSONs; key namespacing happens here.
 function mergeCityPayloads(cityPayloads) {
   const allProperties = [];
   const allActive = [];
@@ -118,11 +93,6 @@ function mergeCityPayloads(cityPayloads) {
     }
   }
 
-  // Mirror the legacy shape the popup/archive already expect:
-  //   payload.properties.properties = [...]
-  //   payload.active.listings       = [...]
-  //   payload.active.wykaz          = [...]
-  //   payload.meta                  = { ...aggregates, per_city }
   return {
     properties: {
       schema_version: 1,
@@ -156,8 +126,6 @@ async function fetchCity(city) {
     ]);
     return { city, properties, active, meta };
   } catch (err) {
-    // A city whose data isn't published yet (e.g. just added to CITIES, not yet
-    // pushed) must NOT blank the whole extension. Skip it; the others still load.
     console.warn(`[ZGM ext] skipping city "${city}": ${err.message}`);
     return null;
   }
@@ -181,12 +149,7 @@ async function getOrFetch(force = false) {
   return { ...merged, fetched_at };
 }
 
-// ---------------- watchlist migration ----------------
 
-// One-shot upgrade for keys saved by the pre-merge extension. Legacy keys
-// look like "street|building|apt" (2 pipes); namespaced keys look like
-// "city|street|building|apt" (3 pipes). Anything with <3 pipes is assumed to
-// be a Gliwice entry (the only city that existed when those keys were saved).
 async function migrateWatchlistOnce() {
   try {
     const flag = (await chrome.storage.local.get(MIGRATION_FLAG))[MIGRATION_FLAG];
@@ -213,7 +176,6 @@ async function migrateWatchlistOnce() {
   }
 }
 
-// ---------------- watchlist diff + notifications ----------------
 
 function activeFingerprint(listing) {
   return {
@@ -241,8 +203,6 @@ async function notifyNewListing(key, entry, listing) {
   reg[id] = entry.detail_url || `https://zgm-gliwice.pl/`;
   await chrome.storage.local.set({ 'notif:registry': reg });
 
-  // PL strings (the app's default). City prefix helps disambiguate now that
-  // notifications can fire for any of CITIES.
   const cityLabel = entry.city ? ` [${entry.city}]` : '';
   const title = `przetargimiejskie${cityLabel} — nowa aukcja obserwowanej nieruchomości`;
   const body = `${entry.addr} — aukcja ${listing.auction_date || '?'} po ${fmtPLN(listing.starting_price_pln)}`;
@@ -293,12 +253,9 @@ async function runWatchlistCheck() {
   }
 }
 
-// ---------------- alarms wiring ----------------
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.alarms.create(ALARM_NAME, { periodInMinutes: ALARM_INTERVAL_MIN });
-  // Best-effort migration on upgrade so legacy watchlist keys don't silently
-  // stop matching once the merge starts namespacing.
   migrateWatchlistOnce().catch(() => {});
 });
 
@@ -315,7 +272,6 @@ chrome.alarms.onAlarm.addListener((alarm) => {
   }
 });
 
-// ---------------- notification click → open detail page ----------------
 
 chrome.notifications.onClicked.addListener(async (id) => {
   const reg = (await chrome.storage.local.get('notif:registry'))['notif:registry'] || {};
@@ -326,7 +282,6 @@ chrome.notifications.onClicked.addListener(async (id) => {
   await chrome.storage.local.set({ 'notif:registry': reg });
 });
 
-// ---------------- message handlers ----------------
 
 chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
   if (msg?.type === 'getData') {

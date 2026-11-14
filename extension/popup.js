@@ -1,5 +1,3 @@
-// Popup: watching section (top) + currently-active table (bottom).
-// Clicking a star toggles watch; clicking a row opens detail in new tab.
 
 const $status = document.getElementById('status');
 const $table = document.getElementById('active-table');
@@ -18,23 +16,17 @@ const fmtPLN = (n) =>
 
 const roundLabel = (n) => (n ? t('chip.round', { r: String(n) }) : null);
 
-// Background.js namespaces property keys as `<city>|...`, so we can recover
-// the city for legacy/orphan watch entries that don't carry one.
 function cityFromKey(key) {
   if (!key || typeof key !== 'string') return null;
   const i = key.indexOf('|');
   return i > 0 ? key.slice(0, i) : null;
 }
 
-// Compact city chip prepended to the Property cell on each row. Style lives
-// in popup.css; color variants come from the city id as a data attribute.
 function cityTagHtml(city) {
-  // Single-city (Gliwice) build: the chip is redundant, so always suppress it.
   return '';
   // eslint-disable-next-line no-unreachable
   if (!city) return '';
   const label = t('city.' + city);
-  // Fall back to a capitalized id when no translation is registered.
   const display = label === 'city.' + city
     ? city.charAt(0).toUpperCase() + city.slice(1)
     : label;
@@ -73,14 +65,10 @@ function applyStaticI18n() {
 let lastPayload = null;
 let lastWatchlist = {};
 
-// Active-table sort state. Null sortKey = use the default heuristic
 // (most-relisted first, then prior count, then area) — preserves the
-// behaviour the popup had before sortable headers existed.
 let activeSortKey = null;
 let activeSortDir = 'asc';
 
-// Per-column value extractor. Returns null for "missing" so the sorter
-// can park empty cells at the bottom regardless of direction.
 function activeSortValue(item, key) {
   const a = item.a;
   switch (key) {
@@ -142,11 +130,6 @@ function renderActive() {
   const properties = payload.properties?.properties || [];
   const byKey = new Map(properties.map((p) => [p.key, p]));
 
-  // Defensive filter: the Katowice crawler currently dumps every BIP-board
-  // announcement into active.json regardless of date, and the city portal
-  // takes its time archiving past-auction documents (see TODO.md). Drop
-  // anything whose auction date has already passed so "currently active"
-  // means what it says. Proper fix lives in cities/katowice/crawl.js.
   const today = new Date().toISOString().slice(0, 10);
   const liveActive = (payload.active?.listings || []).filter(
     (a) => !a.auction_date || a.auction_date >= today,
@@ -170,8 +153,6 @@ function renderActive() {
     .map(({ a, prior, unsold, lastUnsold, key }) => {
       const cityTag = cityTagHtml(a.city || cityFromKey(key));
       const addr = cityTag + (a.address_raw || '') + (a.area_m2 ? ` · ${a.area_m2} m²` : '');
-      // "nowa" (new) only when this really is a first auction with no recorded
-      // history. A 2nd/3rd przetarg is a re-listing, not new — show its round.
       const priorCell =
         prior.length > 0
           ? `<span class="zgm-prior">${t('popup.prior_summary', { n: prior.length, unsold: unsold.length })}</span>`
@@ -199,7 +180,6 @@ function renderActive() {
     })
     .join('');
 
-  // Row click → open detail page (but not when the click was on the star).
   for (const tr of $tbody.querySelectorAll('tr[data-url]')) {
     tr.addEventListener('click', (e) => {
       if (e.target.closest('.zgm-star')) return;
@@ -303,8 +283,6 @@ function render() {
   renderActive();
   const fetched = new Date(lastPayload.fetched_at);
   const meta = lastPayload.meta || {};
-  // Match the same past-date filter renderActive uses so the count in the
-  // footer is consistent with the number of rows the user sees.
   const today = new Date().toISOString().slice(0, 10);
   const activeCount = (lastPayload.active?.listings || []).filter(
     (a) => !a.auction_date || a.auction_date >= today,
@@ -316,8 +294,6 @@ function render() {
   });
 }
 
-// Theme button: show ☀ in light mode (click → dark) and ☾ in dark mode
-// (click → light). Title is i18n'd so it follows the lang toggle.
 function syncThemeButton() {
   if (!$themeToggle || !window.ZGM_THEME) return;
   const eff = window.ZGM_THEME.getEffective();
@@ -346,10 +322,6 @@ function syncThemeButton() {
   });
   $themeToggle?.addEventListener('click', () => window.ZGM_THEME?.toggle());
 
-  // Sortable column headers on the active table. Date defaults to asc
-  // (soonest first — what the user typically wants); other columns default
-  // to desc (most expensive / most-relisted first). Re-clicking the same
-  // column toggles direction.
   for (const th of $table.querySelectorAll('th[data-sort]')) {
     th.addEventListener('click', () => {
       const k = th.dataset.sort;

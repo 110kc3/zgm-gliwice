@@ -1,24 +1,3 @@
-// Lightweight watchlist over chrome.storage.local. The watchlist is keyed by
-// the same property key the rest of the extension joins on
-// (street_norm|building|apt), so we can compare directly against active.json
-// and properties.json without any address re-parsing.
-//
-// API exposed on window.ZGM_WATCH:
-//   getAll()             → Promise<{ [key]: WatchEntry }>
-//   isWatched(key)       → Promise<boolean>
-//   watch(key, meta)     → Promise<void>   (meta: { addr, kind, detail_url })
-//   unwatch(key)         → Promise<void>
-//   markSeenActive(key, fingerprint)  → Promise<void>
-//   onChange(fn)         → unsubscribe()
-//
-// WatchEntry shape:
-//   {
-//     addr:       "Kozielska 62/III",  // human-readable, for notification text
-//     kind:       "uzytkowy",
-//     detail_url: "https://zgm-gliwice.pl/...",
-//     added_at:   epoch ms,
-//     last_seen_active: null | { auction_date, starting_price_pln }
-//   }
 
 (function () {
   const STORAGE_KEY = 'watchlist';
@@ -40,13 +19,11 @@
 
   async function watch(key, meta) {
     const all = await getAll();
-    if (all[key]) return; // already watching
+    if (all[key]) return;
     all[key] = {
       addr: meta?.addr || key,
       kind: meta?.kind || 'unknown',
       detail_url: meta?.detail_url || null,
-      // Persisted so the popup can render a city chip and the background SW
-      // can prefix notifications even when the city isn't otherwise derivable.
       city: meta?.city || null,
       added_at: Date.now(),
       last_seen_active: null,
@@ -82,7 +59,6 @@
     });
   } catch {}
 
-  // Expose both in browser/content-script context (window) and in the SW
   // (globalThis) so background.js can import without bundling.
   const api = { getAll, isWatched, watch, unwatch, markSeenActive, onChange };
   if (typeof window !== 'undefined') window.ZGM_WATCH = api;

@@ -39,7 +39,6 @@
   --chip-swietochlowice-border: #dde6b8;
 }
 
-/* System-pref dark, unless explicitly forced light via the theme toggle. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --fg: #e5e7eb;
@@ -83,7 +82,6 @@
   }
 }
 
-/* Explicit dark via the theme toggle — wins even on a light-pref system. */
 :root[data-theme="dark"] {
   --fg: #e5e7eb;
   --muted: #9ca3af;
@@ -163,7 +161,6 @@ header h1 {
 .header-actions button:hover,
 .header-actions a:hover { background: var(--bg-elev); }
 
-/* Compact icon button (theme toggle uses ☀ / ☾) */
 .header-actions .icon-btn {
   padding: 5px 10px;
   font-size: 15px;
@@ -287,7 +284,6 @@ section h2 {
 #archive-table tr.zgm-ext-row-unsold td { color: var(--red-fg); }
 #archive-table tr:hover td { background: var(--row-hover); }
 
-/* City chip prepended to property cells (archive mixes multiple cities) */
 .zgm-city-tag {
   display: inline-block;
   font-size: 10px;
@@ -311,7 +307,7 @@ section h2 {
 .zgm-city-tag[data-city="bielsko"]  { background: var(--chip-bielsko-bg);   color: var(--chip-bielsko-fg);   border-color: var(--chip-bielsko-border); }
 .zgm-city-tag[data-city="myslowice"] { background: var(--chip-myslowice-bg); color: var(--chip-myslowice-fg); border-color: var(--chip-myslowice-border); }
 .zgm-city-tag[data-city="swietochlowice"] { background: var(--chip-swietochlowice-bg); color: var(--chip-swietochlowice-fg); border-color: var(--chip-swietochlowice-border); }
-/* Override the row-color cascade so the chip stays legible on sold/unsold rows */
+
 #archive-table tr.zgm-ext-row-sold td .zgm-city-tag,
 #archive-table tr.zgm-ext-row-unsold td .zgm-city-tag {
   color: inherit;
@@ -335,7 +331,6 @@ section h2 {
 #archive-table tr.zgm-ext-row-sold td .zgm-city-tag[data-city="swietochlowice"],
 #archive-table tr.zgm-ext-row-unsold td .zgm-city-tag[data-city="swietochlowice"] { color: var(--chip-swietochlowice-fg); }
 
-/* Currently-active section: bigger version of the popup's active table */
 #active-table {
   width: 100%;
   border-collapse: collapse;
@@ -370,7 +365,7 @@ section h2 {
 #active-table .zgm-date-label {
   display: inline-block;
   box-sizing: border-box;
-  width: 72px;            /* must fit "OGLĘDZINY" — the longest Polish label */
+  width: 72px;            
   padding-right: 6px;
   color: var(--muted);
   font-size: 10px;

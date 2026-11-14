@@ -1,26 +1,8 @@
-// Theme manager. Two explicit states + auto:
-//   - No stored value → follow prefers-color-scheme (auto, default)
-//   - Stored 'light' or 'dark' → explicit override, persists across sessions
-//
-// Applied via [data-theme="light"|"dark"] on <html>. CSS layers this on top
-// of its @media (prefers-color-scheme: dark) block so:
-//   • system dark, no override   → dark (from @media)
-//   • system light, no override  → light (defaults)
-//   • data-theme="dark"          → dark (overrides @media if light)
-//   • data-theme="light"         → light (the @media rule excludes this)
-//
-// API exposed on window.ZGM_THEME:
-//   getEffective()   → 'light' | 'dark'  (what's currently rendered)
-//   getExplicit()    → 'light' | 'dark' | null
-//   setExplicit(t)   → persist + apply + notify
-//   toggle()         → flip effective theme, persist as explicit
-//   onChange(fn)     → fn(effective)
-//   ready            → Promise resolved after initial storage read
 
 (function () {
   const STORAGE_KEY = 'theme';
   const listeners = new Set();
-  let _explicit = null; // null | 'light' | 'dark'
+  let _explicit = null;
 
   const mql =
     typeof matchMedia === 'function'
@@ -62,8 +44,6 @@
     return () => listeners.delete(fn);
   }
 
-  // Re-fire onChange when the system pref flips, but only when no explicit
-  // override is in effect (matches the @media rule's exclusion logic).
   if (mql && mql.addEventListener) {
     mql.addEventListener('change', () => {
       if (!_explicit) {
@@ -73,7 +53,6 @@
     });
   }
 
-  // Initial load.
   const ready = (async () => {
     try {
       const v = await chrome.storage.local.get(STORAGE_KEY);
@@ -84,8 +63,6 @@
     apply();
   })();
 
-  // Cross-window sync: a toggle in the popup updates the archive tab and
-  // vice versa via the storage-change event.
   try {
     chrome.storage.onChanged.addListener((changes, area) => {
       if (area !== 'local' || !changes[STORAGE_KEY]) return;

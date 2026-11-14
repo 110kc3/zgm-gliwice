@@ -1,6 +1,3 @@
-// Full-page archive view. Loads via the same getOrFetch path used by the
-// popup, then renders three summary tiles (median sale price + median PLN/m²
-// per kind) and a filterable + sortable table of every historical record.
 
 const $status = document.getElementById('status');
 const $summary = document.getElementById('summary');
@@ -37,9 +34,7 @@ function median(nums) {
   return s.length % 2 === 0 ? Math.round((s[mid - 1] + s[mid]) / 2) : s[mid];
 }
 
-// Compact city chip prepended to property cells (the archive mixes cities).
 function cityTagHtml(city) {
-  // Single-city (Gliwice) build: suppress the redundant chip.
   return '';
   // eslint-disable-next-line no-unreachable
   if (!city) return '';
@@ -56,8 +51,6 @@ let propByKey = new Map();
 let lastMeta = null;
 let lastFetchedAt = null;
 
-// Active-table sort state (separate from the historical table's sortKey).
-// Null = the default "most-relisted first" heuristic in renderActiveTable.
 let activeSortKey = null;
 let activeSortDir = 'asc';
 
@@ -154,9 +147,6 @@ function flatten(payload) {
   const props = payload.properties?.properties || [];
   for (const p of props) {
     for (const l of p.listings) {
-      // 'archived' = a past auction from an announcement-only city (Bytom/
-      // Zabrze) — concluded, achieved price not published. Shown in the
-      // historical table with its starting price.
       if (l.outcome === 'sold' || l.outcome === 'unsold' || l.outcome === 'archived') {
         records.push({
           date: l.date,
@@ -183,7 +173,6 @@ function flatten(payload) {
   records.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 }
 
-// "" = all years; otherwise an exact 4-digit year string.
 function selectedYear() {
   return $filterYear && $filterYear.value ? $filterYear.value : '';
 }
@@ -192,9 +181,7 @@ function matchesYear(r, year) {
   return !!r.date && r.date.slice(0, 4) === year;
 }
 
-// Fill the year dropdown from the distinct auction years present in the data
 // (newest first), with an "All years" option on top. Preserves the current
-// selection across re-populations.
 function populateYears() {
   if (!$filterYear) return;
   const years = [...new Set(
@@ -205,7 +192,6 @@ function populateYears() {
   $filterYear.innerHTML =
     `<option value="">${allLabel}</option>` +
     years.map((y) => `<option value="${y}">${y}</option>`).join('');
-  // restore previous selection if still valid, else default to all years
   $filterYear.value = years.includes(prev) ? prev : '';
 }
 
@@ -222,10 +208,6 @@ function renderSummary() {
       (r) => r.outcome === 'sold' && r.final_price_pln != null,
     );
 
-    // Cities with an achieved-price stream (Gliwice) summarise SOLD prices.
-    // Announcement-only cities have no sold records — every row is 'archived' —
-    // so fall back to counting all archived auctions and showing the median
-    // STARTING (wywoławcza) price instead, which is the data that exists.
     let count, prices, m2vals, suffixKey, labelKey;
     if (sold.length) {
       count = sold.length;
@@ -234,7 +216,7 @@ function renderSummary() {
       suffixKey = 'archive.sold_suffix';
       labelKey = 'archive.median';
     } else {
-      count = ofKind.length; // records[] holds only historical rows (no active)
+      count = ofKind.length;
       prices = ofKind.filter((r) => r.starting_price_pln != null).map((r) => r.starting_price_pln);
       m2vals = ofKind
         .filter((r) => r.area_m2 && r.starting_price_pln != null)
@@ -366,8 +348,6 @@ function renderActiveTable() {
       const lastUnsold = unsold[unsold.length - 1];
       return { a, prop, prior, unsold, lastUnsold };
     });
-  // Heuristic by default, user-clickable headers can override (see the
-  // click handlers at the bottom of this file).
   sortActiveItems(items);
 
   $activeTbody.innerHTML = items
@@ -464,8 +444,6 @@ function syncThemeButton() {
       renderTable();
     });
   }
-  // Sortable headers for the "Currently active" table. Mirrors the popup —
-  // date defaults asc (soonest first), other columns default desc.
   for (const th of $activeTable.querySelectorAll('th[data-sort]')) {
     th.addEventListener('click', () => {
       const k = th.dataset.sort;
