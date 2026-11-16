@@ -4,24 +4,125 @@
   "listings": [
     {
       "kind": "mieszkalny",
-      "address_raw": "Al. Przyjaźni 9/5",
+      "address_raw": "Kr. Jadwigi 4/18",
       "address": {
-        "street": "Przyjaźni",
-        "street_norm": "przyjazni",
-        "building": "9",
-        "apt": "5",
-        "key": "przyjazni|9|5",
+        "street": "Kr. Jadwigi",
+        "street_norm": "kr jadwigi",
+        "building": "4",
+        "apt": "18",
+        "key": "kr jadwigi|4|18",
         "warning": null
       },
-      "auction_date": "2026-12-07",
-      "area_m2": 134.17,
-      "starting_price_pln": 619360,
-      "detail_url": "https://zgm-gliwice.pl/przyjazni-9-5-30-03-2026-r/",
-      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-al-przyjazni-95-lokal-mieszkalny",
-      "round": 4,
+      "auction_date": "2026-11-30",
+      "area_m2": 34.86,
+      "starting_price_pln": 169500,
+      "detail_url": "https://zgm-gliwice.pl/kr-jadwigi-4-18-30-11-2026-r/",
+      "wadium_deadline": "2026-11-24",
+      "viewing_date": "2026-11-16",
+      "round": 1,
+      "round_source": "inferred"
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "W. Styczyńskiego 14/13",
+      "address": {
+        "street": "W. Styczyńskiego",
+        "street_norm": "w styczynskiego",
+        "building": "14",
+        "apt": "13",
+        "key": "w styczynskiego|14|13",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 36.73,
+      "starting_price_pln": 189360,
+      "detail_url": "https://zgm-gliwice.pl/w-styczynskiego-14-13-12-10-2026-r/",
+      "wadium_deadline": "2026-11-24",
+      "viewing_date": "2026-11-19",
+      "round": 2,
+      "round_source": "inferred"
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Mewy 3/9",
+      "address": {
+        "street": "Mewy",
+        "street_norm": "mewy",
+        "building": "3",
+        "apt": "9",
+        "key": "mewy|3|9",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 28,
+      "starting_price_pln": 184230,
+      "detail_url": "https://zgm-gliwice.pl/mewy-3-9-19-10-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-30112026-ul-krolowej-jadwigi-418-ul-wincentego-styczynskiego-1413-ul-mewy-39-ul-ks-marcina-strzody-38-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-zwyciestwa-349a-lokale-uzytkowe",
+      "round": 2,
       "round_source": "explicit",
-      "wadium_deadline": "2026-06-16",
-      "viewing_date": "2026-05-08"
+      "wadium_deadline": "2026-10-13",
+      "viewing_date": "2026-10-07"
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Ks. M. Strzody 3/8",
+      "address": {
+        "street": "Ks. M. Strzody",
+        "street_norm": "ks m strzody",
+        "building": "3",
+        "apt": "8",
+        "key": "ks m strzody|3|8",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 56.61,
+      "starting_price_pln": 313290,
+      "detail_url": "https://zgm-gliwice.pl/ks-marcina-strzody-3-8-19-10-2026-r/",
+      "wadium_deadline": "2026-10-13",
+      "viewing_date": "2026-10-06",
+      "round": 2,
+      "round_source": "inferred"
+    },
+    {
+      "kind": "uzytkowy",
+      "address_raw": "Al. W. Korfantego 17/I",
+      "address": {
+        "street": "W. Korfantego",
+        "street_norm": "w korfantego",
+        "building": "17",
+        "apt": "I",
+        "key": "w korfantego|17|I",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 41.14,
+      "starting_price_pln": 137440,
+      "detail_url": "https://zgm-gliwice.pl/al-w-korfantego-17-i-19-10-2026-r/",
+      "wadium_deadline": "2026-10-13",
+      "viewing_date": "2026-10-05",
+      "round": 1,
+      "round_source": "inferred"
+    },
+    {
+      "kind": "uzytkowy",
+      "address_raw": "Zwycięstwa 34/9a",
+      "address": {
+        "street": "Zwycięstwa",
+        "street_norm": "zwyciestwa",
+        "building": "34",
+        "apt": "9A",
+        "key": "zwyciestwa|34|9A",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 18.06,
+      "starting_price_pln": 80910,
+      "detail_url": "https://zgm-gliwice.pl/zwyciestwa-34-9a-12-10-2026-r/",
+      "bip_url": "https://bip.gliwice.eu/sprzedaz-przetarg-30112026-ul-krolowej-jadwigi-418-ul-wincentego-styczynskiego-1413-ul-mewy-39-ul-ks-marcina-strzody-38-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-zwyciestwa-349a-lokale-uzytkowe",
+      "round": 3,
+      "round_source": "explicit",
+      "wadium_deadline": "2026-11-24",
+      "viewing_date": "2026-11-18"
     },
     {
       "kind": "uzytkowy",
@@ -42,6 +143,166 @@
       "viewing_date": "2026-10-27",
       "round": 1,
       "round_source": "inferred"
+    },
+    {
+      "kind": "garaz",
+      "address_raw": "Kozielskiej 13 garaż nr 1",
+      "address": {
+        "street": "Kozielskiej",
+        "street_norm": "kozielskiej",
+        "building": "13",
+        "apt": "garaz-1",
+        "key": "kozielskiej|13|garaz-1",
+        "warning": null
+      },
+      "auction_date": "2026-12-07",
+      "area_m2": 16.92,
+      "starting_price_pln": 29880,
+      "round": 5,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-ul-rozy-luksemburg-154-ul-ksiecia-ziemowita-89-ul-jozefa-uszczyka-1011-lokale-mieszkalne-ul-paulinska-51-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Róży Luksemburg 15/4",
+      "address": {
+        "street": "Róży Luksemburg",
+        "street_norm": "rozy luksemburg",
+        "building": "15",
+        "apt": "4",
+        "key": "rozy luksemburg|15|4",
+        "warning": null
+      },
+      "auction_date": "2026-12-07",
+      "area_m2": 58.4,
+      "starting_price_pln": 333900,
+      "round": 1,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-ul-rozy-luksemburg-154-ul-ksiecia-ziemowita-89-ul-jozefa-uszczyka-1011-lokale-mieszkalne-ul-paulinska-51-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Księcia Ziemowita 8/9",
+      "address": {
+        "street": "Księcia Ziemowita",
+        "street_norm": "ksiecia ziemowita",
+        "building": "8",
+        "apt": "9",
+        "key": "ksiecia ziemowita|8|9",
+        "warning": null
+      },
+      "auction_date": "2026-12-07",
+      "area_m2": 48.57,
+      "starting_price_pln": 285660,
+      "round": 2,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-ul-rozy-luksemburg-154-ul-ksiecia-ziemowita-89-ul-jozefa-uszczyka-1011-lokale-mieszkalne-ul-paulinska-51-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Józefa Uszczyka 10/11",
+      "address": {
+        "street": "Józefa Uszczyka",
+        "street_norm": "jozefa uszczyka",
+        "building": "10",
+        "apt": "11",
+        "key": "jozefa uszczyka|10|11",
+        "warning": null
+      },
+      "auction_date": "2026-12-07",
+      "area_m2": 43.54,
+      "starting_price_pln": 181710,
+      "round": 2,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-ul-rozy-luksemburg-154-ul-ksiecia-ziemowita-89-ul-jozefa-uszczyka-1011-lokale-mieszkalne-ul-paulinska-51-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "uzytkowy",
+      "address_raw": "Paulińskiej 5/1",
+      "address": {
+        "street": "Paulińskiej",
+        "street_norm": "paulinskiej",
+        "building": "5",
+        "apt": "1",
+        "key": "paulinskiej|5|1",
+        "warning": null
+      },
+      "auction_date": "2026-12-07",
+      "area_m2": 15.62,
+      "starting_price_pln": 52020,
+      "round": 2,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-ul-rozy-luksemburg-154-ul-ksiecia-ziemowita-89-ul-jozefa-uszczyka-1011-lokale-mieszkalne-ul-paulinska-51-lokal-uzytkowy-ul-kozielska-13-garaz-nr-1",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Królowej Jadwigi 4/18",
+      "address": {
+        "street": "Królowej Jadwigi",
+        "street_norm": "krolowej jadwigi",
+        "building": "4",
+        "apt": "18",
+        "key": "krolowej jadwigi|4|18",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 34.86,
+      "starting_price_pln": 169500,
+      "round": 1,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-30112026-ul-krolowej-jadwigi-418-ul-wincentego-styczynskiego-1413-ul-mewy-39-ul-ks-marcina-strzody-38-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-zwyciestwa-349a-lokale-uzytkowe",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Wincentego Styczyńskiego 14/13",
+      "address": {
+        "street": "Wincentego Styczyńskiego",
+        "street_norm": "wincentego styczynskiego",
+        "building": "14",
+        "apt": "13",
+        "key": "wincentego styczynskiego|14|13",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 36.73,
+      "starting_price_pln": 189360,
+      "round": 3,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-30112026-ul-krolowej-jadwigi-418-ul-wincentego-styczynskiego-1413-ul-mewy-39-ul-ks-marcina-strzody-38-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-zwyciestwa-349a-lokale-uzytkowe",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
+    },
+    {
+      "kind": "mieszkalny",
+      "address_raw": "Ks. Marcina Strzody 3/8",
+      "address": {
+        "street": "Ks. Marcina Strzody",
+        "street_norm": "ks marcina strzody",
+        "building": "3",
+        "apt": "8",
+        "key": "ks marcina strzody|3|8",
+        "warning": null
+      },
+      "auction_date": "2026-11-30",
+      "area_m2": 56.61,
+      "starting_price_pln": 313290,
+      "round": 2,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-30112026-ul-krolowej-jadwigi-418-ul-wincentego-styczynskiego-1413-ul-mewy-39-ul-ks-marcina-strzody-38-lokale-mieszkalne-al-wojciecha-korfantego-17i-ul-zwyciestwa-349a-lokale-uzytkowe",
+      "source": "bip",
+      "wadium_deadline": null,
+      "viewing_date": null
     },
     {
       "kind": "mieszkalny",
@@ -87,86 +348,91 @@
     },
     {
       "kind": "mieszkalny",
-      "address_raw": "Derkacza 2/8",
+      "address_raw": "PRZYJAŹNI 9/5",
       "address": {
-        "street": "Derkacza",
-        "street_norm": "derkacza",
-        "building": "2",
-        "apt": "8",
-        "key": "derkacza|2|8",
-        "warning": null
-      },
-      "auction_date": "2026-11-09",
-      "area_m2": 36.87,
-      "starting_price_pln": 239100,
-      "round": 1,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
-      "source": "bip",
-      "wadium_deadline": null,
-      "viewing_date": null
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Lipcowa 9/21",
-      "address": {
-        "street": "Lipcowa",
-        "street_norm": "lipcowa",
+        "street": "PRZYJAŹNI",
+        "street_norm": "przyjazni",
         "building": "9",
-        "apt": "21",
-        "key": "lipcowa|9|21",
+        "apt": "5",
+        "key": "przyjazni|9|5",
         "warning": null
       },
-      "auction_date": "2026-11-09",
-      "area_m2": 36.09,
-      "starting_price_pln": 212700,
-      "round": 1,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
-      "source": "bip",
-      "wadium_deadline": null,
-      "viewing_date": null
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Wielkiej Niedźwiedzicy 11/9",
-      "address": {
-        "street": "Wielkiej Niedźwiedzicy",
-        "street_norm": "wielkiej niedzwiedzicy",
-        "building": "11",
-        "apt": "9",
-        "key": "wielkiej niedzwiedzicy|11|9",
-        "warning": null
-      },
-      "auction_date": "2026-11-09",
-      "area_m2": 62.64,
-      "starting_price_pln": 361980,
-      "round": 2,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
-      "source": "bip",
-      "wadium_deadline": null,
-      "viewing_date": null
-    },
-    {
-      "kind": "mieszkalny",
-      "address_raw": "Zwycięstwa 11/6c",
-      "address": {
-        "street": "Zwycięstwa",
-        "street_norm": "zwyciestwa",
-        "building": "11",
-        "apt": "6C",
-        "key": "zwyciestwa|11|6C",
-        "warning": null
-      },
-      "auction_date": "2026-11-09",
-      "area_m2": 71.07,
-      "starting_price_pln": 271200,
-      "round": 5,
-      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-9112026-ul-derkacza-28-ul-lipcowa-921-ul-wielkiej-niedzwiedzicy-119-ul-zwyciestwa-116c-lokale-mieszkalne",
+      "auction_date": "2026-12-07",
+      "area_m2": 134.17,
+      "starting_price_pln": 619360,
+      "round": 4,
+      "detail_url": "https://bip.gliwice.eu/sprzedaz-przetarg-7122026-al-przyjazni-95-lokal-mieszkalny",
       "source": "bip",
       "wadium_deadline": null,
       "viewing_date": null
     }
   ],
   "wykaz": [
+    {
+      "wykaz_no": "ZGM/DS/255/2026",
+      "address_raw": "Dunikowskiego 16/I",
+      "address": {
+        "street": "Dunikowskiego",
+        "street_norm": "dunikowskiego",
+        "building": "16",
+        "apt": "I",
+        "key": "dunikowskiego|16|I",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/158/2026",
+      "address_raw": "Błogosławionego Czesława 5/9",
+      "address": {
+        "street": "Błogosławionego Czesława",
+        "street_norm": "blogoslawionego czeslawa",
+        "building": "5",
+        "apt": "9",
+        "key": "blogoslawionego czeslawa|5|9",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/253/2026",
+      "address_raw": "Mikołowska 18/11",
+      "address": {
+        "street": "Mikołowska",
+        "street_norm": "mikolowska",
+        "building": "18",
+        "apt": "11",
+        "key": "mikolowska|18|11",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/243/2026",
+      "address_raw": "Kossaka 10/3",
+      "address": {
+        "street": "Kossaka",
+        "street_norm": "kossaka",
+        "building": "10",
+        "apt": "3",
+        "key": "kossaka|10|3",
+        "warning": null
+      },
+      "published_date": null
+    },
+    {
+      "wykaz_no": "ZGM/DS/241/2026",
+      "address_raw": "Grottgera 19A/5",
+      "address": {
+        "street": "Grottgera",
+        "street_norm": "grottgera",
+        "building": "19A",
+        "apt": "5",
+        "key": "grottgera|19A|5",
+        "warning": null
+      },
+      "published_date": null
+    },
     {
       "wykaz_no": "ZGM/DS/101/2026",
       "address_raw": "Witkiewicza 32/7",
@@ -202,58 +468,6 @@
         "building": "3",
         "apt": "IV",
         "key": "zwyciestwa|3|IV",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/166/2026",
-      "address_raw": "Krakusa 20/8",
-      "address": {
-        "street": "Krakusa",
-        "street_norm": "krakusa",
-        "building": "20",
-        "apt": "8",
-        "key": "krakusa|20|8",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/222/2026",
-      "address_raw": "Zawiszy Czarnego 4/3",
-      "address": {
-        "street": "Zawiszy Czarnego",
-        "street_norm": "zawiszy czarnego",
-        "building": "4",
-        "apt": "3",
-        "key": "zawiszy czarnego|4|3",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/186/2026",
-      "address_raw": "Mikołowska 20/14",
-      "address": {
-        "street": "Mikołowska",
-        "street_norm": "mikolowska",
-        "building": "20",
-        "apt": "14",
-        "key": "mikolowska|20|14",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/188/2026",
-      "address_raw": "Mikołowska 20/2",
-      "address": {
-        "street": "Mikołowska",
-        "street_norm": "mikolowska",
-        "building": "20",
-        "apt": "2",
-        "key": "mikolowska|20|2",
         "warning": null
       },
       "published_date": null

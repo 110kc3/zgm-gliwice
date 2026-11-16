@@ -2,22 +2,22 @@
   "schema_version": 1,
   "parser_version": "0.2.0",
   "city": "gliwice",
-  "generated_at": "2026-10-21T22:14:57.826Z",
+  "generated_at": "2026-11-16T12:21:25.795Z",
   "source_pdf_count": 46,
-  "parsed_records": 258,
+  "parsed_records": 261,
   "parser_note_count": 14,
-  "unique_properties": 214,
-  "active_listings": 8,
-  "active_auctions": 8,
-  "archived_auctions": 306,
-  "wykaz_entries": 7,
-  "land_plots": 80,
-  "land_listings": 6,
-  "retained_properties": 40,
+  "unique_properties": 226,
+  "active_listings": 18,
+  "active_auctions": 18,
+  "archived_auctions": 315,
+  "wykaz_entries": 8,
+  "land_plots": 85,
+  "land_listings": 88,
+  "retained_properties": 44,
   "valid_empty": false,
   "valid_empty_land": false,
-  "last_source_attempt_at": "2026-10-21T22:14:19.262Z",
-  "last_successful_source_check_at": "2026-10-21T22:14:19.262Z",
+  "last_source_attempt_at": "2026-11-16T12:19:59.659Z",
+  "last_successful_source_check_at": "2026-11-16T12:19:59.659Z",
   "monitored_assets": [
     "commercial",
     "garage",
@@ -28,14 +28,14 @@
   "source_checks": {
     "property": {
       "status": "healthy",
-      "last_attempt_at": "2026-10-21T22:14:19.262Z",
-      "last_success_at": "2026-10-21T22:14:19.262Z"
+      "last_attempt_at": "2026-11-16T12:19:59.659Z",
+      "last_success_at": "2026-11-16T12:19:59.659Z"
     },
     "land": {
       "status": "healthy",
       "complete": true,
-      "last_attempt_at": "2026-10-21T22:14:19.262Z",
-      "last_success_at": "2026-10-21T22:14:19.262Z"
+      "last_attempt_at": "2026-11-16T12:19:59.659Z",
+      "last_success_at": "2026-11-16T12:19:59.659Z"
     }
   }
 }
