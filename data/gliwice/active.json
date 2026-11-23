@@ -445,32 +445,6 @@
         "warning": null
       },
       "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/199/2026",
-      "address_raw": "Strzody 6A/11",
-      "address": {
-        "street": "Strzody",
-        "street_norm": "strzody",
-        "building": "6A",
-        "apt": "11",
-        "key": "strzody|6A|11",
-        "warning": null
-      },
-      "published_date": null
-    },
-    {
-      "wykaz_no": "ZGM/DS/221/2026",
-      "address_raw": "Zwycięstwa 3/IV",
-      "address": {
-        "street": "Zwycięstwa",
-        "street_norm": "zwyciestwa",
-        "building": "3",
-        "apt": "IV",
-        "key": "zwyciestwa|3|IV",
-        "warning": null
-      },
-      "published_date": null
     }
   ]
 }
